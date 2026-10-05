@@ -1,0 +1,163 @@
+[
+  {
+    "page": 1,
+    "title": "",
+    "section": "内部分享 / 编码模型与 AGI",
+    "source": "Claude 为什么强 · 编码模型如何成功 · 通往 AGI 的行动能力",
+    "notes": ""
+  },
+  {
+    "page": 2,
+    "title": "如果估值迈向两万亿，市场在押注什么？",
+    "section": "开场 / 两万亿的想象",
+    "source": "估值前景情景；非已上市市值",
+    "notes": "原唯一媒体链接本次HTTP403，不能验证IPO目标；删除2026IPO时间表和已确认目标的措辞。不把无法获取等同于新闻虚假。"
+  },
+  {
+    "page": 3,
+    "title": "Opus 5.5 的成绩单：工程与通用行动",
+    "section": "第一幕 / Claude 为什么强",
+    "source": "Artificial Analysis模型页和Terminal4；Anthropic Opus5.5发布页",
+    "notes": "2026-10-04核验。数据只采用本次直接读取的第三方或官方来源；配置和证据见本文件备注及source_audit.md。\nhttps://artificialanalysis.ai/models/claude-opus-5-5\nhttps://artificialanalysis.ai/evaluations/terminalbench-4-0\nhttps://www.anthropic.com/news/claude-opus-5-5\nAA前两项：max with fallback。后两项官方发布表：max effort；FrontierCode Main，非默认medium54.6。CursorBench57.8。不可把不同评测合成企业任务成功率。"
+  },
+  {
+    "page": 4,
+    "title": "10.3% → 70.6%：一次明确的终端能力跃迁",
+    "section": "第一幕 / 代际跃迁",
+    "source": "https://www.anthropic.com/claude-sonnet-5-5",
+    "notes": "2026-10-04核验。数据只采用本次直接读取的第三方或官方来源；配置和证据见本文件备注及source_audit.md。\n发布日期2026-09-28；官方表Sonnet5 10.3、5.5 70.6。此页官方数据不可与第5页AA mini-swe-agent混用。不同模型的最优配置，非受控训练实验。无需假称Verified98.1。"
+  },
+  {
+    "page": 5,
+    "title": "第三方对照：终端执行接近，综合能力有差异",
+    "section": "第一幕 / 横向对照",
+    "source": "来源：Artificial Analysis · terminalbench-4-0 + 三款模型页；核验于 2026-10-04",
+    "notes": "核验日期：2026-10-04。全稿来源见source_audit.md。\n{\n  \"retrieved_at\": \"2026-10-04\",\n  \"scope\": \"Slide 05 only\",\n  \"source_priority\": \"Artificial Analysis independent evaluations; official releases for missing entries only\",\n  \"terminal_bench\": {\n    \"version\": \"4.0\",\n    \"url\": \"https://artificialanalysis.ai/evaluations/terminalbench-4-0?models=claude-opus-5-5%2Cgpt-6-astra%2Cgemini-3-1-pro-preview\",\n    \"harness\": \"mini-swe-agent\",\n    \"tasks\": 66,\n    \"repeats_per_task\": 3,\n    \"metric\": \"pass@1 averaged over three repeats per task\",\n    \"scores_percent\": [\n      59.6,\n      59.1,\n      4\n    ]\n  },\n  \"intelligence_index\": {\n    \"version\": \"4.3.2\",\n    \"metric\": \"Artificial Analysis Intelligence Index, not a percentage or coding success rate\",\n    \"scores\": [\n      58,\n      53,\n      30\n    ]\n  },\n  \"models\": [\n    {\n      \"display_name\": \"Opus 5.5\",\n      \"evaluated_variant\": \"Claude Opus 5.5 (max with fallback)\",\n      \"url\": \"https://artificialanalysis.ai/models/claude-opus-5-5\"\n    },\n    {\n      \"display_name\": \"GPT-6 Astra\",\n      \"evaluated_variant\": \"GPT-6 Astra (max)\",\n      \"url\": \"https://artificialanalysis.ai/models/gpt-6-astra\"\n    },\n    {\n      \"display_name\": \"Gemini 3.1 Pro\",\n      \"evaluated_variant\": \"Gemini 3.1 Pro Preview\",\n      \"url\": \"https://artificialanalysis.ai/models/gemini-3-1-pro-preview\"\n    }\n  ],\n  \"swe_bench_pro\": {\n    \"status\": \"No complete same-version three-model comparison verified in inspected public sources\",\n    \"action\": \"Replace right panel with explicitly labelled AA Intelligence Index rather than retain unverified repository scores\"\n  },\n  \"official_cross_check\": {\n    \"url\": \"https://www.anthropic.com/news/claude-opus-5-5\",\n    \"terminal_bench_percent\": {\n      \"opus_5_5_xhigh\": 66.4,\n      \"gpt_6_astra_high_as_reported_by_openai\": 57.9\n    },\n    \"used_in_chart\": false,\n    \"reason\": \"Different harness/effort/setup from AA; official table does not list SWE-bench Pro. OpenAI direct announcement access returned HTTP 403 / challenge.\"\n  },\n  \"interpretation\": \"0.5 percentage point observed Terminal-Bench difference; not evidence of a statistically significant model lead. Results are configuration-specific. Other deck pages remain repository-sourced and are not reverified by this update.\"\n}\nTerminal-Bench为AA统一mini-swe-agent harness、66任务、每题3次的平均pass@1。Opus为max with fallback；Astra为max；Gemini为Pro Preview。fallback可能由其他模型完成部分任务，因此不是纯Opus无回退能力。AA Coding Agents页面采用厂商Agent harness，Opus约63、Astra约55，不与此处混用。官方66.4与57.9也不混入。\n右侧Intelligence Index v4.3.2是10项评测综合指数，不是百分比、不是SWE-bench Pro、不是纯编码得分。SWE-bench Pro未核实到三者同版本数据，因而移除。0.5为观测分差，不证明统计显著优势。"
+  },
+  {
+    "page": 6,
+    "title": "Sonnet 与 Opus：日常迭代和复杂工作的两种选择",
+    "section": "第一幕 / 能力与价格",
+    "source": "Anthropic Sonnet5.5、Opus5.5发布页；AA对应模型页",
+    "notes": "https://www.anthropic.com/claude-sonnet-5-5\nhttps://www.anthropic.com/news/claude-opus-5-5\nhttps://artificialanalysis.ai/models/claude-sonnet-5-5\nhttps://artificialanalysis.ai/models/claude-opus-5-5\n输出速率132.3/92.0 t/s，不是完整任务交付速度。官方发布价格为输入2/4、输出10/20、缓存读取0.2/0.2。当前API不等于订阅价。"
+  },
+  {
+    "page": 7,
+    "title": "每次调用便宜，不等于整个任务更便宜",
+    "section": "第一幕 / 每任务成本",
+    "source": "https://artificialanalysis.ai/agents/coding-agents",
+    "notes": "2026-10-04核验。数据只采用本次直接读取的第三方或官方来源；配置和证据见本文件备注及source_audit.md。\nAA DOM：ClaudeCode Sonnet5.5 max14.2USD；Opus5.5 max13.0USD；Codex GPT6Astra max7.47USD。页面显示值有四舍五入。指数为DeepSWE1.1/TB4/SWEAtlasQnA均权；不是相同题目全部通过之后的成本、不是人类审查/基础设施总成本。厂商Harness与第5页不同。"
+  },
+  {
+    "page": 8,
+    "title": "重复上下文读取，价格降低 90% / 95%",
+    "section": "第一幕 / Prompt Caching",
+    "source": "Anthropic Sonnet5.5、Opus5.5官方发布页",
+    "notes": "https://www.anthropic.com/claude-sonnet-5-5\nhttps://www.anthropic.com/news/claude-opus-5-5\nSonnet缓存读取比普通输入便宜90%，Opus便宜95%，对应输入标价2/4与cache0.2。输入2/4USD，cache0.2USD，20*100k=2M:4/8->0.4。初次缓存写入、保留期限和其他Tokens另计。算例非实测账单。"
+  },
+  {
+    "page": 9,
+    "title": "终端原生：同一个任务里，查、改、测、再修复",
+    "section": "第一幕 / Claude Code 的工作轨迹",
+    "source": "工程场景示意；命令、回显与文件为教学例，不是本次运行记录",
+    "notes": "https://www.anthropic.com/engineering/writing-tools-for-agents\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents\n不连接真实线上系统；日志预先提供，代码修改在测试环境。git blame仅提供变更线索，不等于定位根因。"
+  },
+  {
+    "page": 10,
+    "title": "为什么不是“换个模型”就能复制体验？",
+    "section": "第一幕 / 模型与 Harness",
+    "source": "来源：Anthropic 上下文工程、工具设计、长任务 Harness",
+    "notes": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents\nhttps://www.anthropic.com/engineering/writing-tools-for-agents\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
+  },
+  {
+    "page": 11,
+    "title": "长上下文，不等于找对这次任务的证据",
+    "section": "第一幕 / 大仓库理解",
+    "source": "来源：Anthropic · Effective context engineering；检索流程示意",
+    "notes": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents\n移除200万字无单位换算的容量表达，保留按问题检索的工程解释。"
+  },
+  {
+    "page": 12,
+    "title": "每步只差 1.5 个百分点，50 步之后差多少？",
+    "section": "第一幕 / 长任务",
+    "source": "数学示意；不由评测分数推算模型单步可靠性",
+    "notes": "0.98^50=36.4%；0.995^50=77.8%；真实Agent会重试、自愈，结果受任务与恢复能力影响。"
+  },
+  {
+    "page": 13,
+    "title": "代码训练场有任务、有环境，也有自动裁判",
+    "section": "第二幕 / 编码模型如何成功",
+    "source": "SWE-bench官方、Scale Pro官方仓库、Terminal-Bench4与AA",
+    "notes": "2026-10-04核验。数据只采用本次直接读取的第三方或官方来源；配置和证据见本文件备注及source_audit.md。\nhttps://www.swebench.com/SWE-bench/\nhttps://github.com/scaleapi/SWE-bench_Pro-os\nhttps://www.tbench.ai/news/terminal-bench-4-0\nhttps://artificialanalysis.ai/evaluations/terminalbench-4-0\nVerified500；ProV2 642（v1 731）；TB4 66。保留训练与评测分离：TerminalBench明确禁止将基准数据放入训练语料。"
+  },
+  {
+    "page": 14,
+    "title": "模型学习的，不只是一份正确补丁，而是整段解题轨迹",
+    "section": "第二幕 / Agentic RL",
+    "source": "DeepSeek-R1官方研究；下图为编码Agent强化学习的机制示意",
+    "notes": "https://github.com/deepseek-ai/DeepSeek-R1\n研究是公开RL实例，不声称图中的全部Agentic编码训练轨迹为Claude已披露的私有配方。OpenAI introducingCodex本次403，移除未经本次复核的codex-1具体归因；保留执行纠错与训练权重更新的区别。"
+  },
+  {
+    "page": 15,
+    "title": "一道真实任务：不停机，从 MySQL 迁到 PostgreSQL",
+    "section": "第二幕 / 反馈为何有效",
+    "source": "Artificial Analysis Terminal-Bench4.0公开任务示例",
+    "notes": "https://artificialanalysis.ai/evaluations/terminalbench-4-0\n用户请求5秒超时；p95比MySQL基线最多增加10ms；不允许5xx意外4xx、数据不一致、陈旧读取或丢行；验证PG全量数据、外键、继续写入、查询行为。公开题目要求，非本次执行或模型成功案例。"
+  },
+  {
+    "page": 16,
+    "title": "Codex 的竞争力，不只在分数，也在执行效率",
+    "section": "第二幕 / 赛道验证",
+    "source": "https://artificialanalysis.ai/agents/coding-agents\nhttps://github.com/openai/codex",
+    "notes": "2026-10-04核验。数据只采用本次直接读取的第三方或官方来源；配置和证据见本文件备注及source_audit.md。\nAA Coding Agent Index1.5 displayed scores GPT6.1Sol xhigh63 / Astra max62；runtime15.5/29.4min；APIcost1.04/7.47USD。不是受控模型唯一变量实验、不是Pro83.5、不支持品牌历史持续提升的曲线。Codex官方仓库核实CLI和Web存在。"
+  },
+  {
+    "page": 17,
+    "title": "普通员工的任务，也包含数据结构、循环与规则",
+    "section": "第三幕 / 为什么 AGI 需要编码",
+    "source": "业务案例示意；表内数字为教学样本，不是公司实际数据",
+    "notes": "https://www.anthropic.com/engineering/code-execution-with-mcp\n教学样本O1042订单额980银行到账950差额30；O1088订单1200到账1200差额0；O1101订单600到账0差额600。Agent需处理编号、金额单位、重复记录与业务授权。"
+  },
+  {
+    "page": 18,
+    "title": "MCP + 代码执行：先发现工具，再按需组合",
+    "section": "第三幕 / 按需制造工具",
+    "source": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "notes": "官方工程文章示例：按需探索工具文件，把需加载内容从150000降至2000Tokens，降低98.7%。它不是模型成功率、不是所有工作端到端账单降低98.7%；计算98.6667%四舍五入。"
+  },
+  {
+    "page": 19,
+    "title": "同一个模型，在不同工作上仍有不同表现",
+    "section": "第三幕 / 能力边界",
+    "source": "https://www.anthropic.com/news/claude-opus-5-5",
+    "notes": "官方发布表：Chartography with tools89；OSWorld2.1 partial81.8；TerminalBenchScience0.1 58.7；AutomationBenchZapier40.0。前两后两指标不同，不能作为统一考试或行业总体胜任率；AutomationBench无fallback，其他部分有安全fallback；均按原文标识。"
+  },
+  {
+    "page": 20,
+    "title": "26% 的内部研发工作，达到 AI 主导级别",
+    "section": "第三幕 / AI 参与 AI 研发",
+    "source": "Anthropic · Measuring the pace of AI development",
+    "notes": "https://www.anthropic.com/institute/measuring-pace-of-ai-development\n26%AL4 AI主导、人类监督；>90%至少AL3协作。AL4包含于AL3及以上集合，两数字不相加；不是26%的原创发现占比。所测任务没有报告AL5完全自主。"
+  },
+  {
+    "page": 21,
+    "title": "约 3 万个 Agent，在同一平台并行做研发",
+    "section": "第三幕 / 研发执行",
+    "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+    "notes": "厂商自报，尚非独立审计：最常用平台任何时刻约30000研究工程Agent；动作100%执行前在线监测；8月超过10亿决策被分析，0.002%被拦截；监控覆盖不等于识别全部风险。三万不是员工人数，也不是完全自主的独立研究者。"
+  },
+  {
+    "page": 22,
+    "title": "当前智能参与研发，后继智能再进入下一轮",
+    "section": "第三幕 / 递归改进",
+    "source": "来源：Anthropic 研发自动化研究；代际反馈机制示意",
+    "notes": "https://www.anthropic.com/institute/measuring-pace-of-ai-development\n这描述可能的代际正反馈，不宣称完全自主RSI或智能爆炸已经完成。算力、研究创意和验证仍可能成为约束。"
+  },
+  {
+    "page": 23,
+    "title": "把业务经验变成可执行能力，而不只是个人熟练度",
+    "section": "结尾 / 员工与公司",
+    "source": "组织变化为方向性分析；任务执行仍需授权环境",
+    "notes": ""
+  }
+]

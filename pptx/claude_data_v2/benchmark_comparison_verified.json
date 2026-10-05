@@ -1,0 +1,35 @@
+{
+  "retrieved_at": "2026-10-04",
+  "scope": "Slide 05 only",
+  "source_priority": "Artificial Analysis independent evaluations; official releases for missing entries only",
+  "terminal_bench": {
+    "version": "4.0",
+    "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0?models=claude-opus-5-5%2Cgpt-6-astra%2Cgemini-3-1-pro-preview",
+    "harness": "mini-swe-agent",
+    "tasks": 66,
+    "repeats_per_task": 3,
+    "metric": "pass@1 averaged over three repeats per task",
+    "scores_percent": [59.6, 59.1, 4.0]
+  },
+  "intelligence_index": {
+    "version": "4.3.2",
+    "metric": "Artificial Analysis Intelligence Index, not a percentage or coding success rate",
+    "scores": [58, 53, 30]
+  },
+  "models": [
+    {"display_name":"Opus 5.5", "evaluated_variant":"Claude Opus 5.5 (max with fallback)", "url":"https://artificialanalysis.ai/models/claude-opus-5-5"},
+    {"display_name":"GPT-6 Astra", "evaluated_variant":"GPT-6 Astra (max)", "url":"https://artificialanalysis.ai/models/gpt-6-astra"},
+    {"display_name":"Gemini 3.1 Pro", "evaluated_variant":"Gemini 3.1 Pro Preview", "url":"https://artificialanalysis.ai/models/gemini-3-1-pro-preview"}
+  ],
+  "swe_bench_pro": {
+    "status": "No complete same-version three-model comparison verified in inspected public sources",
+    "action": "Replace right panel with explicitly labelled AA Intelligence Index rather than retain unverified repository scores"
+  },
+  "official_cross_check": {
+    "url":"https://www.anthropic.com/news/claude-opus-5-5",
+    "terminal_bench_percent":{"opus_5_5_xhigh":66.4,"gpt_6_astra_high_as_reported_by_openai":57.9},
+    "used_in_chart":false,
+    "reason":"Different harness/effort/setup from AA; official table does not list SWE-bench Pro. OpenAI direct announcement access returned HTTP 403 / challenge."
+  },
+  "interpretation":"0.5 percentage point observed Terminal-Bench difference; not evidence of a statistically significant model lead. Results are configuration-specific. Other deck pages remain repository-sourced and are not reverified by this update."
+}

@@ -1,0 +1,17 @@
+{
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 3333786197053713400
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "loaded",
+    "reused": true,
+    "saveStatus": "saved"
+  },
+  "origin": "https://artificialanalysis.ai/evaluations/terminalbench-4-0?models=claude-opus-5-5%2Cgpt-6-astra%2Cgemini-3-1-pro-preview",
+  "result": "Terminal-Bench 4.0: Score\nBenchmark developed by the Laude Institute, Stanford, and open-source contributors · Independently benchmarked by Artificial Analysis\n3 of 209 models\nClaude Opus 5.5 (max with fallback)\nGPT-6 Astra (max)\nGemini 3.1 Pro Preview\n59.6%\n59.1%\n4.0%\nTerminal-Bench 4.0: Score vs. Cost per Task\nTerminal-Bench 4.0 score vs. average cost per task (USD) · Lower is better\n3 of 209 models\nMost attractive quadrant\nPareto line\nAnthropic\nOpenAI\nGoogle\nMeta\nXiaomi\nEvaluation Cost per Task\n"
+}

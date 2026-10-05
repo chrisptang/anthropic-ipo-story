@@ -1,0 +1,17 @@
+quarter,year_month,anthropic_arr_usd_m,openai_arr_usd_m,openai_to_anthropic_ratio,anthropic_catalyst,openai_catalyst,accounting_notes
+2023-Q1,2023-03,10,200,20.0x,Claude 1 research preview,ChatGPT Plus ($20/mo) viral takeoff,OpenAI consumer subscription-heavy
+2023-Q2,2023-06,35,500,14.3x,Claude 1.3 commercial API rollout,GPT-4 API developer rollout,OpenAI API scaling rapidly
+2023-Q3,2023-09,60,1000,16.7x,Claude 2 (100k context) announced,ChatGPT Enterprise launch,Anthropic AWS Bedrock partnership announced
+2023-Q4,2023-12,100,1600,16.0x,Enterprise prompt engineering adoption,GPT-4 Turbo & DevDay Assistants API,OpenAI hits $1.6B ARR milestone
+2024-Q1,2024-03,200,2000,10.0x,Claude 3 (Opus/Sonnet/Haiku) launch,Sora preview & enterprise growth,Claude Opus beats GPT-4 on benchmarks
+2024-Q2,2024-06,400,2800,7.0x,Claude 3.5 Sonnet v1 released,GPT-4o launch (multimodal audio),Cursor & Aider default to Claude 3.5 Sonnet
+2024-Q3,2024-09,650,3400,5.2x,Prompt Caching cuts input cost 90%,o1 (Strawberry) reasoning preview,Prompt caching triggers enterprise repo migrations
+2024-Q4,2024-12,1000,4000,4.0x,Claude 3.5 Sonnet v2 + Computer Use + MCP,o1 full release + Operator preview,Anthropic reaches $1B ARR run rate
+2025-Q1,2025-03,2000,6000,3.0x,Claude Code Preview + Claude 3.7 Sonnet,GPT-4.5 / o3 release,Claude Code turns developers into token incinerators
+2025-Q2,2025-06,4200,8500,2.0x,Claude Code GA + SWE-bench 70%+ break,o3-mini & Enterprise Workspaces,Agent token consumption expands 50x-100x
+2025-Q3,2025-09,6800,11000,1.6x,Fortune 500 multi-agent deployments,Enterprise custom agent models,Anthropic gross contract expansion via Bedrock/GCP
+2025-Q4,2025-12,9000,13000,1.4x,Claude 4.5 series + 500k context,Operator enterprise rollout,Anthropic ARR nears $10B; full year revenue ~$4.6B
+2026-Q1,2026-03,22000,22000,1.0x,Claude Code alone reaches $2.5B ARR,GPT-5 launch,ARR reaches parity; Claude accounts for 7% GitHub commits
+2026-Q2,2026-06,46000,35000,0.76x,Claude Fable 5.0 (1M context) + Series H,SearchGPT & consumer re-acceleration,Anthropic overtakes in gross contracted ARR
+2026-Q3,2026-09,100000,70000,0.70x,Claude Opus/Sonnet 5.5 + Terminal-Bench 70.6%,GPT-6 Astra preview + enterprise push,Anthropic breaks $100B annualized run rate
+2026-Q4E,2026-12,120000,90000,0.75x,Pre-IPO target roadshow ($1.8T-$2.0T),Full enterprise multi-cloud scale,Anthropic forecasts $120B ARR run rate by year-end

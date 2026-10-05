@@ -1,0 +1,11 @@
+round_name,date,amount_raised_usd_m,post_money_valuation_usd_m,lead_investors,key_strategic_partners,valuation_step_up_multiple,primary_milestone_and_notes
+Series A,2021-05,124,850,Jaan Tallinn (Skype co-founder),Dustin Moskovitz,1.0x,Anthropic founded by Dario & Daniela Amodei and former OpenAI VP/core members
+Series B,2022-04,580,1400,Sam Bankman-Fried / Caroline Ellison (later bought out),Jim McClave,1.6x,Initial training compute capital; later SBF stake was repurchased by sovereign/VC funds
+Google Strategic 1,2023-02,300,4100,Google,Google Cloud,2.9x,Google takes ~10% stake and establishes Google Cloud computing partnership
+Series C,2023-05,450,4500,Spark Capital,Google; Salesforce Ventures; Sound Ventures,1.1x,Commercial launch of Claude 1.3 and Claude 2 with 100k context window
+Amazon Strategic Tranche 1,2023-09,1250,10000,Amazon,AWS Bedrock,2.2x,Amazon announces up to $4B total commitment; AWS becomes primary cloud provider
+Google Strategic Tranche 2,2023-10,2000,15000,Google,Google Cloud Vertex AI,1.5x,Google commits up to $2B additional investment ($500M upfront + $1.5B over time)
+Amazon Strategic Tranche 2,2024-03,2750,18400,Amazon,AWS Bedrock / Trainium,1.2x,Amazon completes full $4B investment; Claude 3 family (Opus/Sonnet/Haiku) released
+Series G (Growth Cloud Round),2025-06,4500,180000,Amazon; Menlo Ventures; GIC,AWS; Google Cloud; Project Rainier,9.8x,Amazon adds $4B; Prompt Caching & Claude Code preview catalyze valuation breakout
+Series H (Pre-IPO Crossover),2026-05,10000,965000,GIC (Singapore); Lightspeed; Thrive Capital,Amazon; Google; Menlo Ventures,5.4x,ARR hits $45B+; Claude Fable 5.0 release; final major private round before IPO filing
+IPO Public Offering (Target),2026-11,18000,2000000,Public Equity Investors,Goldman Sachs; JPMorgan; Morgan Stanley,2.1x,Targeting $1.8T - $2.0T valuation on NASDAQ; formal marketing begins week of Nov 9

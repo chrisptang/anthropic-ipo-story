@@ -1,0 +1,106 @@
+ORIGINAL PAGE 194
+8 Capabilities
+8.1 Evaluation summary
+Evaluation Claude family models Other models
+Claude
+Opus 4.8
+Claude
+Opus 4.7
+GPT-5.5 Gemini 3.1
+Pro
+SWE-bench Verified 88.6 87.6 -
+80.6
+SWE-bench Pro 69.2 64.3 58.6 54.2
+SWE-bench Multilingual 84.4 80.5 -
+-
+SWE-bench Multimodal 38.4 34.5 -
+-
+BrowseComp27 84.3
+(single-agent)
+88.5 (multi-agent)
+79.8 84.4 85.9
+Terminal-Bench 2.1 74.6 66.1 78.2 70.3
+Humanity’s
+Last Exam
+No tools 49.8 46.9 41.4 44.4
+With tools 57.9 54.7 52.2 51.4
+ChartQAPro No tools 69.4 67.6 -
+-
+With tools 72.3 69.8 -
+-
+OSWorld-Verified28 83.4 82.8 78.7 76.2
+(3.5 Flash:
+78.4)
+GPQA Diamond 93.6 94.2 -
+94.3
+ScreenSpot-Pro No tools 82.3 79.5 -
+-
+27 Changes to the Opus 4.7 BrowseComp score are due to a new blocklist, context compaction at
+200k tokens and using adaptive thinking.
+28 Changes to the Opus 4.7 OSWorld score are due to a bug fix on our zoom tool when paired with
+batched actions, and increasing the max tokens per turn from 16K to 128K.
+194
+
+ORIGINAL PAGE 195
+ScreenSpot-Pro With tools 87.9 87.6 -
+-
+Finance Agent v2 53.9 51.5 51.8 43.0
+(3.5 Flash:
+57.9)
+GDPval-AA 1890 1753 1769 1314
+MCP-Atlas 82.2 79.1 75.3 78.2
+(Gemini 3.5
+Flash: 83.6)
+Automation Bench 15.5 9.9 12.9 9.6
+(3.5 Flash:
+14.5)
+GraphWalks BFS 256K 85.9 76.9 73.7 -
+GraphWalks Parents 256K 99.3 93.6 90.1 -
+[Table 8.1.A] Capability evaluation summary. Unless otherwise noted, all Claude Opus 4.8 results use the
+following standard configuration: adaptive thinking at max effort, default sampling settings (temperature,
+top_p), averaged over 5 trials. Context window sizes are evaluation-dependent and do not exceed 1M tokens.
+The best score in each row is bolded. Competitor figures are drawn from the respective developers’ published
+system cards or benchmark leaderboards. See the Claude Opus 4.7 System Card for evaluation details of earlier
+Claude models.
+8.2 SWE-bench Verified, Pro, Multilingual, and Multimodal
+SWE-bench (Software Engineering Bench) tests AI models on real-world software
+engineering tasks. We report four variants, where the score is the average over 5 trials:
+●
+●
+●
+SWE-bench Verified29 is a 500-problem subset, each verified by human engineers as
+solvable. Opus 4.8 achieves 88.6%.
+SWE-bench Pro30 is a harder variant: problems drawn from actively-maintained
+repositories with larger, multi-file diffs and no public ground-truth leakage. Opus
+4.8 achieves 69.2%.
+SWE-bench Multilingual extends the format to 300 problems across 9
+programming languages. Opus 4.8 achieves 84.4%.
+29 Jimenez, C. E., et al. (2024). SWE-bench: Can Language Models Resolve Real-World GitHub Issues?
+arXiv:2310.06770. https:/ /arxiv.org/abs/2310.06770
+30 Deng, X., et al. (2025). SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering
+Tasks? arXiv:2509.16941. https:/ /arxiv.org/abs/2509.16941
+195
+
+ORIGINAL PAGE 196
+●
+SWE-bench Multimodal31 adds visual context (screenshots, design mockups) to the
+issue descriptions. Opus 4.8 achieves 38.4% (evaluated on an internal harness;
+Section 9.3 of the Claude Opus 4.7 System Card).
+All SWE-bench variants use the standard configuration, with thinking blocks included in
+the sampling results. For our memorization screening, see Section 6.2.1 in the Mythos
+Preview System Card.
+[Figure 8.2.A] SWE-Bench Pro pass rate across reasoning effort levels with mean output tokens per task on a
+log scale. Opus 4.8 reaches its peak pass rate at extra-high effort, with maximum effort performing comparably.
+At minimum effort, Opus 4.8 matches the peak performance of Opus 4.7 at maximum effort.
+8.3 Terminal-Bench 2.1
+Terminal-Bench 2.132 tests AI models on real-world tasks in terminal and command-line
+environments. The third-party evaluation framework Harbor runs it on the Daytona cloud
+provider, using the official integration. On Harbor’s leaderboard, using the Terminus-2
+harness, Opus 4.8 achieved 74.6% mean reward, averaged over 5 attempts for each one of
+the 89 unique tasks (for a total of 445 trials) compared to Opus 4.7’s score of 66.1%. We
+31 Yang, J., et al. (2024). SWE-bench Multimodal: Do AI Systems Generalize to Visual Software
+Domains? arXiv:2410.03859. https:/ /arxiv.org/abs/2410.03859
+32 Merrill, M. A., et al. (2026). Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in
+Command Line Interfaces. arXiv:2601.11868. https:/ /arxiv.org/abs/2601.11868
+196
+

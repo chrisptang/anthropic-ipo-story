@@ -1,0 +1,60 @@
+[
+  {
+    "path": "news/claude-4",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-4",
+      "result": {
+        "date": "May 22, 2025",
+        "paragraphs": [
+          "Claude Opus 4 is our most powerful model yet and the best coding model in the world, leading on SWE-bench (72.5%) and Terminal-bench (43.2%). It delivers sustained performance on long-running tasks that require focused effort and thousands of steps, with the ability to work continuously for several hours—dramatically outperforming all Sonnet models and significantly expanding what AI agents can accomplish.",
+          "2. Opus 4 and Sonnet 4 score 39.2% and 33.5% pass@1 with the same agent as non-Claude models, the above reported 43.2% and 35.5% with Claude Code as agent framework.",
+          "5. On SWE-Bench, Terminal-Bench, GPQA and AIME, we additionally report results that benefit from parallel test-time compute by sampling multiple sequences and selecting the single best via an internal scoring model."
+        ]
+      }
+    }
+  },
+  {
+    "path": "news/claude-opus-4-7",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-opus-4-7",
+      "result": {
+        "date": "Apr 16, 2026",
+        "paragraphs": [
+          "May 4, 2026: Updated Document reasoning graph to reflect updated OfficeQA Pro scores for Opus 4.7."
+        ]
+      }
+    }
+  },
+  {
+    "path": "news/claude-sonnet-5",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-sonnet-5",
+      "result": {
+        "date": "Jun 30, 2026",
+        "paragraphs": [
+          "Edit August 10, 2026: Sonnet 5's introductory pricing of $2 per million input tokens and $10 per million output tokens is now permanent. The standard pricing of $3 input / $15 output previously set to take effect September 1 no longer applies. The pricing references in this post have been updated accordingly.",
+          "Edit June 30, 2026: In the original version of this post, we included a cost-performance chart for the BrowseComp evaluation that was based on data from a simpler methodology that did not reflect the standard methodology we use for agentic search evaluations. This had the result of underestimating Sonnet 5's performance on the evaluation.",
+          "3 On April 26, 2026, we raised Sonnet and Haiku rate limits at every usage tier and simplified to three tiers (Start, Build, and Scale) on the native Claude Platform. You can view your tier and current limits in the Claude Console or read the documentation to learn more."
+        ]
+      }
+    }
+  },
+  {
+    "path": "claude-fable-and-mythos-5-1",
+    "data": {
+      "origin": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "result": {
+        "paragraphs": [
+          "SEPTEMBER 2026",
+          "Terminal-Bench-Science 0.1: The standard error is ±3.5–4.5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0% and Claude Fable 5 at 21.4%; our setup reproduces them at 29.0% and 24.7%, respectively, both within noise.",
+          "Terminal-Bench 4.0 scores by cost (log scale), at each effort level. Claude Fable 5.1 and Claude Mythos 5.1 are the same underlying model; the gap between them reflects the tasks on which our earlier, less precise cyber safeguards intervened. With the improvements we’re making to these safeguards today, we expect the difference between the models to be much smaller.",
+          "In July 2026, Anthropic (along with 190 other signatories, including several other major AI model providers) signed the EU AI Act’s Code of Practice on Transparency of AI-Generated Content.",
+          "This required us to add a watermark—a numerical way of determining the likelihood that Claude was involved in writing a piece of text—to the outputs of models released after August 2, 2026. As we recently explained, this watermark is invisible to anyone who does not have the detection API. It has no practical impact on the quality or content of Claude’s outputs and contains no information about the user, their organization, or their conversations with Claude.",
+          "Indexed cost of running the same workloads on Fable 5 and Fable 5.1, at usage-based pricing measured at default effort over four weeks of actual usage in August 2026. Typical workload covers Fable usage across Claude Enterprise, Claude Code, and the API. Highly agentic workload covers context-heavy, tool-heavy work, where cache reads make up most of the cost.",
+          "1\nTerminal-Bench-Science 0.1: The standard error is ±3.5–4.5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0% and Claude Fable 5 at 21.4%; our setup reproduces them at 29.0% and 24.7%, respectively, both within noise.",
+          "2\nOSWorld 2.0: Scores are on the benchmark authors’ August 2026 task release; Fable 5 and Opus 5 were re-run under the same conditions. Because the task files differ from earlier releases, these numbers aren't directly comparable to previously published OSWorld 2.0 results, which is why no competitor score is shown"
+        ]
+      }
+    }
+  }
+]

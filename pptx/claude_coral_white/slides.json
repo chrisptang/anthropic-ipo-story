@@ -1,0 +1,164 @@
+[
+  {
+    "slide": 1,
+    "section": "ANTHROPIC / 内部学习",
+    "title": "",
+    "source": "编码模型与 AGI · 公司内部分享"
+  },
+  {
+    "slide": 2,
+    "section": "开场 / 能力扩张",
+    "title": "两万亿的想象，来自工作能力的扩张",
+    "source": "来源：仓库 IPO 研究；目标估值报道见备注"
+  },
+  {
+    "slide": 3,
+    "section": "第一幕 / Claude 为什么强",
+    "title": "四次转折：理解代码、选择行动、持续执行",
+    "source": "来源：Anthropic 3.5 / 3.7 / Claude 4 / Sonnet 5.5 发布资料"
+  },
+  {
+    "slide": 4,
+    "section": "第一幕 / 工程判断",
+    "title": "Claude 的强，体现在四种工程判断",
+    "source": "来源：内部工程体验；Anthropic 产品与 Agent 工程资料"
+  },
+  {
+    "slide": 5,
+    "section": "第一幕 / 真实工程",
+    "title": "连接耗尽只是症状，修复要看懂生命周期",
+    "source": "来源：仓库 Celery 教学场景；非本次运行记录"
+  },
+  {
+    "slide": 6,
+    "section": "第一幕 / 工作系统",
+    "title": "Claude Code 把模型接入一套工作系统",
+    "source": "来源：Anthropic · Building effective agents / Long-running harnesses"
+  },
+  {
+    "slide": 7,
+    "section": "第一幕 / 上下文",
+    "title": "大仓库的理解，靠按需建立高价值上下文",
+    "source": "来源：Anthropic · Effective context engineering"
+  },
+  {
+    "slide": 8,
+    "section": "第一幕 / 工具设计",
+    "title": "回显有多清楚，下一步判断就有多准确",
+    "source": "来源：Anthropic · Writing tools for agents"
+  },
+  {
+    "slide": 9,
+    "section": "第一幕 / 工程表现",
+    "title": "Sonnet 的优势：把能力用在合适的任务上",
+    "source": "来源：Anthropic · Sonnet 5.5 发布表；各模型为页面所列配置"
+  },
+  {
+    "slide": 10,
+    "section": "第一幕 / 长程可靠性",
+    "title": "小错误会在长任务里累积放大",
+    "source": "数学示意；不是模型实测，也不能由 benchmark 分数换算"
+  },
+  {
+    "slide": 11,
+    "section": "第一幕 / 连续工作",
+    "title": "长任务的连续性，靠可恢复的工作状态",
+    "source": "来源：Anthropic · Effective harnesses for long-running agents"
+  },
+  {
+    "slide": 12,
+    "section": "第二幕 / 编码模型如何成功",
+    "title": "代码环境，提供可规模化的训练反馈",
+    "source": "来源：OpenAI · Introducing Codex；SWE-bench Pro；Anthropic Agent 资料"
+  },
+  {
+    "slide": 13,
+    "section": "第二幕 / 学习层次",
+    "title": "任务内纠错，与模型训练，是两种不同的进步",
+    "source": "来源：OpenAI codex-1 强化学习披露；机制示意"
+  },
+  {
+    "slide": 14,
+    "section": "第二幕 / 评测升级",
+    "title": "评测在追问：Agent 完成了哪一层工作？",
+    "source": "来源：SWE-bench / SWE-bench Pro V2 / Terminal-Bench 4.0 / FrontierCode"
+  },
+  {
+    "slide": 15,
+    "section": "第二幕 / 验证反馈",
+    "title": "配置能启动，不代表访问控制做对了",
+    "source": "来源：Nginx SSL 模块文档；工程教学示例"
+  },
+  {
+    "slide": 16,
+    "section": "第二幕 / 执行策略",
+    "title": "工程任务里，廉价反馈能减少无效推演",
+    "source": "机制示意；不由榜单排名反推私有训练算法"
+  },
+  {
+    "slide": 17,
+    "section": "第二幕 / 行业竞争",
+    "title": "Codex 的追赶，也在结合模型与执行系统",
+    "source": "来源：OpenAI · o3/o4-mini 发布；Introducing Codex"
+  },
+  {
+    "slide": 18,
+    "section": "第三幕 / 为什么 AGI 需要编码能力",
+    "title": "很多办公室工作，本来就是未写出来的程序",
+    "source": "来源：MCP 代码执行机制；办公流程示意"
+  },
+  {
+    "slide": 19,
+    "section": "第三幕 / 工具制造",
+    "title": "会写代码，Agent 就能按需制造工具",
+    "source": "来源：Anthropic · Code execution with MCP / Writing tools for agents"
+  },
+  {
+    "slide": 20,
+    "section": "第三幕 / 通用行动",
+    "title": "CLI、MCP、Skills，接成一条实际工作流",
+    "source": "来源：Anthropic MCP 代码执行文章；Claude Code 最佳实践"
+  },
+  {
+    "slide": 21,
+    "section": "第三幕 / 智能研发",
+    "title": "科学研究也需要把想法变成可执行实验",
+    "source": "来源：Amodei · Machines of Loving Grace；Anthropic 研发研究"
+  },
+  {
+    "slide": 22,
+    "section": "第三幕 / 直接证据",
+    "title": "Claude 已经进入下一代 Claude 的研发",
+    "source": "来源：Anthropic · Measuring the pace of AI development；截至 2026.08"
+  },
+  {
+    "slide": 23,
+    "section": "第三幕 / 代际反馈",
+    "title": "RSI：研究工具开始参与改进研究工具",
+    "source": "来源：Anthropic 研发自动化研究；代际机制示意"
+  },
+  {
+    "slide": 24,
+    "section": "第三幕 / 软件范式",
+    "title": "Software 3.0：自然语言成为新的编程入口",
+    "source": "来源：Karpathy · Software Is Changing (Again)"
+  },
+  {
+    "slide": 25,
+    "section": "第三幕 / 我们的工作",
+    "title": "执行越来越便宜，业务判断越来越重要",
+    "source": "岗位变化：本报告的组织分析"
+  },
+  {
+    "slide": 26,
+    "section": "结尾 / 公司选择",
+    "title": "瓶颈正在从“有没有人做”，转向“什么值得做”",
+    "source": "组织推演 · 编码能力扩张的管理含义"
+  },
+  {
+    "slide": 27,
+    "section": "收束 / 能力路径",
+    "title": "程序员是第一批用户，智能研发是更大的应用",
+    "source": "Claude · 编码模型 · AGI"
+  }
+]

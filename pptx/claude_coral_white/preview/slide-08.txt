@@ -1,0 +1,14 @@
+第一幕 / 工具设计
+回显有多清楚，下一步判断就有多准确
+Agent 通过工具感知工程环境；错误信息也是行动材料。
+低信息量回显
+可定位的回显
+edit_file()
+→ operation failed
+edit_file(path, expected_text)
+→ 未匹配位置 + 当前片段
+不知道哪里失败
+继续猜参数、重复尝试
+把失败变成新证据
+缩小范围，精确修正
+来源：Anthropic · Writing tools for agents 08

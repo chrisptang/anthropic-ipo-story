@@ -1,0 +1,9 @@
+第二幕 / 赛道验证
+Codex 的竞争力，不只在分数，也在执行效率
+Artificial Analysis · Codex 两种模型配置 · 当前任务均值。
+Codex 模型配置 编码 Agent 指数 平均运行时间 平均 API 费用
+GPT-6.1 Sol · xhigh 63 15.5 分钟 $1.04
+GPT-6 Astra · max 62 29.4 分钟 $7.47
+指数 v1.5：DeepSWE 1.1 + Terminal-Bench 4.0 + SWE-Atlas-QnA
+赛道已经从“谁答得更好”，进入“谁能以更低代价持续完成任务”。
+编码模型与 AGI 16

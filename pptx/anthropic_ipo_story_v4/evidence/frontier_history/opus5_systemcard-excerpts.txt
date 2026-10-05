@@ -1,0 +1,88 @@
+ORIGINAL PAGE 152
+8 Capabilities
+8.1 Evaluation summary
+Claude Opus 5 is meaningfully more intelligent than Opus 4.8 and achieves state of the art
+performance on many benchmarks.
+Evaluation Claude models Other
+models
+Opus 5 Opus 4.8 Fable 5 GPT 5.6 Sol
+SWE-bench Pro 79.2 69.2 80 64.6
+SWE-bench Multilingual 89.5 84.4 86.6 -
+SWE-bench Multimodal 59.4 38.4 54.1 -
+DeepSWE v1.1 68.8 59.0 69.7 72.7
+FrontierCode 1.1 (Main) 53.4 46.5 53.5 47.5
+FrontierBench v0.1 43.3 21.1 33.8 34.4
+(Codex)
+BrowseComp 90.8 84.3 87.4 90.4
+Humanity’s Last Exam No tools 56.3 49.8 56.5 -
+With tools 64.7 57.9 63.9 -
+OSWorld 2.0 70.6 55.7 66.1 62.6
+HealthBench Professional 59.8 57.4 66.011 60.5
+GDPval-AA v2 1861 1593 1747 1736
+AA-Briefcase 1720 1346 1574 1505
+AutomationBench 26.0 17.0 17.4 18.1
+ARC-AGI-1 97.5 92.5 - 97.5 (xhigh)
+11 Mythos 5
+152
+
+ORIGINAL PAGE 153
+ARC-AGI-2 90.4 72.1 - 92.5
+ARC-AGI-3 30.2 (high) 1.5 - 7.8
+[Table 8.1.A] Capability evaluation summary. Unless otherwise noted, all Claude Opus 5 results use the
+following standard configuration: adaptive thinking at max effort, default sampling settings (temperature,
+top_p), averaged over 5 trials. Context window sizes are evaluation-dependent and do not exceed 1M tokens.
+The best score in each row is bolded. Competitor figures are drawn from the respective developers’ published
+system cards or benchmark leaderboards. See the Claude Fable 5 System Card for evaluation details of earlier
+Claude models. FrontierBench results in this table are from Harbor’s evaluations.
+8.2 SWE-bench Verified, Pro, Multilingual, and Multimodal
+SWE-bench (Software Engineering Bench) tests AI models on real-world software
+engineering tasks. We report four variants, where each score is an average over five trials:
+●
+●
+●
+●
+SWE-bench Verified12 is a 500-problem subset, each verified by human engineers as
+solvable. Claude Opus 5 achieved 96.0%.
+SWE-bench Pro13 is a harder variant composed of problems drawn from
+actively-maintained repositories with larger, multi-file diffs and reduced public
+ground-truth leakage. Claude Opus 5 achieved 79.2%.
+SWE-bench Multilingual extends the format to 300 problems across 9
+programming languages. Claude Opus 5 achieved 89.5%.
+SWE-bench Multimodal14 adds visual context (screenshots, design mockups) to the
+issue descriptions (see Section 9.3 for details on the internal harness). Claude Opus
+5 achieved 59.4%.
+8.3 DeepSWE v1.1
+DeepSWE is a set of 113 long-horizon software engineering tasks built to measure the
+capabilities of frontier coding agents. The tasks are diverse, reflect real-world complexity,
+and are written from scratch to avoid benchmark contamination. Claude Opus 5 scored an
+average of 68.8% over five trials.
+12 Jimenez, C. E., et al. (2024). SWE-bench: Can language models resolve real-world GitHub issues?
+arXiv:2310.06770. https:/ /arxiv.org/abs/2310.06770
+13 Deng, X., et al. (2025). SWE-bench Pro: Can AI agents solve long-horizon software engineering
+tasks? arXiv:2509.16941. https:/ /arxiv.org/abs/2509.16941
+14 Yang, J., et al. (2024). SWE-bench Multimodal: Do AI systems generalize to visual software
+domains? arXiv:2410.03859. https:/ /arxiv.org/abs/2410.03859
+153
+
+ORIGINAL PAGE 156
+[Figure 8.4.B] FrontierCode (extended set). Scores of Claude Opus 5, Claude Opus 4.8, Claude Fable 5, and
+GPT-5.6 Sol on the extended set of FrontierCode v1.1, a coding evaluation run and scored by Cognition, at each
+model’s five reasoning-effort settings. Claude Opus 5 reaches its best extended-set score, 63.6, at medium
+effort.
+8.5 FrontierBench v0.1
+FrontierBench v0.1 is a successor to Terminal-Bench 2.1 developed by the same team. It’s a
+refreshed set of 74 harder tasks, with a larger emphasis on science and engineering
+problems like computational biology, physics simulation, CAD, formal proofs, and GPU
+performance work. It tests AI models on real-world work in terminal and command-line
+containerized environments. In addition to evaluations run by Harbor presented in Table
+8.1.A, we report here our own evaluations on the mini-SWE-agent harness on a GKE
+backend.
+On FrontierBench v0.1, Claude Opus 5 achieved a 44.4% mean reward, averaged over 5
+attempts for each one of the 74 unique tasks, using xhigh effort (best result – max scored
+similarly and within noise, landing at 43%). high effort achieves 39% mean reward for 19%
+fewer output tokens on average, while low effort achieves 25% mean reward for 64% fewer
+output tokens on average.
+We also ran the benchmark on Claude Fable 5, which achieved 33.7% at max effort, Claude
+Sonnet 5, 17% mean reward, and Claude Opus 4.8, which achieved 18.7%.
+156
+

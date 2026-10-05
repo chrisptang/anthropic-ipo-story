@@ -1,0 +1,140 @@
+[
+  {
+    "page": 1,
+    "title": "",
+    "section": "内部分享 / 数据增强版",
+    "source": "Claude 为什么强 · 编码模型如何成功 · 通往 AGI 的行动能力"
+  },
+  {
+    "page": 2,
+    "title": "两万亿，不只是在给“写代码工具”定价",
+    "section": "开场 / 两万亿的尺度",
+    "source": "来源：仓库 IPO 研究；两万亿美元为目标估值"
+  },
+  {
+    "page": 3,
+    "title": "Claude 的成绩单：修软件、做工程、用工具",
+    "section": "第一幕 / Claude 为什么强",
+    "source": "来源：仓库 Claude 评测 CSV；发布时间与评测口径见备注"
+  },
+  {
+    "page": 4,
+    "title": "从 33.4% 到 98.1%：旧标尺接近饱和",
+    "section": "第一幕 / 代际跃迁",
+    "source": "来源：data/claude_agent_benchmark_evolution.csv；跨代际配置不同"
+  },
+  {
+    "page": 5,
+    "title": "第三方对照：终端执行接近，综合能力有差异",
+    "section": "第一幕 / 横向对照",
+    "source": "来源：Artificial Analysis · terminalbench-4-0 + 三款模型页；核验于 2026-10-04"
+  },
+  {
+    "page": 6,
+    "title": "更强，也更便宜：能力被推向日常工作",
+    "section": "第一幕 / 能力与价格",
+    "source": "来源：Claude 评测 CSV；美元 / 百万 Token；不等于每任务总成本"
+  },
+  {
+    "page": 7,
+    "title": "0.5 美元怎样算出来？看一次任务的账单",
+    "section": "第一幕 / 一笔可复算的账",
+    "source": "来源：仓库 API 标价；Token 用量为算例假设；不含人工审查"
+  },
+  {
+    "page": 8,
+    "title": "反复读取相同上下文，缓存把价格压到十分之一",
+    "section": "第一幕 / Prompt Caching",
+    "source": "来源：Claude 价格 CSV；缓存写入及输出另计"
+  },
+  {
+    "page": 9,
+    "title": "终端原生：同一个任务里，查、改、测、再修复",
+    "section": "第一幕 / Claude Code 的工作轨迹",
+    "source": "工程场景示意；命令、回显与文件为教学例，不是本次运行记录"
+  },
+  {
+    "page": 10,
+    "title": "为什么不是“换个模型”就能复制体验？",
+    "section": "第一幕 / 模型与 Harness",
+    "source": "来源：Anthropic 上下文工程、工具设计、长任务 Harness"
+  },
+  {
+    "page": 11,
+    "title": "200 万字的容量，不等于找对这次任务的证据",
+    "section": "第一幕 / 大仓库理解",
+    "source": "来源：Anthropic · Effective context engineering；检索流程示意"
+  },
+  {
+    "page": 12,
+    "title": "每步只差 1.5 个百分点，50 步之后差多少？",
+    "section": "第一幕 / 长任务",
+    "source": "数学示意；不由评测分数推算模型单步可靠性"
+  },
+  {
+    "page": 13,
+    "title": "代码训练场有任务、有环境，也有自动裁判",
+    "section": "第二幕 / 编码模型如何成功",
+    "source": "来源：仓库基准研究；SWE-bench / SWE-bench Pro / Terminal-Bench"
+  },
+  {
+    "page": 14,
+    "title": "模型学习的，不只是一份正确补丁，而是整段解题轨迹",
+    "section": "第二幕 / Agentic RL",
+    "source": "来源：OpenAI · Introducing Codex；一般训练机制示意"
+  },
+  {
+    "page": 15,
+    "title": "任务不是“写一段 Nginx 配置”，而是满足四项验收",
+    "section": "第二幕 / 反馈为何有效",
+    "source": "来源：仓库 Nginx 教学任务；非本次运行记录"
+  },
+  {
+    "page": 16,
+    "title": "OpenAI 的编码专项迭代，也在持续爬坡",
+    "section": "第二幕 / 赛道验证",
+    "source": "来源：data/openai_codex_benchmark_evolution.csv；历史条件不同"
+  },
+  {
+    "page": 17,
+    "title": "普通员工的任务，也包含数据结构、循环与规则",
+    "section": "第三幕 / 为什么 AGI 需要编码",
+    "source": "业务案例示意；表内数字为教学样本，不是公司实际数据"
+  },
+  {
+    "page": 18,
+    "title": "新需求不必都先开发一个新产品",
+    "section": "第三幕 / 按需制造工具",
+    "source": "来源：Anthropic · Code execution with MCP；代码为说明性伪代码"
+  },
+  {
+    "page": 19,
+    "title": "数字任务先走得更远，不同领域仍然很不均衡",
+    "section": "第三幕 / 能力边界",
+    "source": "来源：Claude 评测 CSV；各集合规则不同，不可视为统一考试"
+  },
+  {
+    "page": 20,
+    "title": "26% 的研发工作，已经达到 AI 主导",
+    "section": "第三幕 / AI 参与 AI 研发",
+    "source": "来源：仓库引用 Anthropic 研发自动化指数；截至 2026.08"
+  },
+  {
+    "page": 21,
+    "title": "它进入研发的方式，是代码、实验与检查工具",
+    "section": "第三幕 / 研发执行",
+    "source": "来源：仓库 RSI 研究 + Anthropic 研发自动化研究；用途示意"
+  },
+  {
+    "page": 22,
+    "title": "当前智能参与研发，后继智能再进入下一轮",
+    "section": "第三幕 / 递归改进",
+    "source": "来源：Anthropic 研发自动化研究；代际反馈机制示意"
+  },
+  {
+    "page": 23,
+    "title": "把业务经验变成可执行能力，而不只是个人熟练度",
+    "section": "结尾 / 员工与公司",
+    "source": "组织变化为方向性分析；任务执行仍需授权环境"
+  }
+]

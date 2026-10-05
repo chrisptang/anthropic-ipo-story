@@ -1,0 +1,111 @@
+ORIGINAL PAGE 188
+6.2.3 MMMU-Pro
+MMMU-Pro is a benchmark we would normally report in this System Card (specifically, in
+Section 6.11 below). Like CharXiv Reasoning, MMMU-Pro comprises material from widely
+disseminated public materials—for example, university exams, textbooks, and quiz
+sites—that are difficult to fully decontaminate from training corpora.
+We identified a large fraction of MMMU-Pro images that appear in the training data,
+primarily via textbooks, homework-help sites, and document crawls, which repackage and
+distribute the underlying source content.
+Unlike CharXiv Reasoning, MMMU-Pro contains a limited number of questions for which
+variants of approximately equivalent difficulty can be readily created. MMMU-Pro contains
+a small number of charts and figures, but studying just this subset of problems would paint
+a biased picture. Given the difficulty of determining the impact of contamination, we
+choose to omit results for MMMU-Pro from this System Card.
+6.3 Overall results summary
+Table 6.3.A summarizes the evaluations discussed in more detail below.
+Evaluation Claude family Other models
+Claude
+Mythos
+Preview
+Claude
+Opus 4.6
+GPT-5.4 Gemini 3.1
+Pro
+SWE-bench Verified 93.9% 80.8% — 80.6%
+SWE-bench Pro 77.8% 53.4% 57.7% 54.2%
+SWE-bench Multilingual 87.3% 77.8% — —
+SWE-bench Multimodal 59% 27.1% — —
+Terminal-Bench 2.0* 82% 65.4% 75.1% 68.5%
+GPQA Diamond 94.5% 91.3% 92.8% 94.3%
+188
+
+ORIGINAL PAGE 189
+Evaluation Claude family Other models
+Claude
+Mythos
+Preview
+Claude
+Opus 4.6
+GPT-5.4 Gemini 3.1
+Pro
+MMMLU 92.7% 91.1% — 92.6%–93.6%
+USAMO 2026 97.6% 66.2% 95.2% 74.4%
+GraphWalks BFS 256K-1M 80.0% 38.7% 21.4% —
+HLE no tools 56.8% 40.0% 39.8% 44.4%
+with tools 64.7% 53.1% 52.1% 51.4%
+CharXiv
+Reasoning
+no tools 86.1% 69.1% - -
+with tools 93.2% 84.7% - -
+OSWorld 79.6% 72.7% 75.0%
+[Table 6.3.A] Capability Evaluation Summary. Unless otherwise noted, all Claude Mythos Preview results use
+the following standard configuration: adaptive thinking at max effort, default sampling settings (temperature,
+top_p), averaged over 5 trials. Context window sizes are evaluation-dependent and do not exceed 1M tokens.
+The best score in each row is bolded. Competitor figures are drawn from the respective developers’ published
+system cards or benchmark leaderboards. See the Claude Opus 4.6 System Card for evaluation details of earlier
+Claude models.
+*For Terminal-Bench 2.0, OpenAI used a specialized harness for their reported score, making
+comparison between the models in this row inexact. All other scores used the Terminus-2 harness.
+6.4 SWE-bench Verified, Pro, Multilingual, and Multimodal
+SWE-bench (Software Engineering Bench) tests AI models on real-world software
+engineering tasks. We report four variants:
+●
+●
+SWE-bench Verified (OpenAI) is a 500-problem subset, each verified by human
+engineers as solvable. Claude Mythos Preview achieves 93.9%, averaged over 5 trials.
+SWE-bench Pro (Scale) is a harder variant: problems drawn from
+actively-maintained repositories with larger, multi-file diffs and no public
+ground-truth leakage. Claude Mythos Preview achieves 77.8%, averaged over 5 trials.
+189
+
+ORIGINAL PAGE 190
+●
+●
+SWE-bench Multilingual extends the format to 300 problems across 9 programming
+languages. Claude Mythos Preview achieves 87.3%, averaged over 5 trials.
+SWE-bench Multimodal adds visual context (screenshots, design mockups) to the
+issue descriptions. Claude Mythos Preview achieves 59.0% (evaluated on an internal
+harness; see Appendix 8.6), averaged over 5 trials. We note higher trial-to-trial
+variance on this variant (56.4%–61.4%) than on the others.
+All SWE-bench variants use the standard configuration (see Table 6.3.A), with thinking
+blocks included in the sampling results. For our memorization screening, see Section 6.2.
+6.5 Terminal-Bench 2.0
+Terminal-Bench 2.0, developed by researchers at Stanford University and the Laude
+Institute, tests AI models on real-world tasks in terminal and command-line environments.
+We ran Terminal-Bench 2.0 in the Harbor scaffold with the Terminus-2 harness and default
+parser. Each task runs in an isolated Kubernetes pod with guaranteed resources at 1× the
+benchmark-specified limits (hard preemption ceiling at 3×) and timeouts at 1× for
+benchmark fidelity. Details on this configuration are available at our engineering blog.
+Claude Mythos Preview achieved 82% mean reward, averaged over 5 attempts for each one
+of the 89 unique tasks (for a total of 445 trials). We configured Claude Mythos Preview to
+run with maximum reasoning effort (adaptive mode), 1M total token budget per task, and
+32K maximum output tokens per request. Terminal-Bench is sensitive to inference latency:
+fixed wall-clock timeouts mean a slower-decoding endpoint completes fewer episodes per
+task. Our reported score uses a production API endpoint to account for these dynamics.
+Terminal-Bench 2.0 timeouts get quite restrictive at times, especially with thinking models,
+which risks hiding real capabilities jumps behind seemingly uncorrelated confounders like
+sampling speed. Moreover, some Terminal-Bench 2.0 tasks have ambiguities and limited
+resource specs that don’t properly allow agents to explore the full solution space—both
+being currently addressed by the maintainers in the 2.1 update. To exclusively measure
+agentic coding capabilities net of the confounders, we also ran Terminal-Bench with the
+latest 2.1 fixes available on GitHub, while increasing the timeout limits to 4 hours (roughly
+four times the 2.0 baseline). This brought the mean reward to 92.1%. Under the same
+conditions, we measured GPT-5.4 with Codex CLI harness to achieve 75.3% (up from 68.3%
+under baseline specs)23
+.
+23 We do not report a Gemini 3.1 Pro result with this setup. We struggled to reproduce previous best
+results, including our own tests, which matched the reported scores when the model was released in
+February.
+190
+

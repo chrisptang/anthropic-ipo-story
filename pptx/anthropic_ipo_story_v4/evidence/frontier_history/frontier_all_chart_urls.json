@@ -1,0 +1,207 @@
+[
+  {
+    "path": "news/claude-4",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-4",
+      "result": {
+        "date": "May 22, 2025",
+        "images": [
+          {
+            "alt": "Bar chart comparison between Claude and other LLMs on software engineering tasks",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/09a6d5aa47c25cb2037efff9f486da4918f77708-3840x2304.png"
+          },
+          {
+            "alt": "A visual note in Claude's memories that depicts a navigation guide for the game Pokemon Red.",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/e51564bb5ce9597dbfc59bbab13a0efbe25a7d66-1920x1080.gif"
+          }
+        ],
+        "links": [
+          "https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf"
+        ]
+      }
+    }
+  },
+  {
+    "path": "news/claude-opus-4-1",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-opus-4-1",
+      "result": {
+        "date": "Aug 5, 2025",
+        "images": [
+          {
+            "alt": "Chart showing Claude's progress on a popular coding evaluation",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dced1e451a52da3bcb3807d7a9510b1b5426ace6-3840x2160.png"
+          },
+          {
+            "alt": "A benchmark table comparing Claude Opus 4.1 to prior Claude models and other public models",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/bde326699c667506c87f74b09a6355961d29eb26-2600x2084.png"
+          }
+        ],
+        "links": [
+          "https://www.anthropic.com/claude-opus-4-1-system-card",
+          "https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf"
+        ]
+      }
+    }
+  },
+  {
+    "path": "news/claude-sonnet-4-5",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "result": {
+        "date": "Sep 29, 2025",
+        "images": [
+          {
+            "alt": "Chart showing frontier model performance on SWE-bench Verified with Claude Sonnet 4.5 leading",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6421e7049ff8b2c4591497ec92dc4157b2ac1b30-3840x2160.png"
+          },
+          {
+            "alt": "Benchmark table comparing frontier models across popular public evals",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/67081be1ea2752e2a554e49a6aab2731b265d11b-2600x2288.png"
+          },
+          {
+            "alt": "",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/7175bc18c46562f1228280a7abda751219a2aae1-3840x2160.png"
+          },
+          {
+            "alt": "",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/fd313a5edb996d98b9fc73ee5b3e6a34fbbcbb83-3840x2160.png"
+          }
+        ],
+        "links": [
+          "https://www.anthropic.com/claude-sonnet-4-5-system-card",
+          "https://www.anthropic.com/claude-sonnet-4-5-system-card",
+          "https://www.anthropic.com/claude-sonnet-4-5-system-card",
+          "https://cdn.openai.com/gpt-5-system-card.pdf"
+        ]
+      }
+    }
+  },
+  {
+    "path": "news/claude-sonnet-4-6",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "result": {
+        "date": "Feb 17, 2026",
+        "images": [
+          {
+            "alt": "Chart comparing several Sonnet model scores on the OSWorld benchmark",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/1206645ef5a618dabce8587b472b21c67a30a0db-3840x1948.png"
+          },
+          {
+            "alt": "A table of popular benchmarks and Sonnet 4.6's relative performance compared to other frontier models",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/10b2602771d21378cd6d76628a081c8a76dcf216-2600x2960.png"
+          },
+          {
+            "alt": "",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/8c2855afe51fc0980596b5369b01b0b87eea7eaf-3840x2160.png"
+          }
+        ],
+        "links": [
+          "https://anthropic.com/claude-sonnet-4-6-system-card"
+        ]
+      }
+    }
+  },
+  {
+    "path": "news/claude-sonnet-5",
+    "data": {
+      "origin": "https://www.anthropic.com/news/claude-sonnet-5",
+      "result": {
+        "date": "Jun 30, 2026",
+        "images": [
+          {
+            "alt": "Claude Sonnet 5 benchmark table",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/9941d610909f28a504e16dd5af823df172ec6035-2600x1234.png"
+          },
+          {
+            "alt": "",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cd0df787f39b6408dcba539fba93f817f2f3c0b4-3840x2160.png"
+          },
+          {
+            "alt": "",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d5c761e88dc46d7f79990dc2c4ad7a7cbaebdf3b-3840x2160.png"
+          },
+          {
+            "alt": "Rates of misaligned behavior across Claude models",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d018d76aa03c0ef18abc8a68de8f6fcd51c0a574-3840x2160.png"
+          }
+        ],
+        "links": [
+          "https://www.anthropic.com/claude-sonnet-5-system-card",
+          "https://www.anthropic.com/claude-sonnet-5-system-card",
+          "https://www.anthropic.com/claude-sonnet-5-system-card",
+          "https://www.anthropic.com/claude-sonnet-5-system-card",
+          "https://www-cdn.anthropic.com/9e6a1044980d8c4ed85669faf9c2a8342e2e9f1e/Claude%20Sonnet%205%20System%20Card.pdf"
+        ]
+      }
+    }
+  },
+  {
+    "path": "claude-fable-and-mythos-5-1",
+    "data": {
+      "origin": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "result": {
+        "images": [
+          {
+            "alt": "Radar image (Magellan): bright cone, radian lava flows",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/4d8f06a743ecfc6ec87ccde0b1964e48175a141e-800x800.png"
+          },
+          {
+            "alt": "Altimetry 10-20km footprint",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/e374c070fc1a84872dcb1343b5bb0ed540ca3770-800x800.png"
+          },
+          {
+            "alt": "New DEM (300m) a volcano 15km across",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/3dd626b47b88feb72082646cdea87944d49a3c7f-800x800.png"
+          }
+        ],
+        "links": [
+          "https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card",
+          "https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card"
+        ]
+      }
+    }
+  },
+  {
+    "path": "news/claude-opus-5-5",
+    "data": {
+      "origin": "https://www.anthropic.com/claude-opus-5-5",
+      "result": {
+        "images": [],
+        "links": [
+          "https://anthropic.com/claude-opus-5-5-system-card"
+        ]
+      }
+    }
+  },
+  {
+    "path": "claude-sonnet-5-5",
+    "data": {
+      "origin": "https://www.anthropic.com/claude-sonnet-5-5",
+      "result": {
+        "images": [
+          {
+            "alt": "The previous model writing a starling murmuration program, then running it.",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/c3945915dad02168b631b238c900b98b23964539-1600x1000.png?rect=0%2C0%2C1600%2C1000"
+          },
+          {
+            "alt": "The latest model writing a starling murmuration program, then running it.",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cf0eae4b26b6fbe29e370d300ecac766cb94bc2d-1600x1000.png?rect=0%2C0%2C1600%2C1000"
+          },
+          {
+            "alt": "The previous model writing a sand dunes program, then running it.",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dac9adf55898f7da5fbd40cfb562784289ab9048-1600x1000.png?rect=0%2C0%2C1600%2C1000"
+          },
+          {
+            "alt": "The latest model writing a sand dunes program, then running it.",
+            "src": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d71a0217af7efe761f190d4bceea9a38e9a7dbad-1600x1000.png?rect=0%2C0%2C1600%2C1000"
+          }
+        ],
+        "links": [
+          "https://www.anthropic.com/claude-sonnet-5-5-system-card"
+        ]
+      }
+    }
+  }
+]

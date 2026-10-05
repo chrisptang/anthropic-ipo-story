@@ -1,0 +1,350 @@
+{
+  "dataset_metadata": {
+    "title": "Anthropic Claude Agentic Evolution & Benchmark Dataset (2024-2026)",
+    "description": "Comprehensive tracking of Claude frontier models across software engineering, terminal autonomy, tool orchestration, and context retrieval benchmarks.",
+    "version": "1.0.0",
+    "updated_at": "2026-10-03",
+    "benchmarks_catalog": {
+      "SWE-bench": {
+        "variants": ["Lite (300 tasks)", "Verified (500 human-validated tasks)", "Pro (Repository-scale multi-repo tasks)"],
+        "metric": "Resolve Rate (pass@1 %)",
+        "relevance": "Gold standard for multi-file autonomous software engineering bug resolution."
+      },
+      "Terminal-Bench": {
+        "versions": {
+          "1.0": "Initial 2025 CLI agent benchmark measuring basic terminal tool use.",
+          "2.0": "Curated 89 hard tasks covering SWE, system admin, data processing, model training, security.",
+          "3.0": "Expanded CI/CD and result migrations with continuous evaluation.",
+          "4.0": "August 2026 release with 66 re-calibrated tasks, resource limits, removing saturated/refusal-prone tasks."
+        },
+        "metric": "Task Completion Rate (%) in sandboxed Docker CLI environment",
+        "relevance": "Measures genuine end-to-end OS/terminal execution autonomy beyond static code generation."
+      },
+      "TAU-bench": {
+        "domains": ["Airline", "Retail", "Banking"],
+        "metric": "Multi-turn Policy Adherence & Success Rate (%)",
+        "relevance": "Evaluates complex multi-turn stateful tool use and business constraint compliance."
+      },
+      "BFCL": {
+        "name": "Berkeley Function Calling Leaderboard",
+        "metric": "Overall Accuracy (%)",
+        "relevance": "Micro-level function calling schema adherence, parallel tool calling, and irrelevant call rejection."
+      },
+      "OSWorld / Computer Use": {
+        "metric": "GUI Task Completion Rate (%)",
+        "relevance": "Screen pixel observation, mouse/keyboard coordinate action execution."
+      }
+    }
+  },
+  "models": [
+    {
+      "model_id": "claude-3-opus-20240229",
+      "model_name": "Claude 3 Opus",
+      "release_date": "2024-03-04",
+      "era": "Claude 3.0",
+      "category": "Foundational Flagship",
+      "reasoning_mode": "Standard Dense (Pre-thinking)",
+      "specs": {
+        "context_window_tokens": 200000,
+        "max_output_tokens": 4096,
+        "prompt_caching": false,
+        "pricing_usd_per_m": { "input": 15.0, "output": 75.0, "cache_read": null }
+      },
+      "benchmarks": {
+        "swe_bench_lite": 38.4,
+        "swe_bench_verified": 33.4,
+        "swe_bench_pro": null,
+        "terminal_bench_1_0": null,
+        "terminal_bench_2_0": null,
+        "terminal_bench_3_0": null,
+        "terminal_bench_4_0": null,
+        "tau_bench": { "airline": 36.0, "retail": 52.3, "banking": null },
+        "bfcl_accuracy": 72.4,
+        "osworld_computer_use": null
+      },
+      "agentic_milestones": [
+        "First industry-leading 200k context needle-in-a-haystack retrieval (>99%)",
+        "Initial native Tool Use API support"
+      ]
+    },
+    {
+      "model_id": "claude-3-5-sonnet-20240620",
+      "model_name": "Claude 3.5 Sonnet (v1)",
+      "release_date": "2024-06-20",
+      "era": "Claude 3.5",
+      "category": "Developer Workhorse",
+      "reasoning_mode": "Standard Dense (Steerable)",
+      "specs": {
+        "context_window_tokens": 200000,
+        "max_output_tokens": 8192,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 3.0, "output": 15.0, "cache_read": 0.3 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": 40.0,
+        "swe_bench_verified": 49.0,
+        "swe_bench_pro": null,
+        "terminal_bench_1_0": null,
+        "terminal_bench_2_0": null,
+        "terminal_bench_3_0": null,
+        "terminal_bench_4_0": null,
+        "tau_bench": { "airline": 53.2, "retail": 69.5, "banking": 12.8 },
+        "bfcl_accuracy": 84.1,
+        "osworld_computer_use": null
+      },
+      "agentic_milestones": [
+        "Became undisputed default backbone for Cursor, Aider, Cognition Devin",
+        "Introduction of Prompt Caching (90% cost drop, enabling continuous codebase context)",
+        "Artifacts introduced in Claude.ai for interactive execution"
+      ]
+    },
+    {
+      "model_id": "claude-3-5-sonnet-20241022",
+      "model_name": "Claude 3.5 Sonnet (v2)",
+      "release_date": "2024-10-22",
+      "era": "Claude 3.5",
+      "category": "Frontier Agent",
+      "reasoning_mode": "Dense + Native GUI Grounding",
+      "specs": {
+        "context_window_tokens": 200000,
+        "max_output_tokens": 8192,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 3.0, "output": 15.0, "cache_read": 0.3 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": 42.5,
+        "swe_bench_verified": 53.7,
+        "swe_bench_pro": null,
+        "terminal_bench_1_0": 28.4,
+        "terminal_bench_2_0": null,
+        "terminal_bench_3_0": null,
+        "terminal_bench_4_0": null,
+        "tau_bench": { "airline": 58.6, "retail": 73.4, "banking": 16.2 },
+        "bfcl_accuracy": 88.7,
+        "osworld_computer_use": 14.9
+      },
+      "agentic_milestones": [
+        "Pioneered Computer Use API (controlling desktop via screenshots and mouse/keyboard events)",
+        "Launched Model Context Protocol (MCP) in Nov 2024 as open agent standard",
+        "Published 'Building Effective Agents' design pattern whitepaper"
+      ]
+    },
+    {
+      "model_id": "claude-3-7-sonnet-20250219",
+      "model_name": "Claude 3.7 Sonnet",
+      "release_date": "2025-02-19",
+      "era": "Claude 3.7",
+      "category": "Hybrid Reasoning Flagship",
+      "reasoning_mode": "Hybrid (Configurable Thinking Budget)",
+      "specs": {
+        "context_window_tokens": 200000,
+        "max_output_tokens": 64000,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 3.0, "output": 15.0, "cache_read": 0.3 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": 48.2,
+        "swe_bench_verified": 70.3,
+        "swe_bench_pro": 38.5,
+        "terminal_bench_1_0": 41.2,
+        "terminal_bench_2_0": 34.5,
+        "terminal_bench_3_0": null,
+        "terminal_bench_4_0": null,
+        "tau_bench": { "airline": 64.2, "retail": 79.8, "banking": 20.5 },
+        "bfcl_accuracy": 92.3,
+        "osworld_computer_use": 22.4
+      },
+      "agentic_milestones": [
+        "First frontier hybrid model: Seamlessly toggles between fast reactive tool calls and extended thinking",
+        "First model to break 70% on SWE-bench Verified (with high-compute thinking harness)",
+        "Official launch of Claude Code CLI (terminal-native agent tool)"
+      ]
+    },
+    {
+      "model_id": "claude-4-5-opus-20251101",
+      "model_name": "Claude 4.5 Opus",
+      "release_date": "2025-11-01",
+      "era": "Claude 4.5",
+      "category": "Enterprise Autonomous Flagship",
+      "reasoning_mode": "Extended Deep Reasoning",
+      "specs": {
+        "context_window_tokens": 500000,
+        "max_output_tokens": 64000,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 12.0, "output": 60.0, "cache_read": 1.2 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": 52.0,
+        "swe_bench_verified": 80.9,
+        "swe_bench_pro": 56.2,
+        "terminal_bench_1_0": 52.6,
+        "terminal_bench_2_0": 47.8,
+        "terminal_bench_3_0": 38.2,
+        "terminal_bench_4_0": null,
+        "tau_bench": { "airline": 68.4, "retail": 84.0, "banking": 24.7 },
+        "bfcl_accuracy": 94.5,
+        "osworld_computer_use": 31.2
+      },
+      "agentic_milestones": [
+        "Context window expanded to 500k tokens with sub-second prompt cache lookups",
+        "Autonomous multi-repo architecture refactoring capability introduced",
+        "Zero-shot SWE-bench Verified surpassing 80%"
+      ]
+    },
+    {
+      "model_id": "claude-4-5-sonnet-20251115",
+      "model_name": "Claude 4.5 Sonnet",
+      "release_date": "2025-11-15",
+      "era": "Claude 4.5",
+      "category": "High-throughput Agent",
+      "reasoning_mode": "Hybrid Dynamic Thinker",
+      "specs": {
+        "context_window_tokens": 500000,
+        "max_output_tokens": 64000,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 3.0, "output": 15.0, "cache_read": 0.3 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": 54.1,
+        "swe_bench_verified": 82.4,
+        "swe_bench_pro": 58.7,
+        "terminal_bench_1_0": 55.0,
+        "terminal_bench_2_0": 50.2,
+        "terminal_bench_3_0": 41.0,
+        "terminal_bench_4_0": null,
+        "tau_bench": { "airline": 70.0, "retail": 86.2, "banking": 25.3 },
+        "bfcl_accuracy": 95.1,
+        "osworld_computer_use": 33.5
+      },
+      "agentic_milestones": [
+        "Unbeatable price-performance ratio across all SWE and tool-call benchmarks",
+        "Leader on TAU-bench Airline (70.0%) and Retail (86.2%)"
+      ]
+    },
+    {
+      "model_id": "claude-fable-5-20260609",
+      "model_name": "Claude Fable 5.0",
+      "release_date": "2026-06-09",
+      "era": "Claude 5.0",
+      "category": "Frontier Autonomous Specialist",
+      "reasoning_mode": "Mythos-Core with Enterprise Safety Classifiers",
+      "specs": {
+        "context_window_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 15.0, "output": 75.0, "cache_read": 1.5 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": null,
+        "swe_bench_verified": 94.2,
+        "swe_bench_pro": 82.4,
+        "terminal_bench_1_0": 66.8,
+        "terminal_bench_2_0": 61.5,
+        "terminal_bench_3_0": 52.4,
+        "terminal_bench_4_0": 51.8,
+        "tau_bench": { "airline": 78.2, "retail": 91.0, "banking": 34.0 },
+        "bfcl_accuracy": 97.2,
+        "osworld_computer_use": 42.0
+      },
+      "agentic_milestones": [
+        "1M token context window; capable of multi-hour autonomous execution",
+        "First public release of 'Mythos-class' reasoning with built-in cybersecurity/bio classifiers",
+        "Introduced visual self-verification in sandbox environments"
+      ]
+    },
+    {
+      "model_id": "claude-fable-5-1-20260901",
+      "model_name": "Claude Fable 5.1",
+      "release_date": "2026-09-01",
+      "era": "Claude 5.5",
+      "category": "Frontier Long-Horizon Specialist",
+      "reasoning_mode": "Advanced Adaptive Mythos with Refined Guardrails",
+      "specs": {
+        "context_window_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 10.0, "output": 50.0, "cache_read": 1.0 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": null,
+        "swe_bench_verified": 96.5,
+        "swe_bench_pro": 86.8,
+        "terminal_bench_1_0": 71.2,
+        "terminal_bench_2_0": 65.8,
+        "terminal_bench_3_0": 58.2,
+        "terminal_bench_4_0": 57.9,
+        "tau_bench": { "airline": 81.5, "retail": 93.4, "banking": 37.5 },
+        "bfcl_accuracy": 98.1,
+        "osworld_computer_use": 45.8
+      },
+      "agentic_milestones": [
+        "Substantially reduced false-positive refusal rates on complex engineering tasks",
+        "Top-tier performance in long-horizon scientific, security, and complex repo migrations",
+        "Terminal-Bench 4.0 score of 57.9% in strict safety evaluation"
+      ]
+    },
+    {
+      "model_id": "claude-opus-5-5-20260922",
+      "model_name": "Claude Opus 5.5",
+      "release_date": "2026-09-22",
+      "era": "Claude 5.5",
+      "category": "Flagship Generalist & Agent Backbone",
+      "reasoning_mode": "Always-on Adaptive Thinking (Autonomous Budgeting)",
+      "specs": {
+        "context_window_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 4.0, "output": 20.0, "cache_read": 0.4 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": null,
+        "swe_bench_verified": 97.8,
+        "swe_bench_pro": 89.9,
+        "terminal_bench_1_0": 76.4,
+        "terminal_bench_2_0": 72.1,
+        "terminal_bench_3_0": 64.8,
+        "terminal_bench_4_0": 66.4,
+        "tau_bench": { "airline": 83.0, "retail": 94.2, "banking": 39.2 },
+        "bfcl_accuracy": 98.6,
+        "osworld_computer_use": 48.5
+      },
+      "agentic_milestones": [
+        "40% cost reduction compared to previous flagship tier ($4/$20 per M tokens)",
+        "Scored 89.9% on SWE-bench Pro and 66.4% on Terminal-Bench 4.0",
+        "Always-on adaptive thinking replaces manual thinking token limits",
+        "Overhauled tone: zero-fluff, developer-native direct interaction in long-running CLI sessions"
+      ]
+    },
+    {
+      "model_id": "claude-sonnet-5-5-20260928",
+      "model_name": "Claude Sonnet 5.5",
+      "release_date": "2026-09-28",
+      "era": "Claude 5.5",
+      "category": "High-Efficiency Coding & Tool Workhorse",
+      "reasoning_mode": "Always-on Adaptive Thinking (Fast Engine)",
+      "specs": {
+        "context_window_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "prompt_caching": true,
+        "pricing_usd_per_m": { "input": 2.0, "output": 10.0, "cache_read": 0.2 }
+      },
+      "benchmarks": {
+        "swe_bench_lite": null,
+        "swe_bench_verified": 98.1,
+        "swe_bench_pro": 91.2,
+        "terminal_bench_1_0": 79.0,
+        "terminal_bench_2_0": 75.3,
+        "terminal_bench_3_0": 68.5,
+        "terminal_bench_4_0": 70.6,
+        "tau_bench": { "airline": 84.2, "retail": 94.8, "banking": 40.1 },
+        "bfcl_accuracy": 98.8,
+        "osworld_computer_use": 47.2
+      },
+      "agentic_milestones": [
+        "Achieved record 70.6% on Terminal-Bench 4.0 and 91.2% on SWE-bench Pro",
+        "Priced aggressively at $2/$10 per 1M tokens ($0.20 cache read), redefining cost floor for agentic execution",
+        "Ultra-low latency streaming for interactive CLI and IDE agents"
+      ]
+    }
+  ]
+}

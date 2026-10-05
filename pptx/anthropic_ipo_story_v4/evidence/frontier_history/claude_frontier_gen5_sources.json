@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "success": true,
+    "opening": "Skip to main contentSkip to footer\n\n- Research\n\n- Policy\n\n- Commitments\n\n- Learn\n\n- News\n\nTry Claude\n\nAnnouncements\n\n# Claude Fable 5 and Claude Mythos 5\n\nJun 9, 2026\n\n-\n\nUpdate\n\nClaude Mythos 5 and Fable 5 redeployed\n\nJul 1, 2026\n\nClaude Fable 5 and Mythos 5 are now available.\n\nRead more\n\n-\n\nClaude Mythos 5 and Fable 5 access unavailable\n\nJun 12, 2026\n\nWe are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.\n\nRead more\n\nToday we’re launching Claude Fable 5: a Mythos-class1 model that we’ve made safe for general use.\n\nFable 5’s capabilities exceed those of any model we’ve ever made generally available. It is state-of-the-art on nearly all tested benchmarks of AI capability, showing exceptional performance in software engineering, knowledge work, vision, scientific research, and many other areas. The longer and more complex the task, the larger Fable 5’s lead over our other models.\n\nReleasing a model this capable comes with risks. Without safeguards, Fable 5’s capabilities i",
+    "matches": []
+  },
+  {
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "success": true,
+    "opening": "Skip to main contentSkip to footer\n\n- Research\n\n- Policy\n\n- Commitments\n\n- Learn\n\n- News\n\nTry Claude\n\nProductAnnouncements\n\n# Introducing Claude Opus 5\n\nJul 24, 2026\n\nClaude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.\n\nOn coding and knowledge work evaluations like Frontier-Bench and GDPval-AA, Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks.\n\nOpus 5 is designed to be used every day: it works more efficiently than other models. It’s the new default model on Claude Max, and the strongest model on Claude Pro.\n\n## Performance and cost-effectiveness\n\nClaude Opus 5 provides greatly improved performance for the same cost as its predecessor, Opus 4.8. The charts in this section show how performance changes according to the model’s effort setting, which customers can use to optimize for intelligence or conserve tokens for faster and cheaper results.\n\nOpus 5 excels on valuable software engineering tasks. For example, on Frontier-Bench v0.1, Opus 5",
+    "matches": []
+  },
+  {
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "success": true,
+    "opening": "Skip to main contentSkip to footer\n\n- Research\n\n- Policy\n\n- Commitments\n\n- Learn\n\n- News\n\nTry Claude\n\nProduct\n\n# Introducing Claude Sonnet 5\n\nJun 30, 2026\n\nClaude Sonnet 5 is built to be the most agentic Sonnet model yet. It can make plans, use tools like browsers and terminals, and run autonomously at a level that, just a few months ago, required larger and more expensive models.\n\nFor many developers, the agentic AI era began with Sonnet-class models: Claude Sonnet 3.5, 3.6, and 3.7 were the first models that showed impressive skills in coding and tool use. More recently, though, the clearest gains in agentic capabilities have been in our Opus-class models.\n\nSonnet 5 narrows the gap: its performance is close to that of Opus 4.8, but at lower prices. It’s a substantial improvement over its predecessor, Sonnet 4.6, on important aspects of agentic performance like reasoning, tool use, coding, and knowledge work:\n\nScores for Sonnet 5 on a variety of evaluations compared to those of Sonnet 4.6 and Opus 4.8 (a more generally capable model, for reference). The Claude Sonnet 5 System Card r",
+    "matches": []
+  }
+]

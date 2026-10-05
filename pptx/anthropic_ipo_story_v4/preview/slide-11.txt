@@ -1,0 +1,13 @@
+02 / 不仅仅是程序员的梦中情模 / 2.1
+今天的第三方对照：Claude 强，但领先不是天赋
+Opus 5.5 max / fallback · Astra max · Gemini 3.1 Pro Preview。
+Terminal-Bench 4.0 · 平均 pass@1 AA Intelligence Index v4.3.2
+Opus 5.5 59.6%
+Opus 5.5 58
+GPT-6 Astra 59.1%
+GPT-6 Astra 53
+Gemini 3.1 Pro 4%
+Gemini 3.1 Pro 30
+终端分差：Opus 与 Astra 仅 0.5 个百分点 综合指数不是百分比，也不是纯编码分数
+领先必须持续经营：模型能力、Agent 系统和产品体验缺一不可。
+编码模型与 AGI 11

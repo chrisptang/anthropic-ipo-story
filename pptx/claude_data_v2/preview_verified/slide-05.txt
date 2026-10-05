@@ -1,0 +1,14 @@
+第一幕 / 横向对照
+第三方对照：终端执行接近，综合能力有差异
+Opus 5.5（max / fallback）· GPT-6 Astra（max）· Gemini 3.1 Pro（Preview）
+Terminal-Bench 4.0 · 平均 pass@1 统一 mini-swe-agent · 66 题 · 每题 3 次 AA Intelligence Index · 综合能力
+v4.3.2 · 10 项评测 · 指数分，非百分比
+Opus 5.5 59.6%
+Opus 5.5 58
+GPT-6 Astra 59.1%
+GPT-6 Astra 53
+Gemini 3.1 Pro 4.0%
+Gemini 3.1 Pro 30
+终端观测分差：仅 0.5 个百分点 未核实到完整 SWE-bench Pro 对照，改用综合指数
+统一测试配置，才能比较分数；综合能力不等于终端任务成功率。
+来源：Artificial Analysis · terminalbench-4-0 + 三款模型页；核验于 2026-10-04 05
