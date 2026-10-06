@@ -1,0 +1,19 @@
+{
+  "source": "docs/03_anthropic_valuation_and_arr_deep_dive.md §1.2",
+  "reference_period": "2026年（原文数据时间：2026年10月）",
+  "unit": "亿美元",
+  "anthropic_comparison_value": 20000,
+  "companies": [
+    { "name": "腾讯", "value": 5300 },
+    { "name": "阿里巴巴", "value": 2350 },
+    { "name": "拼多多", "value": 1500 },
+    { "name": "美团", "value": 1100 },
+    { "name": "小米", "value": 850 },
+    { "name": "网易", "value": 650 },
+    { "name": "京东", "value": 500 },
+    { "name": "携程", "value": 380 },
+    { "name": "百度", "value": 320 },
+    { "name": "快手", "value": 270 }
+  ],
+  "notes": "沿用仓库参考估算，不另行核验实时报价或Top 10排名。原表未提供逐家公司报价出处及具体交易日；不含未上市公司，不能解释为整个中国互联网行业市值。Anthropic为IPO目标估值，不是已完成的挂牌市值。"
+}

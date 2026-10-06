@@ -1,0 +1,26 @@
+Date	Vendor	Model	Series	Benchmark	Score	Harness	Source
+2025-11-13	OpenAI	GPT-5.1	General	Terminal-Bench 2.0	45.5	Terminus 2 / Requesty	Vals AI / Requesty
+2025-11-19	OpenAI	GPT-5.1-Codex-Max	Coding Flagship	Terminal-Bench 2.0	58.1	Official Codex Harness	OpenAI Official / tbench.ai (53.5%)
+2025-11-20	Anthropic	Claude Opus 4.5	Flagship	Terminal-Bench 2.0	69.5	Harbor / Claude Code	BenchLM / tbench.ai
+2025-12-11	OpenAI	GPT-5.2	Flagship	Terminal-Bench 2.0	62.9	Codex CLI (62.9%) / Warp (61.1%)	tbench.ai (62.9% ± 3.0%) / Warp
+2026-01-15	OpenAI	GPT-5.3 Codex	Coding Flagship	Terminal-Bench 2.0	77.3	Official Codex Harness	BenchLM / LLM Stats
+2026-01-20	Anthropic	Claude Opus 4.6	Flagship	Terminal-Bench 2.0	73.2	Claude Code	BenchLM
+2026-02-15	OpenAI	GPT-5.4	General Flagship	Terminal-Bench 2.0	75.1	Official Harness	BenchLM
+2026-04-10	OpenAI	GPT-5.5	Flagship	Terminal-Bench 2.0	82	Official Harness	BenchLM / LLM Stats
+2026-04-20	Anthropic	Claude Opus 4.8	Flagship	Terminal-Bench 2.1	74.6	Terminus 2	Artificial Analysis
+2026-05-25	Anthropic	Claude Sonnet 5	Mid-tier / Agent	Terminal-Bench 2.0	80.4	Anthropic Harness	LLM Stats
+2026-05-25	Anthropic	Claude Sonnet 5 (Baseline)	Mid-tier / Baseline	Terminal-Bench 4.0	10.3	Claude Code	Anthropic Sonnet 5.5 System Card
+2026-06-15	Anthropic	Claude Fable 5	Reasoning / Research	Terminal-Bench 2.1	86	Terminus 2	Vals AI / Vellum
+2026-06-26	OpenAI	GPT-5.6 Sol	Flagship	Terminal-Bench 2.1	88	Terminus 2 (Max Effort)	Artificial Analysis / OpenAI (88.8%)
+2026-06-26	OpenAI	GPT-5.6 Sol (Baseline)	Prior Flagship / Baseline	Terminal-Bench 4.0	37.3	Codex (Max Effort)	tbench.ai / Anthropic Report
+2026-07-24	Anthropic	Claude Opus 5	Flagship	Terminal-Bench 2.1	89.1	Terminus 2 (Max Effort)	Artificial Analysis / Morph
+2026-07-24	Anthropic	Claude Opus 5 (Baseline)	Prior Flagship / Baseline	Terminal-Bench 4.0	52.3	Claude Code (51.8% Public, 52.3% Internal)	Anthropic Opus 5.5 System Card / tbench.ai
+2026-08-31	Anthropic	Claude Fable 5.1	Reasoning / Research	Terminal-Bench 4.0	57.9	Claude Code	tbench.ai / Harbor Hub
+2026-09-01	Anthropic	Claude Mythos 5.1	Specialized Flagship	Terminal-Bench 4.0	60.9	Anthropic Harness	LLM Stats
+2026-09-03	OpenAI	GPT-6 Astra	Flagship	Terminal-Bench 2.1	88.4	Terminus 2 / AA (89.5% Med, 87.3% Vals)	Artificial Analysis / Vals AI
+2026-09-03	OpenAI	GPT-6 Astra	Frontier Flagship	Terminal-Bench 4.0	58.2	Codex (Max Effort)	tbench.ai (58.2% ± 2.8%) / Vals (59.6%)
+2026-09-22	Anthropic	Claude Opus 5.5	Flagship	Terminal-Bench 2.1	87.6	Terminus 2 (High Effort)	Vals AI (87.64%) / BenchLM (86.4%)
+2026-09-22	Anthropic	Claude Opus 5.5	Frontier Flagship	Terminal-Bench 4.0	66.4	Claude Code (Xhigh Effort)	Anthropic Official / Vals (65.2%)
+2026-09-23	OpenAI	GPT-6 Sol	Workhorse (Efficient)	Terminal-Bench 4.0	44.4	Mini-SWE-agent	Vals AI / Emergent
+2026-09-29	Anthropic	Claude Sonnet 5.5	Coding Specialist	Terminal-Bench 4.0	70.6	Claude Code (Peak Effort)	Anthropic Official / LLM Stats
+2026-09-30	OpenAI	GPT-6.1 Sol	Workhorse (Efficient)	Terminal-Bench 4.0	55.1	Mini-SWE-agent	Vals AI / Emergent

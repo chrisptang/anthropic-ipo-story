@@ -1,9 +1,0 @@
-02 / 不仅仅是程序员的梦中情模 / 2.4
-OpenAI 的正例：把竞争带到执行效率
-Artificial Analysis Coding Agent Index v1.5 · Codex 当前配置对照。
-Codex 配置 编码 Agent 指数 平均运行时间 平均 API 费用
-GPT-6 Astra · max 62 29.4 分钟 $7.47
-GPT-6.1 Sol · xhigh 63 15.5 分钟 $1.04
-不只争一分：更快交付、更低成本，会改变用户与企业的选择
-Claude 的领先并非永久；但整个行业已经被推向同一条 Agentic 赛道。
-编码模型与 AGI 19
