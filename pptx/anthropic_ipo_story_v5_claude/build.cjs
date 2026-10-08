@@ -83,36 +83,31 @@ if(total!==13220||target!==20000)throw new Error('China Top 10 reference changed
 const s=slide(ch1+' / 1.1','2 万亿美元，比中国互联网 Top 10 总和还高',null,
 data.source+'\n'+SRC.reuters,
 data.notes+'\n原表十家公司逐项求和：'+data.companies.map(r=>r.value).join(' + ')+' = '+total+' 亿美元。20000 / 13220 = '+ratio.toFixed(6)+'，展示为 1.51 倍；20000 - 13220 = '+gap+' 亿美元，高出 '+((ratio-1)*100).toFixed(1)+'%。成立2021，沿用全稿2026年叙事，展示五年多；不声称已经完成两万亿IPO定价。');
-// 面积图：整个长方形=2万亿，十家公司按市值比例拼成66.1%，右侧余量=6780亿。
+// 同尺度双条：上条=2万亿，下条=十家按市值比例拼接，右侧虚线框=6780亿差额。
 // 保留原生图表与工作簿作为数据载体，可见层为原生可编辑形状。
-nativeBar(s,['Anthropic','中国互联网 Top 10'],[{name:'亿美元',values:[target,total]}],4.06,2.77,8.46,2.91,target);
-rect(s,4.01,2.7,8.57,3.05,C.white);
-text(s,'1.51',.8,2.66,2.05,1.05,76,{bold:true,color:C.coral});
-text(s,'倍',2.93,3.19,.48,.48,29,{bold:true,color:C.dark});
-text(s,'一家，超过十家',.86,4.05,3.02,.43,24,{bold:true});
-text(s,'2021 → 2026',.86,5.0,3.02,.29,14,{color:C.muted});
-text(s,'成立仅五年多',.86,5.43,3.02,.38,21,{bold:true,color:C.dark});
-const mx=4.06,my=2.77,mw=8.46,mh=2.91,cw=mw*total/target,extraX=mx+cw;
-text(s,'Anthropic',mx,2.13,4.0,.43,24,{bold:true,color:C.dark});
-text(s,'2 万亿美元',9.28,2.13,3.24,.43,24,{bold:true,color:C.dark,align:'right'});
-// 腾讯占左侧完整一列，余下九家分三行；每个矩形严格按金额比例分配面积。
-const tw=cw*data.companies[0].value/total,rw=cw-tw,rx=mx+tw;
-const tiles=[{r:data.companies[0],x:mx,y:my,w:tw,h:mh,c:'BCCBBF'}];
-const bands=[{ids:[1,2],colors:['CFD9CC','DDE4D9']},{ids:[3,4,5],colors:['D4DCCF','C1CEC4','E6EADF']},{ids:[6,7,8,9],colors:['E3E7DF','CED7CF','E9ECE5','D9E0D7']}];
-let yy=my;bands.forEach(b=>{const sum=b.ids.reduce((a,i)=>a+data.companies[i].value,0),hh=mh*sum/(total-data.companies[0].value);let xx=rx;
- b.ids.forEach((id,j)=>{const r=data.companies[id],ww=rw*r.value/sum;tiles.push({r,x:xx,y:yy,w:ww,h:hh,c:b.colors[j]});xx+=ww;});yy+=hh;});
-tiles.forEach(t=>{rect(s,t.x,t.y,t.w,t.h,t.c);s.addShape(ST.rect,{x:t.x,y:t.y,w:t.w,h:t.h,fill:{color:t.c,transparency:100},line:{color:C.white,width:2.5}});
- const small=t.h<.6,large=t.r.name==='腾讯',fs=large?29:small?13:t.w<1.35?16:20;
- text(s,t.r.name,t.x+.05,t.y+(t.h-(small?.27:.44))/2,t.w-.1,small?.27:.44,fs,{bold:true,align:'center'});
-});
-rect(s,extraX,my,mw-cw,mh,C.coral);
-text(s,'还多出',extraX+.22,my+.47,mw-cw-.44,.34,18,{color:C.white,bold:true});
-text(s,'6,780',extraX+.22,my+1.02,mw-cw-.44,.72,45,{color:C.white,bold:true});
-text(s,'亿美元',extraX+.22,my+1.85,mw-cw-.44,.36,21,{color:C.white,bold:true});
-text(s,'中国互联网 Top 10',mx,5.9,2.7,.33,17,{bold:true});
-text(s,'1.322 万亿美元',mx+2.8,5.9,cw-2.8,.33,15,{bold:true,align:'right',color:C.muted});
+nativeBar(s,['Anthropic','中国互联网 Top 10'],[{name:'亿美元',values:[target,total]}],4.5,2.45,8.0,2.95,target);
+rect(s,4.45,2.4,8.1,3.05,C.white);
+s.addText([{text:'1.51',options:{fontSize:80,color:C.coral,bold:true}},{text:' 倍',options:{fontSize:30,color:C.dark,bold:true}}],{x:.8,y:2.6,w:3.2,h:1.15,fontFace:'PingFang SC',margin:0,valign:'mid',fit:'shrink'});
+text(s,'一家，超过十家',.86,3.93,3.02,.43,24,{bold:true});
+line(s,.86,4.63,3.6,4.63,C.line,1);
+text(s,'2021 → 2026',.86,4.83,3.02,.29,14,{color:C.muted});
+text(s,'成立仅五年多',.86,5.17,3.02,.38,21,{bold:true,color:C.dark});
+const bx=4.5,bw=8.0,bh=.7,y1=3.03,y2=4.43,sc=bw/target,cw=total*sc,gx=bx+cw;
+const barLabel=(t,v,col,y)=>s.addText([{text:t,options:{color:C.ink}},{text:'   '+v,options:{color:col}}],{x:bx,y,w:bw,h:.32,fontFace:'PingFang SC',fontSize:15,bold:true,margin:0,valign:'mid',fit:'shrink'});
+barLabel('Anthropic','2 万亿美元',C.dark,2.63);
+rect(s,bx,y1,bw,bh,C.coral);
+barLabel('中国互联网 Top 10','1.322 万亿美元',C.muted,4.03);
+// 前三家单独成段，其余七家合并一段；每段宽度严格按金额比例。
+const rest=data.companies.slice(3);
+const segs=[...data.companies.slice(0,3).map(r=>({name:r.name,v:r.value,c:'5F7766',tc:C.white})),{name:'其余七家',v:rest.reduce((a,r)=>a+r.value,0),c:'C9D3CA',tc:C.ink}];
+let sx=bx;segs.forEach((g,i)=>{const w=g.v*sc;rect(s,sx,y2,w,bh,g.c);if(i)line(s,sx,y2,sx,y2+bh,C.white,2);
+ text(s,g.name,sx+.04,y2+.18,w-.08,.34,w<.8?12:w<1.2?14:16,{bold:true,align:'center',color:g.tc});sx+=w;});
+s.addShape(ST.rect,{x:gx,y:y2,w:bx+bw-gx,h:bh,fill:{color:C.pale},line:{color:C.coral,width:1.25,dashType:'dash'}});
+dash(s,bx+bw,y1+bh,bx+bw,y2,C.coral,1.25);
+text(s,'还差 6,780 亿美元',gx+.1,y2+.17,bx+bw-gx-.2,.36,18,{bold:true,color:C.dark,align:'center'});
+text(s,'其余七家：'+rest.map(r=>r.name).join('、'),bx,y2+bh+.14,cw,.26,12,{color:C.muted});
 takeaway(s,'把腾讯、阿里、拼多多等十家装进去，离两万亿还差一大块。');
-speakerOnly(s,'矩形面积严格按参考市值成比例分配；整框20000亿，十家公司13220亿，右侧余量6780亿。腾讯独立一列，其余分三行；白色分隔线只作公司边界。详细单家公司金额保留于JSON，不再在页面上逐项列数。');
+speakerOnly(s,'两条同一比例尺：上条20000亿，下条十家公司13220亿，右侧虚线框为6780亿差额。腾讯、阿里巴巴、拼多多单独成段，其余七家合并一段；白色分隔线只作公司边界。详细单家公司金额保留于JSON，不再在页面上逐项列数。');
 }
 // 03 / 历史坐标只服务于Anthropic主线，不另设募资纪录支线
 {
