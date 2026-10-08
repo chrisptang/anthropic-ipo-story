@@ -53,6 +53,27 @@ text(s,'>$2T',.83,2.65,5.0,1.16,72,{bold:true,color:C.coral});text(s,'预期上�
 [['2021','Anthropic 成立'],['2026.06','秘密提交 S-1 草案'],['2026.09','报道披露两万亿估值目标']].forEach((r,i)=>{const y=2.71+i*1.0;box(s,6.0,y,6.54,.79,i===2?C.yp:C.gray);text(s,r[0],6.24,y+.16,1.55,.4,19,{bold:true,color:C.dark});text(s,r[1],8.04,y+.18,4.23,.37,18);});
 takeaway(s,'真正值得追问的是：资本为什么给它如此高的价格？');
 }
+// 公司简介：三栏各回答一个问题（谁创立 / 治理为什么不一样 / 算力靠谁），数据见 source_audit。
+{
+const s=slide(ch1,'Anthropic 是谁：七位创始人，一套不寻常的治理','先认识这家公司，再看它的价格。',
+'https://en.wikipedia.org/wiki/Anthropic\nhttps://en.wikipedia.org/wiki/Dario_Amodei\nhttps://www.anthropic.com/company\nhttps://www.anthropic.com/news/the-long-term-benefit-trust\nhttps://www.investing.com/news/stock-market-news/exclusiveanthropic-leaders-to-control-ai-lab-via-founder-llc-to-promote-public-good-over-market-forces-4921448\nhttps://clsbluesky.law.columbia.edu/2026/10/02/public-purpose-and-founder-control-at-anthropic/\nhttps://www.anthropic.com/news/anthropic-amazon-trainium\nhttps://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services\nhttps://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships\nhttps://lexfridman.com/dario-amodei-transcript/\nhttps://arxiv.org/abs/1512.02595\nhttps://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions',
+'成立：2021年1月注册（Wikipedia）。创始人数：Reuters依据S-1草案称七位联合创始人，点名Dario（CEO）、Daniela（总裁兼董事长）、Tom Brown（首席算力官）、Chris Olah；Wikipedia信息框列八人（另含Jared Kaplan、Jack Clark、Ben Mann、Sam McCandlish），与“七位”未对齐，页面只写“七位”并只点名Reuters所列人员。Tom Brown为GPT-3论文第一作者。Dario曾任OpenAI研究副总裁（2016加入，2021离开）。治理：Anthropic为特拉华州公益公司（PBC，官方公司页与LTBT页）。LTBT经Class T股份选任董事，2023承诺4年内选出董事会多数。IPO后结构来自Reuters 2026-09-28/29所见S-1草案：创始人经Founder LLC指挥唯一一股Class F，关键事项50.1%表决权；7席董事中LTBT选4席，Class A与Class F选3席；公众为Class A一股一票，五类股份之一，不能单独选董事；创始人剩两人及以下时特殊权利开始失效。这些是草案报道，不是最终注册文件。算力：Amazon累计$8B（2024-11-22官方），AWS为主要训练与云伙伴；Google 2025-10-23官方最多100万颗TPU、价值数百亿美元，Google股权金额只见于Wikipedia（2023.10 $500M+后续$1.5B，2025.03再$1B），未经官方页核实，页面不写金额；Microsoft最多$5B、NVIDIA最多$10B，Anthropic承诺采购$30B Azure（2025-11-18官方）。“股东=供应商”是结构描述，不判断是否构成循环交易。');
+const cols=[
+ {h:'谁创立的',big:'2021.01',sub:'七位前 OpenAI 成员创立',fill:C.gray,rows:[['Dario Amodei','CEO · 前 OpenAI 研究副总裁'],['Daniela Amodei','总裁兼董事长'],['Tom Brown · Chris Olah 等','GPT-3 论文一作 · 可解释性研究']],foot:'彩蛋：Dario 2014–15 在百度做语音识别'},
+ {h:'为什么不一样',big:'PBC + LTBT',sub:'公益公司 + 长期利益信托',fill:C.yp,rows:[['公益公司','可在股东回报与使命之间权衡'],['长期利益信托','选出 7 席董事中的 4 席'],['创始人 Class F 一股','关键事项 50.1% 表决权']],foot:'公众股东：一股一票，不能单独选董事'},
+ {h:'靠谁供给算力',big:'股东 = 供应商',sub:'主要投资方，也卖给它算力',fill:C.gray,rows:[['Amazon','累计投资 $8B · 主要训练与云伙伴'],['Google','股东 · 最多 100 万颗 TPU'],['Microsoft + NVIDIA','最多投资 $15B · 采购 $30B Azure']],foot:'投资与算力采购，往往一起签'}];
+cols.forEach((c,i)=>{const x=.8+i*4.14,w=3.66;box(s,x,2.45,w,3.1,c.fill);
+ label(s,c.h,x+.24,2.6,w-.48);
+ text(s,c.big,x+.24,2.9,w-.48,.48,28,{bold:true,color:C.dark});
+ text(s,c.sub,x+.24,3.4,w-.48,.3,14,{bold:true});
+ line(s,x+.24,3.8,x+w-.24,3.8,C.line,1);
+ c.rows.forEach((r,j)=>{const y=3.9+j*.55;text(s,r[0],x+.24,y,w-.48,.27,15,{bold:true});text(s,r[1],x+.24,y+.27,w-.48,.23,12,{color:C.muted});});
+ box(s,x,5.67,w,.46,i===0?C.pale:C.white);if(i)s.addShape(ST.roundRect,{x,y:5.67,w,h:.46,fill:{color:C.white,transparency:100},line:{color:C.line,width:1},radius:.1});
+ text(s,c.foot,x+.16,5.67,w-.32,.46,13,{bold:i===0,color:i===0?C.dark:C.ink,align:'center'});});
+speakerOnly(s,'彩蛋背景：Dario 于2014年11月至2015年10月在百度（Wikipedia），在Andrew Ng的硅谷AI实验室做语音识别；他在Lex Fridman访谈中说，正是在那里第一次感到“数据、算力、训练越多，模型越好”，即scaling的雏形。Deep Speech 2论文（arXiv 1512.02595）作者按字母排序，他列第一不代表一作贡献。');
+speakerOnly(s,'互动提问（可选）：“Claude 针对中国用户的封号，和 Dario 在百度的经历有关吗？”——可查到的事实：1）中国从来不是 Claude 的支持地区，个人账号受地区条款约束；2）2025-09-04 官方把限制扩展到“中国等不支持地区的公司直接或间接持股超过50%的实体”，理由写的是法律、监管与安全风险，数据可能被强制提供给情报机构、被用于蒸馏；3）Dario 在 2025–2026 年多篇文章与采访中把中国的 AI 发展定位为安全威胁。关于百度：一篇对2026-06 Bloomberg《The Circuit》长访谈的二手转述称，他在百度一年，印象深的不是技术而是一句“在中国不在乎隐私”的随口话；而一个中文论坛帖标题称他在该访谈中表示“对中国的看法与百度无关”。两者都是二手材料，原视频未核实。结论：没有证据支持“因为百度经历才封号”的因果关系，官方给出的是国家安全与合规理由。这里只作为提问引子，不下结论。');
+takeaway(s,'一家把使命写进章程的公司，正在冲击史上最大 IPO。');
+}
 // 新第 04 页：两万亿与中国互联网 Top 10 的尺度，沿用仓库参考数据。
 {
 let data;try{data=JSON.parse(fs.readFileSync(path.join(__dirname,'china_internet_market_cap_reference.json'),'utf8'));}catch(e){throw new Error('China internet market cap reference could not be loaded',{cause:e});}
@@ -245,6 +266,24 @@ pans.forEach(p=>{const w=5.64;box(s,p.x,2.5,w,3.4,p.fill);
 footnote(s,'两列是不同的评测口径：harness、effort、重复次数与是否含 fallback 都不同，不可混用也不可相减。');
 takeaway(s,'领先只有半个百分点，而且换个口径就变样——它必须靠持续经营守住。');
 }
+// 成绩之后、范式之前：先讲清“编码 Agent 模型”和推理模型优化的不是同一件事。只做概念对照，不放分数。
+{
+const s=slide(ch2+' / 2.2','推理模型 vs 编码 Agent 模型：是两种东西','同一时期都在“变聪明”，但力气花在了不同的地方。',
+'https://openai.com/index/learning-to-reason-with-llms/\nhttps://openai.com/index/introducing-o3-and-o4-mini/\nhttps://github.com/deepseek-ai/DeepSeek-R1\nhttps://arxiv.org/abs/2501.12948\nhttps://www.anthropic.com/news/claude-3-7-sonnet\nhttps://www.anthropic.com/news/claude-4',
+'概念对照，讲的是优化重心，不是互斥分类，也不是能力排名。o1（2024.09）、DeepSeek R1（2025.01）以强化学习训练长思维链，公开成绩以AIME、Codeforces等竞赛题为主；R1用规则奖励（答案对错、格式），与第24页“机器检验行不行”同源。推理模型也能调用工具：o3/o4-mini（2025.04）在ChatGPT中可用工具，同月发布Codex CLI。Claude 3.7 Sonnet（2025.02）本身也是混合推理模型（extended thinking），同时发布Claude Code研究预览；Claude 4（2025.05）支持思考与工具调用交替。因此右栏不是“不思考”，而是把思考放进与仓库、终端的多轮交互里。本页不放竞赛分或SWE-bench分数，不做同口径成绩比较。');
+const dims=['优化目标','算力花在哪','输入','典型战场','交付物'];
+const cols=[
+ {x:2.8,fill:C.gray,t:'推理模型',k:'o1 · o3 · o4-mini · DeepSeek R1',rows:['单轮把题做对','回答之前的长思维链','一道定义清楚的题','AIME 数学 · Codeforces 竞赛','一个答案']},
+ {x:7.86,fill:C.yp,t:'编码 Agent 模型',k:'Claude 3.7 起 · Claude Code',rows:['多轮把活干完','工具调用之间：查 → 改 → 跑 → 再修','一个陌生仓库 + 模糊需求','SWE-bench · Terminal-Bench','Diff + 测试结果 + 没解决的问题']}];
+const w=4.7,top=2.45,r0=3.55,rh=.48;
+cols.forEach((c,i)=>{box(s,c.x,top,w,3.53,c.fill);
+ text(s,c.t,c.x+.26,top+.17,w-.52,.4,22,{bold:true,color:C.dark});text(s,c.k,c.x+.26,top+.61,w-.52,.28,12,{color:C.muted});
+ line(s,c.x+.26,3.45,c.x+w-.26,3.45,C.line,1);
+ c.rows.forEach((t,j)=>{const y=r0+j*rh;if(j)line(s,c.x+.26,y,c.x+w-.26,y,C.line,.6);text(s,t,c.x+.26,y+.05,w-.52,.38,16,{bold:i===1});});});
+dims.forEach((t,j)=>text(s,t,.84,r0+j*rh+.05,1.8,.38,14,{bold:true,color:C.muted}));
+footnote(s,'推理模型也能调用工具，Claude 也会深度思考；两栏比的是优化重心，不是谁会谁不会。');
+takeaway(s,'会解竞赛题，不等于会修真实仓库。');
+}
 // 13
 {
 const s=slide(ch2+' / 2.2','Chatbot → Copilot → Agent：从问一句，到交一件事','同一个任务：修复支付重试的错误。差别在于，谁来把下一步接起来。','https://www.anthropic.com/news/claude-3-7-sonnet\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents','吸收Gemini第13页三栏对照，重写为同一任务中的分工变化；三种交互方式可共存，不是每个产品的严格代际分类。代码、命令与交付均为教学示意，非本次真实运行。Copilot不绝对限定为只能单行补全，Agent也不承诺必定通过测试。人负责业务取舍、审查合并与生产授权。');
@@ -389,6 +428,61 @@ panels.forEach(p=>{
 if(plotted!==records.length)throw new Error('TB record missing from visual');
 footnote(s,'多来源、不同配置汇总；横轴按资料中的迭代事件等距排列，版本间不比较分数。');
 takeaway(s,'2.x 的接近不是终点：评测升级后，追赶仍在继续。');
+}
+// 31 / ARR 与估值双轨：用户提供的多来源汇总，按真实日期等比例绘制；标签自动避让，放不下即报错。
+{
+const raw=fs.readFileSync(path.join(__dirname,'arr_valuation_user_supplied.tsv'),'utf8').trim().split('\n');
+const fields=raw.shift().split('\t');
+const recs=raw.map(row=>{const v=row.split('\t');if(v.length!==fields.length)throw new Error('ARR record columns');const r=Object.fromEntries(fields.map((k,i)=>[k,v[i]]));r.v=Number(r.Amount_USD_B);r.t=Date.parse(r.Date);if(!Number.isFinite(r.v)||!Number.isFinite(r.t))throw new Error('ARR record value');return r;});
+if(recs.length!==28)throw new Error('Expected 28 user-supplied ARR/valuation records');
+const notes='本页按用户在2026-10-08提供的28条多来源汇总绘制（ARR 15条、估值13条），未经本次逐条独立核验；原始字段与来源标签保存在 arr_valuation_user_supplied.tsv。与本deck已核实口径一致的点：Anthropic 2025年初约$1B、2025.08>$5B、2026.02 $14B、2026.05>$47B（第10页官方run-rate），E/F/G/H轮$61.5B/$183B/$380B/$965B投后（官方公告）。其余点（OpenAI全部ARR与估值、Anthropic 2025年末$9B、2026.03 $19B、2026.04 $30B、2026.07 $65B、2026.09 $72B、条款书$350B、二级$1,350B）只来自用户汇总所列二手来源，未取得原文复核。ARR是年化run-rate，不是全年确认收入；两家口径（是否含云分成、是否为月度×12）未必一致，交叉点只表示所列数字的先后，不是审计后的收入排名。估值混合了一级融资投后、员工回购要约、二级市场成交与IPO目标，空心点为非一级融资口径，不可与实心点直接等同。OpenAI $1,050B为保密递交IPO的目标区间中值，Anthropic $1,350B为二级市场讨论值，均非上市定价；Anthropic超过$2T的IPO目标见第3页，不画进本图。横轴按日期等比例。OpenAI 2026.06→2026.09 $26.5B→$69B约2.6倍，汇总将其归因于GPT-5.6 Sol与GPT-6 Astra发布，本页只呈现时间共现，不做因果判断。\n\n原表记录：\n'+recs.map(r=>fields.map(k=>k+': '+r[k]).join(' | ')).join('\n');
+const s=slide(ch2+' / 2.4','被反超之后，OpenAI 也在自我进化',null,'用户提供的多来源汇总（2026-10-08）\narr_valuation_user_supplied.tsv\n'+[SRC.e,SRC.f,SRC.g,SRC.h].join('\n'),notes);
+speakerOnly(s,'左边是年化收入，右边是估值，横轴按真实日期比例。先看左图六月以后那段绿线。');
+rect(s,9.78,1.88,.11,.11,C.coral);text(s,'Anthropic',9.97,1.78,1.15,.3,12,{bold:true,color:C.dark});
+circle(s,11.25,1.88,.11,C.sage);text(s,'OpenAI',11.44,1.78,1.05,.3,12,{bold:true,color:C.sage});
+line(s,6.84,2.3,6.84,5.86,C.line,.7);
+const t0=Date.parse('2025-01-01'),t1=Date.parse('2027-01-20');
+const vName={'Series E':'E 轮','Series F':'F 轮','Term Sheet':'条款书','Series G':'G 轮','Series H':'H 轮','Pre-IPO / Secondary':'二级','SoftBank Round':'软银轮','Secondary Tender':'回购要约','Mega Financing Round':'$122B 轮','Forge Secondary':'Forge','Confidential IPO Target':'IPO'};
+const primary=new Set(['Series E','Series F','Series G','Series H','SoftBank Round','Mega Financing Round']);
+const cw=t=>[...t].reduce((a,ch)=>a+(/[一-鿿]/.test(ch)?.145:ch===' '?.04:.07),0)+.04;
+const fmt=v=>'$'+(v>=100?Math.round(v).toLocaleString('en-US'):String(v))+'B';
+const panels=[
+ {metric:'ARR',title:'年化收入（ARR）',unit:'十亿美元 · 2025.02—2026.09',x:.78,w:5.9,max:80,ticks:[0,20,40,60,80],
+  chips:[['Anthropic 反超：2026.04，$30B 对 $25B',C.pale,C.dark],['OpenAI 再加速：3 个月 $26.5B → $69B',C.gray,C.sage]]},
+ {metric:'Valuation',title:'估值',unit:'十亿美元 · 空心为二级 / 条款书 / 目标',x:7.0,w:5.6,max:1500,ticks:[0,500,1000,1500],
+  chips:[['H 轮 $965B，首次高于 OpenAI $852B',C.pale,C.dark]]}];
+const months=[['2025.01','2025-01-01'],['2025.07','2025-07-01'],['2026.01','2026-01-01'],['2026.07','2026-07-01']];
+let plotted=0;
+panels.forEach(p=>{
+ text(s,p.title,p.x,2.22,p.w,.32,18,{bold:true});text(s,p.unit,p.x,2.58,p.w,.2,10,{color:C.muted});
+ const px=p.x+.42,pw=p.w-.55,py=2.95,ph=2.55,bottom=py+ph,xt=t=>px+(t-t0)/(t1-t0)*pw,vy=v=>bottom-v/p.max*ph;
+ p.ticks.forEach(v=>{const y=vy(v);line(s,px,y,px+pw,y,C.line,.6);text(s,v.toLocaleString('en-US'),p.x-.06,y-.1,.42,.2,9,{align:'right',color:C.muted});});
+ months.forEach(([t,d])=>text(s,t,xt(Date.parse(d))-.36,5.72,.72,.2,9,{align:'center',color:C.muted}));
+ const series=['Anthropic','OpenAI'].map(co=>recs.filter(r=>r.Metric===p.metric&&r.Company===co).sort((a,b)=>a.t-b.t).map(r=>({...r,x:xt(r.t),y:vy(r.v)})));
+ const segs=[],marks=[],placed=[];
+ series.forEach(pts=>{for(let k=1;k<pts.length;k++)segs.push([pts[k-1],pts[k]]);pts.forEach(q=>marks.push([q.x-.06,q.y-.06,.12,.12,q]));});
+ const hit=(a,b)=>a[0]<b[0]+b[2]&&b[0]<a[0]+a[2]&&a[1]<b[1]+b[3]&&b[1]<a[1]+a[3];
+ const crosses=r=>segs.some(([a,b])=>{for(let k=0;k<=40;k++){const x=a.x+(b.x-a.x)*k/40,y=a.y+(b.y-a.y)*k/40;if(x>r[0]-.02&&x<r[0]+r[2]+.02&&y>r[1]-.02&&y<r[1]+r[3]+.02)return true;}return false;});
+ const inside=r=>r[0]>=px-.05&&r[0]+r[2]<=p.x+p.w+.05&&r[1]>=py-.12&&r[1]+r[3]<=bottom+.17;
+ // 注释条放在左上空白，同样参与避让。
+ p.chips.forEach(([t,fill,col],i)=>{const r=[px+.08,py+.02+i*.36,cw(t)+.12,.28];if(crosses(r))throw new Error('ARR chip crosses line: '+t);placed.push(r);rect(s,r[0],r[1],r[2],r[3],fill,true);text(s,t,r[0]+.06,r[1],r[2]-.12,r[3],10,{bold:true,color:col});});
+ series.forEach((pts,j)=>{const color=j?C.sage:C.coral;segs.filter(([a])=>a.Company===pts[0].Company).forEach(([a,b])=>line(s,a.x,a.y,b.x,b.y,color,2.1));});
+ const lh=.22,modes=[[-.5,-1,.08],[-.5,0,.08],[-1,-1,.07],[0,-1,.07],[-1,0,.07],[0,0,.07],[-1,-.5,.1],[0,-.5,.1],[-.5,-1,.3],[-.5,0,.3],[-1,-1,.3],[0,-1,.3],[-1,0,.3],[0,0,.3],[-1,-.5,.3],[0,-.5,.3],[-.5,-1,.55],[-.5,0,.55]];
+ series.flat().sort((a,b)=>a.t-b.t).forEach(q=>{
+  const label=p.metric==='ARR'?fmt(q.v):(vName[q.Event_or_Round]||q.Event_or_Round)+' '+fmt(q.v),w=cw(label);
+  const cand=modes.map(([fx,fy,g])=>{const x=q.x+fx*w+(fx===0?g:fx===-1?-g:0),y=fy===-.5?q.y-lh/2:q.y+fy*lh+(fy===0?g:-g);return [x,y,w,lh];})
+   .find(r=>inside(r)&&!placed.some(o=>hit(o,r))&&!marks.some(m=>m[4]!==q&&hit(m,r))&&!crosses(r));
+  if(!cand)throw new Error('ARR label has no free slot: '+q.Company+' '+q.Date+' '+label);
+  placed.push(cand);
+  const color=q.Company==='OpenAI'?C.sage:C.coral,hollow=p.metric==='Valuation'&&!primary.has(q.Event_or_Round);
+  s.addShape(q.Company==='OpenAI'?ST.ellipse:ST.rect,{x:q.x-.05,y:q.y-.05,w:.1,h:.1,fill:{color:hollow?C.white:color},line:{color,width:hollow?1.35:.5}});
+  text(s,label,cand[0],cand[1],cand[2],cand[3],10,{bold:true,color:q.Company==='OpenAI'?C.sage:C.dark,align:'center'});
+  plotted++;
+ });
+});
+if(plotted!==recs.length)throw new Error('ARR record missing from visual');
+footnote(s,'多来源汇总，非审计数字；ARR 为年化 run-rate，估值混合融资、回购、二级与 IPO 目标，空心点不可与实心点等同。');
+takeaway(s,'追赶者也在进化：竞争把两条曲线一起推高。');
 }
 divider('PART 03','编码模型与 AGI','先把 AGI 说清楚，再回答：为什么是编码能力，以及还差多少。',[['3.1','AGI 指的是什么'],['3.2','为什么是编码'],['3.3','还有多远']],'引出第三章，不新增数据。');
 // 3.1 定义页：只做定义与判断问题，不做进度评估（进度留给 3.3 门槛表）

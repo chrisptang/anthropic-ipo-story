@@ -22,251 +22,272 @@
   },
   {
     "page": 4,
+    "title": "Anthropic 是谁：七位创始人，一套不寻常的治理",
+    "section": "01 / 史上最大 IPO",
+    "source": "https://en.wikipedia.org/wiki/Anthropic\nhttps://en.wikipedia.org/wiki/Dario_Amodei\nhttps://www.anthropic.com/company\nhttps://www.anthropic.com/news/the-long-term-benefit-trust\nhttps://www.investing.com/news/stock-market-news/exclusiveanthropic-leaders-to-control-ai-lab-via-founder-llc-to-promote-public-good-over-market-forces-4921448\nhttps://clsbluesky.law.columbia.edu/2026/10/02/public-purpose-and-founder-control-at-anthropic/\nhttps://www.anthropic.com/news/anthropic-amazon-trainium\nhttps://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services\nhttps://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships\nhttps://lexfridman.com/dario-amodei-transcript/\nhttps://arxiv.org/abs/1512.02595\nhttps://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions",
+    "notes": "成立：2021年1月注册（Wikipedia）。创始人数：Reuters依据S-1草案称七位联合创始人，点名Dario（CEO）、Daniela（总裁兼董事长）、Tom Brown（首席算力官）、Chris Olah；Wikipedia信息框列八人（另含Jared Kaplan、Jack Clark、Ben Mann、Sam McCandlish），与“七位”未对齐，页面只写“七位”并只点名Reuters所列人员。Tom Brown为GPT-3论文第一作者。Dario曾任OpenAI研究副总裁（2016加入，2021离开）。治理：Anthropic为特拉华州公益公司（PBC，官方公司页与LTBT页）。LTBT经Class T股份选任董事，2023承诺4年内选出董事会多数。IPO后结构来自Reuters 2026-09-28/29所见S-1草案：创始人经Founder LLC指挥唯一一股Class F，关键事项50.1%表决权；7席董事中LTBT选4席，Class A与Class F选3席；公众为Class A一股一票，五类股份之一，不能单独选董事；创始人剩两人及以下时特殊权利开始失效。这些是草案报道，不是最终注册文件。算力：Amazon累计$8B（2024-11-22官方），AWS为主要训练与云伙伴；Google 2025-10-23官方最多100万颗TPU、价值数百亿美元，Google股权金额只见于Wikipedia（2023.10 $500M+后续$1.5B，2025.03再$1B），未经官方页核实，页面不写金额；Microsoft最多$5B、NVIDIA最多$10B，Anthropic承诺采购$30B Azure（2025-11-18官方）。“股东=供应商”是结构描述，不判断是否构成循环交易。\n\n演讲补充：先认识这家公司，再看它的价格。\n\n演讲补充：彩蛋背景：Dario 于2014年11月至2015年10月在百度（Wikipedia），在Andrew Ng的硅谷AI实验室做语音识别；他在Lex Fridman访谈中说，正是在那里第一次感到“数据、算力、训练越多，模型越好”，即scaling的雏形。Deep Speech 2论文（arXiv 1512.02595）作者按字母排序，他列第一不代表一作贡献。\n\n演讲补充：互动提问（可选）：“Claude 针对中国用户的封号，和 Dario 在百度的经历有关吗？”——可查到的事实：1）中国从来不是 Claude 的支持地区，个人账号受地区条款约束；2）2025-09-04 官方把限制扩展到“中国等不支持地区的公司直接或间接持股超过50%的实体”，理由写的是法律、监管与安全风险，数据可能被强制提供给情报机构、被用于蒸馏；3）Dario 在 2025–2026 年多篇文章与采访中把中国的 AI 发展定位为安全威胁。关于百度：一篇对2026-06 Bloomberg《The Circuit》长访谈的二手转述称，他在百度一年，印象深的不是技术而是一句“在中国不在乎隐私”的随口话；而一个中文论坛帖标题称他在该访谈中表示“对中国的看法与百度无关”。两者都是二手材料，原视频未核实。结论：没有证据支持“因为百度经历才封号”的因果关系，官方给出的是国家安全与合规理由。这里只作为提问引子，不下结论。"
+  },
+  {
+    "page": 5,
     "title": "2 万亿美元，比中国互联网 Top 10 总和还高",
     "section": "01 / 史上最大 IPO / 1.1",
     "source": "docs/03_anthropic_valuation_and_arr_deep_dive.md §1.2\nhttps://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs",
     "notes": "沿用仓库参考估算，不另行核验实时报价或Top 10排名。原表未提供逐家公司报价出处及具体交易日；不含未上市公司，不能解释为整个中国互联网行业市值。Anthropic为IPO目标估值，不是已完成的挂牌市值。\n原表十家公司逐项求和：5300 + 2350 + 1500 + 1100 + 850 + 650 + 500 + 380 + 320 + 270 = 13220 亿美元。20000 / 13220 = 1.512859，展示为 1.51 倍；20000 - 13220 = 6780 亿美元，高出 51.3%。成立2021，沿用全稿2026年叙事，展示五年多；不声称已经完成两万亿IPO定价。\n\n演讲补充：矩形面积严格按参考市值成比例分配；整框20000亿，十家公司13220亿，右侧余量6780亿。腾讯独立一列，其余分三行；白色分隔线只作公司边界。详细单家公司金额保留于JSON，不再在页面上逐项列数。"
   },
   {
-    "page": 5,
+    "page": 6,
     "title": "从阿里巴巴到 Anthropic：超级 IPO 的尺度",
     "section": "01 / 史上最大 IPO / 1.1",
     "source": "https://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs\nhttps://www.alibabagroup.com/en-US/document-1490842489823690752\nhttps://www.cnbc.com/2014/09/18/alibaba-prices-shares-at-68-a-share-dj.html\nhttps://www.cnbc.com/2020/01/12/saudi-aramco-raises-ipo-to-record-29point4-billion-through-greenshoe-option.html\nhttps://www.cnbc.com/2019/12/05/saudi-aramco-prices-shares-at-the-top-of-the-range-for-record-ipo-report-says.html\nhttps://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
     "notes": "2026-10-05叙事纠正：合并原第3/4页，删除SpaceX纪录支线。历史公司只用于建立Anthropic估值尺度。公司估值按发行价：阿里167.62B（不是首日231.4B）；Aramco1.7T；SpaceX1.77T来自Reuters。发行总额含超额配售：阿里25.03B含公司及售股股东；Aramco29.4B；SpaceX官方85.7B，其股数乘135美元与公告金额不一致，按公告明确gross proceeds，冲突保留audit。Anthropic募资未定、>2T为报道目标。不是完整所有IPO名单，不宣称Anthropic募资额破纪录。\n\n演讲补充：取几笔有代表性的大型 IPO 作参照，不是完整名单。\n\n演讲补充：已上市公司按 IPO 发行价计算估值；Anthropic 为报道中的上市估值目标。"
   },
   {
-    "page": 6,
+    "page": 7,
     "title": "同样的两万亿，被定价的不是同一种东西",
     "section": "01 / 史上最大 IPO / 1.1",
     "source": "https://www.cnbc.com/2019/12/05/saudi-aramco-prices-shares-at-the-top-of-the-range-for-record-ipo-report-says.html\nhttps://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs\nhttps://www.anthropic.com/news/prompt-caching",
     "notes": "性质对照为分析框架，不是财务可比口径：Aramco为已完成定价的上市估值1.7T，Anthropic为报道中的IPO目标>2T，两者不在同一状态。左栏描述石油资产的通行特征，未引用Aramco财报单位成本。右栏“边际成本随缓存与推理优化下降”指官方prompt caching等机制方向，不给出具体单位成本数字，也不声称已盈利。不推断两类资产谁更值得投资。\n\n演讲补充：用一家已经完成定价的万亿级公司当尺子，看这笔钱买的是什么。\n\n演讲补充：性质对照，不是同口径财务比较；右侧尚未定价，两者不在同一状态。"
   },
   {
-    "page": 7,
+    "page": 8,
     "title": "走到两万亿，别人用了几十年",
     "section": "01 / 史上最大 IPO / 1.2",
     "source": "https://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs\nhttps://en.wikipedia.org/wiki/Microsoft\nhttps://en.wikipedia.org/wiki/Apple_Inc.\nhttps://en.wikipedia.org/wiki/Nvidia\nhttps://en.wikipedia.org/wiki/Alphabet_Inc.",
     "notes": "口径不同必须明说：微软1975成立、2021年市值首破2T；苹果1976、2020；英伟达1993、2024；Alphabet(Google)1998、2024。以上为二级市场市值首次突破，公开资料取整年数。Anthropic 2021成立、2026报道IPO目标>2T，是发行估值目标而非已达成的市值，也未定价，因此单独标注“目标”。不同年份的两万亿购买力不同，未做通胀调整。不声称Anthropic已经是两万亿公司，也不预测它一定达成。\n\n演讲补充：横条的长度，是从公司成立到跨过这个量级所用的年数。\n\n演讲补充：不同年份的两万亿购买力不同。\n\n演讲补充：已上市公司为二级市场市值首次突破 $2T；Anthropic 为 IPO 发行估值目标，尚未定价。"
   },
   {
-    "page": 8,
+    "page": 9,
     "title": "从成立到两万亿目标：仅仅五年",
     "section": "01 / 史上最大 IPO / 1.2",
     "source": "https://www.anthropic.com/news/anthropic-raises-series-e-at-usd61-5b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\nhttps://www.anthropic.com/news/series-h\nhttps://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs",
     "notes": "早期融资CSV日期轮次金额有错，保留2021成立而不画无原始证据的早期估值；折线各点等距展示事件，不代表等时距。IPO目标不用作为已成交融资点。\n\n演讲补充：纵轴为投后估值，单位十亿美元；横轴为融资事件，不按时间等比例。\n\n演讲补充：实线与实心点为已完成定价的融资轮次；虚线与空心点为报道中的 IPO 目标，尚未定价。2021–2024 各轮公开口径不一致，未入图。"
   },
   {
-    "page": 9,
+    "page": 10,
     "title": "Claude Code 发布之后，公司年化收入陡增",
     "section": "01 / 史上最大 IPO / 1.3",
     "source": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\nhttps://www.anthropic.com/news/series-h\nhttps://www.anthropic.com/news/claude-3-7-sonnet\nhttps://www.anthropic.com/news/claude-4",
     "notes": "run-rate revenue不是全年确认营收、不是保证续约ARR，采用官方名称。公司整体收入并非全部来自ClaudeCode；时间共现不证明Code单独导致全部增长。年初约1B、8月>5B、2月14B、5月>47B，下限点。\n\n演讲补充：纵轴为公司整体年化收入，单位十亿美元。\n\n演讲补充：竖线为 Claude Code 两个发布时点，在首段内按月份比例定位；其余横轴为事件点，不按时间等比例。时间上的先后不等于全部收入增长都来自这一个产品。"
   },
   {
-    "page": 10,
+    "page": 11,
     "title": "Claude Code 本身，也跑出了十亿美元级生意",
     "section": "01 / 史上最大 IPO / 1.3",
     "source": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
     "notes": "2025.08 Code >0.5B；2026.02 >2.5B。业务订阅从2026年初增4倍，企业占Code收入过半。不是整个公司企业收入比例。\n\n演讲补充：上一页是公司整体口径；这一页只看 Claude Code 这一个产品。"
   },
   {
-    "page": 11,
+    "page": 12,
     "title": "18–20 倍收入，怎样才能支撑两万亿？",
     "section": "01 / 史上最大 IPO / 1.3",
     "source": "https://www.anthropic.com/news/series-h\nhttps://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs",
     "notes": "Reuters全文没有100B ARR；仓库9月100B没有独立来源，不作为实际收入。以下100–111B是所需收入倒算。965/47=20.53；2000/47=42.55；2000/20=100；2000/18=111.11。\n\n演讲补充：估值 ÷ 年化收入 = 收入倍数；这里不是 PE，ARR 也不是利润。"
   },
   {
-    "page": 12,
+    "page": 13,
     "title": "高增长之外，市场还在押注什么？",
     "section": "01 / 史上最大 IPO",
     "source": "https://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs",
     "notes": "2025净亏损近42B含约34B融资估值会计费用，不等于现金烧钱；经营亏损>8B。未来cloud/compute/infrastructure义务518B不是单年Capex。\n\n演讲补充：2025 年确认收入约 $4.6B；仍有超过 $8B 的经营亏损。"
   },
   {
-    "page": 13,
+    "page": 14,
     "title": "不仅仅是程序员的梦中情模",
     "section": "PART 02",
     "source": "章节过渡页",
     "notes": "引出第二章，不新增数据。\n\n演讲补充：价格之后讲能力：编码成绩、Agent 闭环、生态标准，以及同行的反例与正例。"
   },
   {
-    "page": 14,
+    "page": 15,
     "title": "没有铺满生成赛道，却在冲击两万亿",
     "section": "02 / 不仅仅是程序员的梦中情模 / 转折",
     "source": "https://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs\nhttps://platform.claude.com/docs/en/about-claude/models/overview\nhttps://support.claude.com/en/articles/9002504-can-claude-produce-images\nhttps://support.claude.com/en/articles/11101966-using-voice-mode\nhttps://platform.openai.com/docs/models\nhttps://developers.openai.com/api/docs/guides/video-generation\nhttps://deepmind.google/models/veo/\nhttps://deepmind.google/models/gemini-audio/",
     "notes": "截至2026-10-05官方公开产品目录对照，不证明内部未研发。Claude模型目录以文本/图像输入、文本输出为主；可用HTML/SVG画图，也有voice mode，不能说无图像理解/语音功能。语音没有独立公开生成模型产品线是目录边界，而非证明无内部语音模型。Google图像Gemini Image/Imagen页面、视频Veo、语音Gemini Audio；OpenAI图像GPT-Image、语音TTS/Realtime、视频Sora历史发布但2026-09-24停止API，明示已停服。>$2T为IPO目标，不称首家已超越2T，未取得全体AI公司可比估值排名。Google非纯AI公司这一提示不放deck。不从产品线推断竞品研发动机。\n\n演讲补充：对照三家的公开模型目录：谁上线了独立的生成模型产品线。\n\n演讲补充：比较独立生成模型产品线；Claude 有语音对话，也能用代码画图。Sora 已于 2026.09 停服。"
   },
   {
-    "page": 15,
+    "page": 16,
     "title": "从三分之一，到几乎做满：真实仓库修复的跨越",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.1",
     "source": "{\n  \"checked_at\": \"2026-10-05\",\n  \"provenance\": \"Anthropic release pages and system cards; repo CSV used as discovery only, conflicting scores replaced\",\n  \"early\": {\n    \"model\": \"Claude 2\",\n    \"date\": \"2023-07-11\",\n    \"benchmark\": \"HumanEval\",\n    \"score\": 71.2,\n    \"previous_model\": \"Claude 1.3\",\n    \"previous_score\": 56,\n    \"source\": \"https://www.anthropic.com/news/claude-2\",\n    \"note\": \"No model named Sonnet 2 in official releases; Claude 2 predates Sonnet naming. Claude 3 Opus release does not disclose a comparable SWE Verified score.\"\n  },\n  \"swe_verified\": [\n    {\n      \"name\": \"Sonnet 3.5\",\n      \"date\": \"2024.06\",\n      \"score\": 33.4,\n      \"source\": \"https://www.anthropic.com/news/3-5-models-and-computer-use\"\n    },\n    {\n      \"name\": \"Sonnet 3.5 v2\",\n      \"date\": \"2024.10\",\n      \"score\": 49,\n      \"source\": \"https://www.anthropic.com/news/3-5-models-and-computer-use\"\n    },\n    {\n      \"name\": \"Sonnet 3.7\",\n      \"date\": \"2025.02\",\n      \"score\": 62.3,\n      \"source\": \"https://www.anthropic.com/news/claude-3-7-sonnet\",\n      \"note\": \"Full 500 pass@1; custom scaffold 70.3 is on 489 eligible tasks, not plotted.\"\n    },\n    {\n      \"name\": \"Opus 4\",\n      \"date\": \"2025.05\",\n      \"score\": 72.5,\n      \"source\": \"https://www.anthropic.com/news/claude-4\"\n    },\n    {\n      \"name\": \"Sonnet 4\",\n      \"date\": \"2025.05\",\n      \"score\": 72.7,\n      \"source\": \"https://www.anthropic.com/news/claude-4\"\n    },\n    {\n      \"name\": \"Opus 4.1\",\n      \"date\": \"2025.08\",\n      \"score\": 74.5,\n      \"source\": \"https://www.anthropic.com/news/claude-opus-4-1\"\n    },\n    {\n      \"name\": \"Sonnet 4.5\",\n      \"date\": \"2025.09\",\n      \"score\": 77.2,\n      \"source\": \"https://www.anthropic.com/news/claude-sonnet-4-5\"\n    },\n    {\n      \"name\": \"Opus 4.5\",\n      \"date\": \"2025.11\",\n      \"score\": 80.9,\n      \"source\": \"https://www.anthropic.com/claude-opus-4-5-system-card\",\n      \"page\": 20\n    },\n    {\n      \"name\": \"Opus 4.6\",\n      \"date\": \"2026.02\",\n      \"score\": 80.8,\n      \"source\": \"https://www.anthropic.com/claude-opus-4-6-system-card\",\n      \"page\": 19\n    },\n    {\n      \"name\": \"Sonnet 4.6\",\n      \"date\": \"2026.02\",\n      \"score\": 79.6,\n      \"source\": \"https://www.anthropic.com/claude-sonnet-4-6-system-card\",\n      \"page\": 16\n    },\n    {\n      \"name\": \"Mythos Preview\",\n      \"date\": \"2026.04\",\n      \"score\": 93.9,\n      \"source\": \"https://www.anthropic.com/claude-mythos-preview-system-card\",\n      \"page\": 189\n    },\n    {\n      \"name\": \"Opus 4.7\",\n      \"date\": \"2026.04\",\n      \"score\": 87.6,\n      \"source\": \"https://www.anthropic.com/news/claude-opus-4-7\"\n    },\n    {\n      \"name\": \"Opus 4.8\",\n      \"date\": \"2026.05\",\n      \"score\": 88.6,\n      \"source\": \"https://www.anthropic.com/claude-opus-4-8-system-card\",\n      \"page\": 195\n    },\n    {\n      \"name\": \"Mythos / Fable 5\",\n      \"date\": \"2026.06\",\n      \"score\": 95.5,\n      \"paired_score\": 95,\n      \"source\": \"https://www.anthropic.com/claude-fable-5-mythos-5-system-card\",\n      \"page\": 253\n    },\n    {\n      \"name\": \"Sonnet 5\",\n      \"date\": \"2026.06\",\n      \"score\": 85.2,\n      \"source\": \"https://www.anthropic.com/claude-sonnet-5-system-card\",\n      \"page\": 116\n    },\n    {\n      \"name\": \"Opus 5\",\n      \"date\": \"2026.07\",\n      \"score\": 96,\n      \"source\": \"https://www.anthropic.com/claude-opus-5-system-card\",\n      \"page\": 153\n    }\n  ],\n  \"new_swe_pro\": [\n    {\n      \"name\": \"Mythos / Fable 5.1\",\n      \"score\": 81.2,\n      \"source\": \"https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card\",\n      \"page\": 167\n    },\n    {\n      \"name\": \"Opus 5.5\",\n      \"score\": 89.9,\n      \"source\": \"https://www.anthropic.com/claude-opus-5-5-system-card\",\n      \"page\": 175\n    },\n    {\n      \"name\": \"Sonnet 5.5\",\n      \"score\": 81.3,\n      \"source\": \"https://www.anthropic.com/claude-sonnet-5-5-system-card\",\n      \"page\": 109\n    }\n  ],\n  \"terminal_panels\": [\n    {\n      \"version\": \"原版 · 2025\",\n      \"harness\": \"发布时配置；Opus 4 使用 Claude Code\",\n      \"rows\": [\n        [\n          \"Opus 4\",\n          43.2\n        ],\n        [\n          \"Sonnet 4\",\n          35.5\n        ],\n        [\n          \"Opus 4.1\",\n          43.3\n        ],\n        [\n          \"Sonnet 4.5\",\n          50\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/news/claude-4\",\n        \"https://www.anthropic.com/news/claude-opus-4-1\",\n        \"https://www.anthropic.com/news/claude-sonnet-4-5\"\n      ]\n    },\n    {\n      \"version\": \"2.0 · 2025–26\",\n      \"harness\": \"Terminus-2；各代发布配置\",\n      \"rows\": [\n        [\n          \"Opus 4.5\",\n          59.3\n        ],\n        [\n          \"Opus 4.6\",\n          65.4\n        ],\n        [\n          \"Sonnet 4.6\",\n          59.1\n        ],\n        [\n          \"Mythos Preview\",\n          82\n        ],\n        [\n          \"Opus 4.7\",\n          69.4\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/claude-opus-4-5-system-card\",\n        \"https://www.anthropic.com/claude-opus-4-6-system-card\",\n        \"https://www.anthropic.com/claude-sonnet-4-6-system-card\",\n        \"https://www.anthropic.com/claude-mythos-preview-system-card\",\n        \"https://www.anthropic.com/news/claude-opus-4-7\"\n      ]\n    },\n    {\n      \"version\": \"2.1 · 2026\",\n      \"harness\": \"4.8: Terminus-2；后续含不同 harness\",\n      \"rows\": [\n        [\n          \"Opus 4.8\",\n          74.6\n        ],\n        [\n          \"Fable 5\",\n          84.3\n        ],\n        [\n          \"Mythos 5\",\n          88\n        ],\n        [\n          \"Sonnet 5\",\n          80.4\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/claude-opus-4-8-system-card\",\n        \"https://www.anthropic.com/claude-fable-5-mythos-5-system-card\",\n        \"https://www.anthropic.com/claude-sonnet-5-system-card\"\n      ],\n      \"note\": \"Fable/Mythos5 card reruns Opus4.8 at82.7, not substituted for release74.6. Sonnet5 uses mini-swe-agent.\"\n    },\n    {\n      \"version\": \"4.0 · 2026\",\n      \"harness\": \"Claude Code --bare；5.5 含 fallback\",\n      \"rows\": [\n        [\n          \"Sonnet 5\",\n          10.3\n        ],\n        [\n          \"Fable 5\",\n          42\n        ],\n        [\n          \"Opus 5\",\n          52.3\n        ],\n        [\n          \"Fable 5.1\",\n          55.8\n        ],\n        [\n          \"Mythos 5.1\",\n          60.9\n        ],\n        [\n          \"Opus 5.5\",\n          66.4\n        ],\n        [\n          \"Sonnet 5.5\",\n          70.6\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/claude-sonnet-5-5\",\n        \"https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card\",\n        \"https://www.anthropic.com/claude-opus-5-5-system-card\",\n        \"https://www.anthropic.com/claude-sonnet-5-5-system-card\"\n      ],\n      \"note\": \"Opus5.5 xhigh (max64.8), other shown 5.1/5.5 models max; Mythos and Fable are same core with different safeguards/access. 5/10/15 repeats vary. Sonnet5 10.3 from latest release body, no finer setting disclosed there.\"\n    }\n  ]\n}",
     "notes": "100格图每格1个百分点，部分格按比例填充；表示平均修复率，不代表这些具体题目都被同一运行解出。33.4→62.3→96为官方里程碑而非同配置受控实验；harness/thinking/trials不同，数字差62.6pp为描述性差异。3.7 full50062.3，定制48970.3单独备注。HumanEval在下一页独立历史起点。95.5/95为Mythos/Fable5 Verified；96为Opus5。不能把Pro89.9作为Verified后继点。\n\n演讲补充：SWE-bench Verified · 同一套 500 题；历代官方结果。\n\n演讲补充：每格 = 1 个百分点；不是逐题运行记录。历史配置不同，数字是公开能力足迹。"
   },
   {
-    "page": 16,
+    "page": 17,
     "title": "不是一次偶然领先，是一代代把工程问题往前推",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.1",
     "source": "{\n  \"checked_at\": \"2026-10-05\",\n  \"provenance\": \"Anthropic release pages and system cards; repo CSV used as discovery only, conflicting scores replaced\",\n  \"early\": {\n    \"model\": \"Claude 2\",\n    \"date\": \"2023-07-11\",\n    \"benchmark\": \"HumanEval\",\n    \"score\": 71.2,\n    \"previous_model\": \"Claude 1.3\",\n    \"previous_score\": 56,\n    \"source\": \"https://www.anthropic.com/news/claude-2\",\n    \"note\": \"No model named Sonnet 2 in official releases; Claude 2 predates Sonnet naming. Claude 3 Opus release does not disclose a comparable SWE Verified score.\"\n  },\n  \"swe_verified\": [\n    {\n      \"name\": \"Sonnet 3.5\",\n      \"date\": \"2024.06\",\n      \"score\": 33.4,\n      \"source\": \"https://www.anthropic.com/news/3-5-models-and-computer-use\"\n    },\n    {\n      \"name\": \"Sonnet 3.5 v2\",\n      \"date\": \"2024.10\",\n      \"score\": 49,\n      \"source\": \"https://www.anthropic.com/news/3-5-models-and-computer-use\"\n    },\n    {\n      \"name\": \"Sonnet 3.7\",\n      \"date\": \"2025.02\",\n      \"score\": 62.3,\n      \"source\": \"https://www.anthropic.com/news/claude-3-7-sonnet\",\n      \"note\": \"Full 500 pass@1; custom scaffold 70.3 is on 489 eligible tasks, not plotted.\"\n    },\n    {\n      \"name\": \"Opus 4\",\n      \"date\": \"2025.05\",\n      \"score\": 72.5,\n      \"source\": \"https://www.anthropic.com/news/claude-4\"\n    },\n    {\n      \"name\": \"Sonnet 4\",\n      \"date\": \"2025.05\",\n      \"score\": 72.7,\n      \"source\": \"https://www.anthropic.com/news/claude-4\"\n    },\n    {\n      \"name\": \"Opus 4.1\",\n      \"date\": \"2025.08\",\n      \"score\": 74.5,\n      \"source\": \"https://www.anthropic.com/news/claude-opus-4-1\"\n    },\n    {\n      \"name\": \"Sonnet 4.5\",\n      \"date\": \"2025.09\",\n      \"score\": 77.2,\n      \"source\": \"https://www.anthropic.com/news/claude-sonnet-4-5\"\n    },\n    {\n      \"name\": \"Opus 4.5\",\n      \"date\": \"2025.11\",\n      \"score\": 80.9,\n      \"source\": \"https://www.anthropic.com/claude-opus-4-5-system-card\",\n      \"page\": 20\n    },\n    {\n      \"name\": \"Opus 4.6\",\n      \"date\": \"2026.02\",\n      \"score\": 80.8,\n      \"source\": \"https://www.anthropic.com/claude-opus-4-6-system-card\",\n      \"page\": 19\n    },\n    {\n      \"name\": \"Sonnet 4.6\",\n      \"date\": \"2026.02\",\n      \"score\": 79.6,\n      \"source\": \"https://www.anthropic.com/claude-sonnet-4-6-system-card\",\n      \"page\": 16\n    },\n    {\n      \"name\": \"Mythos Preview\",\n      \"date\": \"2026.04\",\n      \"score\": 93.9,\n      \"source\": \"https://www.anthropic.com/claude-mythos-preview-system-card\",\n      \"page\": 189\n    },\n    {\n      \"name\": \"Opus 4.7\",\n      \"date\": \"2026.04\",\n      \"score\": 87.6,\n      \"source\": \"https://www.anthropic.com/news/claude-opus-4-7\"\n    },\n    {\n      \"name\": \"Opus 4.8\",\n      \"date\": \"2026.05\",\n      \"score\": 88.6,\n      \"source\": \"https://www.anthropic.com/claude-opus-4-8-system-card\",\n      \"page\": 195\n    },\n    {\n      \"name\": \"Mythos / Fable 5\",\n      \"date\": \"2026.06\",\n      \"score\": 95.5,\n      \"paired_score\": 95,\n      \"source\": \"https://www.anthropic.com/claude-fable-5-mythos-5-system-card\",\n      \"page\": 253\n    },\n    {\n      \"name\": \"Sonnet 5\",\n      \"date\": \"2026.06\",\n      \"score\": 85.2,\n      \"source\": \"https://www.anthropic.com/claude-sonnet-5-system-card\",\n      \"page\": 116\n    },\n    {\n      \"name\": \"Opus 5\",\n      \"date\": \"2026.07\",\n      \"score\": 96,\n      \"source\": \"https://www.anthropic.com/claude-opus-5-system-card\",\n      \"page\": 153\n    }\n  ],\n  \"new_swe_pro\": [\n    {\n      \"name\": \"Mythos / Fable 5.1\",\n      \"score\": 81.2,\n      \"source\": \"https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card\",\n      \"page\": 167\n    },\n    {\n      \"name\": \"Opus 5.5\",\n      \"score\": 89.9,\n      \"source\": \"https://www.anthropic.com/claude-opus-5-5-system-card\",\n      \"page\": 175\n    },\n    {\n      \"name\": \"Sonnet 5.5\",\n      \"score\": 81.3,\n      \"source\": \"https://www.anthropic.com/claude-sonnet-5-5-system-card\",\n      \"page\": 109\n    }\n  ],\n  \"terminal_panels\": [\n    {\n      \"version\": \"原版 · 2025\",\n      \"harness\": \"发布时配置；Opus 4 使用 Claude Code\",\n      \"rows\": [\n        [\n          \"Opus 4\",\n          43.2\n        ],\n        [\n          \"Sonnet 4\",\n          35.5\n        ],\n        [\n          \"Opus 4.1\",\n          43.3\n        ],\n        [\n          \"Sonnet 4.5\",\n          50\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/news/claude-4\",\n        \"https://www.anthropic.com/news/claude-opus-4-1\",\n        \"https://www.anthropic.com/news/claude-sonnet-4-5\"\n      ]\n    },\n    {\n      \"version\": \"2.0 · 2025–26\",\n      \"harness\": \"Terminus-2；各代发布配置\",\n      \"rows\": [\n        [\n          \"Opus 4.5\",\n          59.3\n        ],\n        [\n          \"Opus 4.6\",\n          65.4\n        ],\n        [\n          \"Sonnet 4.6\",\n          59.1\n        ],\n        [\n          \"Mythos Preview\",\n          82\n        ],\n        [\n          \"Opus 4.7\",\n          69.4\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/claude-opus-4-5-system-card\",\n        \"https://www.anthropic.com/claude-opus-4-6-system-card\",\n        \"https://www.anthropic.com/claude-sonnet-4-6-system-card\",\n        \"https://www.anthropic.com/claude-mythos-preview-system-card\",\n        \"https://www.anthropic.com/news/claude-opus-4-7\"\n      ]\n    },\n    {\n      \"version\": \"2.1 · 2026\",\n      \"harness\": \"4.8: Terminus-2；后续含不同 harness\",\n      \"rows\": [\n        [\n          \"Opus 4.8\",\n          74.6\n        ],\n        [\n          \"Fable 5\",\n          84.3\n        ],\n        [\n          \"Mythos 5\",\n          88\n        ],\n        [\n          \"Sonnet 5\",\n          80.4\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/claude-opus-4-8-system-card\",\n        \"https://www.anthropic.com/claude-fable-5-mythos-5-system-card\",\n        \"https://www.anthropic.com/claude-sonnet-5-system-card\"\n      ],\n      \"note\": \"Fable/Mythos5 card reruns Opus4.8 at82.7, not substituted for release74.6. Sonnet5 uses mini-swe-agent.\"\n    },\n    {\n      \"version\": \"4.0 · 2026\",\n      \"harness\": \"Claude Code --bare；5.5 含 fallback\",\n      \"rows\": [\n        [\n          \"Sonnet 5\",\n          10.3\n        ],\n        [\n          \"Fable 5\",\n          42\n        ],\n        [\n          \"Opus 5\",\n          52.3\n        ],\n        [\n          \"Fable 5.1\",\n          55.8\n        ],\n        [\n          \"Mythos 5.1\",\n          60.9\n        ],\n        [\n          \"Opus 5.5\",\n          66.4\n        ],\n        [\n          \"Sonnet 5.5\",\n          70.6\n        ]\n      ],\n      \"sources\": [\n        \"https://www.anthropic.com/claude-sonnet-5-5\",\n        \"https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card\",\n        \"https://www.anthropic.com/claude-opus-5-5-system-card\",\n        \"https://www.anthropic.com/claude-sonnet-5-5-system-card\"\n      ],\n      \"note\": \"Opus5.5 xhigh (max64.8), other shown 5.1/5.5 models max; Mythos and Fable are same core with different safeguards/access. 5/10/15 repeats vary. Sonnet5 10.3 from latest release body, no finer setting disclosed there.\"\n    }\n  ]\n}",
     "notes": "历代全部16节点保留，按发布日期顺序且横轴等距，不表示等时距。同月多个家族分叉而非单一模型训练曲线。模型架构/配置改变，线为历史记录导览不证明单调提升。配对Fable95单独文字而非第二条历史整线。Pro和HumanEval不接Verified。原始3.7定制scaffold70.3/489不入主图。\n\n演讲补充：Verified 的完整足迹；最新 5.1 / 5.5 转向更难的 SWE-bench Pro，单独展示。\n\n演讲补充：节点等距，配置有差异。\n\n演讲补充：SWE-bench Pro 不与 Verified 连线。\n\n演讲补充：更早的起点：Claude 2 · HumanEval 71.2%（2023）；3.7 定制 scaffold：70.3%（489 题）。"
   },
   {
-    "page": 17,
+    "page": 18,
     "title": "终端里的进展：在 2.1 上，已做到接近九成",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.1",
     "source": "[\n  {\n    \"version\": \"原版 · 2025\",\n    \"harness\": \"发布时配置；Opus 4 使用 Claude Code\",\n    \"rows\": [\n      [\n        \"Opus 4\",\n        43.2\n      ],\n      [\n        \"Sonnet 4\",\n        35.5\n      ],\n      [\n        \"Opus 4.1\",\n        43.3\n      ],\n      [\n        \"Sonnet 4.5\",\n        50\n      ]\n    ],\n    \"sources\": [\n      \"https://www.anthropic.com/news/claude-4\",\n      \"https://www.anthropic.com/news/claude-opus-4-1\",\n      \"https://www.anthropic.com/news/claude-sonnet-4-5\"\n    ]\n  },\n  {\n    \"version\": \"2.0 · 2025–26\",\n    \"harness\": \"Terminus-2；各代发布配置\",\n    \"rows\": [\n      [\n        \"Opus 4.5\",\n        59.3\n      ],\n      [\n        \"Opus 4.6\",\n        65.4\n      ],\n      [\n        \"Sonnet 4.6\",\n        59.1\n      ],\n      [\n        \"Mythos Preview\",\n        82\n      ],\n      [\n        \"Opus 4.7\",\n        69.4\n      ]\n    ],\n    \"sources\": [\n      \"https://www.anthropic.com/claude-opus-4-5-system-card\",\n      \"https://www.anthropic.com/claude-opus-4-6-system-card\",\n      \"https://www.anthropic.com/claude-sonnet-4-6-system-card\",\n      \"https://www.anthropic.com/claude-mythos-preview-system-card\",\n      \"https://www.anthropic.com/news/claude-opus-4-7\"\n    ]\n  },\n  {\n    \"version\": \"2.1 · 2026\",\n    \"harness\": \"4.8: Terminus-2；后续含不同 harness\",\n    \"rows\": [\n      [\n        \"Opus 4.8\",\n        74.6\n      ],\n      [\n        \"Fable 5\",\n        84.3\n      ],\n      [\n        \"Mythos 5\",\n        88\n      ],\n      [\n        \"Sonnet 5\",\n        80.4\n      ]\n    ],\n    \"sources\": [\n      \"https://www.anthropic.com/claude-opus-4-8-system-card\",\n      \"https://www.anthropic.com/claude-fable-5-mythos-5-system-card\",\n      \"https://www.anthropic.com/claude-sonnet-5-system-card\"\n    ],\n    \"note\": \"Fable/Mythos5 card reruns Opus4.8 at82.7, not substituted for release74.6. Sonnet5 uses mini-swe-agent.\"\n  },\n  {\n    \"version\": \"4.0 · 2026\",\n    \"harness\": \"Claude Code --bare；5.5 含 fallback\",\n    \"rows\": [\n      [\n        \"Sonnet 5\",\n        10.3\n      ],\n      [\n        \"Fable 5\",\n        42\n      ],\n      [\n        \"Opus 5\",\n        52.3\n      ],\n      [\n        \"Fable 5.1\",\n        55.8\n      ],\n      [\n        \"Mythos 5.1\",\n        60.9\n      ],\n      [\n        \"Opus 5.5\",\n        66.4\n      ],\n      [\n        \"Sonnet 5.5\",\n        70.6\n      ]\n    ],\n    \"sources\": [\n      \"https://www.anthropic.com/claude-sonnet-5-5\",\n      \"https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card\",\n      \"https://www.anthropic.com/claude-opus-5-5-system-card\",\n      \"https://www.anthropic.com/claude-sonnet-5-5-system-card\"\n    ],\n    \"note\": \"Opus5.5 xhigh (max64.8), other shown 5.1/5.5 models max; Mythos and Fable are same core with different safeguards/access. 5/10/15 repeats vary. Sonnet5 10.3 from latest release body, no finer setting disclosed there.\"\n  }\n]",
     "notes": "原版发布结果最高50，不称全部旧版满分。2.0公开点最高82，2.1最高88，是所示历史节点不是最新全榜最优。同版harness/thinking不同，点不连线避免暗示同配置增长。每格1pp辅助展示。版本内排列按原JSON发布节点，同代多家族非单一曲线。3个native bar data plus editable display。\n\n演讲补充：Terminal-Bench · 原版、2.0、2.1 各自展示；不跨版本连接分数。\n\n演讲补充：原版：Claude Code / Terminus-1；2.0：Terminus-2；2.1：含不同 harness。各代 thinking 配置不同。"
   },
   {
-    "page": 18,
+    "page": 19,
     "title": "换一套更有区分度的题，再看模型往前走",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.1",
     "source": "{\n  \"version\": \"4.0 · 2026\",\n  \"harness\": \"Claude Code --bare；5.5 含 fallback\",\n  \"rows\": [\n    [\n      \"Sonnet 5\",\n      10.3\n    ],\n    [\n      \"Fable 5\",\n      42\n    ],\n    [\n      \"Opus 5\",\n      52.3\n    ],\n    [\n      \"Fable 5.1\",\n      55.8\n    ],\n    [\n      \"Mythos 5.1\",\n      60.9\n    ],\n    [\n      \"Opus 5.5\",\n      66.4\n    ],\n    [\n      \"Sonnet 5.5\",\n      70.6\n    ]\n  ],\n  \"sources\": [\n    \"https://www.anthropic.com/claude-sonnet-5-5\",\n    \"https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card\",\n    \"https://www.anthropic.com/claude-opus-5-5-system-card\",\n    \"https://www.anthropic.com/claude-sonnet-5-5-system-card\"\n  ],\n  \"note\": \"Opus5.5 xhigh (max64.8), other shown 5.1/5.5 models max; Mythos and Fable are same core with different safeguards/access. 5/10/15 repeats vary. Sonnet5 10.3 from latest release body, no finer setting disclosed there.\"\n}\nhttps://www.tbench.ai/news/terminal-bench-4-0",
     "notes": "4.0官方连续benchmark变更：校准资源/修19题/删8题，其中2饱和2拒答2公开答案2质量或平台。饱和定义最新各家族各档均5/5完成，而非Claude单独推动全部版本。4.0不是全新题库：future5.0新题；因此不用逼出新题唯一因果。0–100同版bar；Opus5.5 xhigh+fallback其余近期max；Sonnet5 10.3细设置未披露，不把+60.3pp视同配置训练提升。旧版与新版不相减。原始rows与全部harness细节在historyJSON。\n\n演讲补充：Terminal-Bench 4.0 · 同一版本内比较，分数为各模型的公开发布结果。\n\n演讲补充：同时校准资源、修题；新题持续征集。\n\n演讲补充：4.0：Claude Code --bare；Opus 5.5 xhigh，其余近期节点 max；5.5 含 fallback。各代配置有差异。"
   },
   {
-    "page": 19,
+    "page": 20,
     "title": "同一对手，换一套 harness，差距就不一样",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.1",
     "source": "{\n  \"retrieved_at\": \"2026-10-04\",\n  \"scope\": \"Slide 05 only\",\n  \"source_priority\": \"Artificial Analysis independent evaluations; official releases for missing entries only\",\n  \"terminal_bench\": {\n    \"version\": \"4.0\",\n    \"url\": \"https://artificialanalysis.ai/evaluations/terminalbench-4-0?models=claude-opus-5-5%2Cgpt-6-astra%2Cgemini-3-1-pro-preview\",\n    \"harness\": \"mini-swe-agent\",\n    \"tasks\": 66,\n    \"repeats_per_task\": 3,\n    \"metric\": \"pass@1 averaged over three repeats per task\",\n    \"scores_percent\": [\n      59.6,\n      59.1,\n      4\n    ]\n  },\n  \"intelligence_index\": {\n    \"version\": \"4.3.2\",\n    \"metric\": \"Artificial Analysis Intelligence Index, not a percentage or coding success rate\",\n    \"scores\": [\n      58,\n      53,\n      30\n    ]\n  },\n  \"models\": [\n    {\n      \"display_name\": \"Opus 5.5\",\n      \"evaluated_variant\": \"Claude Opus 5.5 (max with fallback)\",\n      \"url\": \"https://artificialanalysis.ai/models/claude-opus-5-5\"\n    },\n    {\n      \"display_name\": \"GPT-6 Astra\",\n      \"evaluated_variant\": \"GPT-6 Astra (max)\",\n      \"url\": \"https://artificialanalysis.ai/models/gpt-6-astra\"\n    },\n    {\n      \"display_name\": \"Gemini 3.1 Pro\",\n      \"evaluated_variant\": \"Gemini 3.1 Pro Preview\",\n      \"url\": \"https://artificialanalysis.ai/models/gemini-3-1-pro-preview\"\n    }\n  ],\n  \"swe_bench_pro\": {\n    \"status\": \"No complete same-version three-model comparison verified in inspected public sources\",\n    \"action\": \"Replace right panel with explicitly labelled AA Intelligence Index rather than retain unverified repository scores\"\n  },\n  \"official_cross_check\": {\n    \"url\": \"https://www.anthropic.com/news/claude-opus-5-5\",\n    \"terminal_bench_percent\": {\n      \"opus_5_5_xhigh\": 66.4,\n      \"gpt_6_astra_high_as_reported_by_openai\": 57.9\n    },\n    \"used_in_chart\": false,\n    \"reason\": \"Different harness/effort/setup from AA; official table does not list SWE-bench Pro. OpenAI direct announcement access returned HTTP 403 / challenge.\"\n  },\n  \"interpretation\": \"0.5 percentage point observed Terminal-Bench difference; not evidence of a statistically significant model lead. Results are configuration-specific. Other deck pages remain repository-sourced and are not reverified by this update.\"\n}",
     "notes": "两套口径必须分开看，绝对不可混用或相减。左：Artificial Analysis 独立复测，mini-swe-agent，66题每题3次平均pass@1，Opus 5.5为max with fallback（fallback可能调用其他模型），Astra为max，59.6/59.1观测差0.5pp不构成统计显著领先。右：官方发布表，Opus 5.5 xhigh使用Claude Code harness 66.4，Astra 57.9为OpenAI自报并由Anthropic发布页转述，OpenAI公告直接访问返回403，未取得原文复核。effort、harness、重复次数、是否含fallback都不同，8.5pp不是模型能力差。两套都不是受控训练实验。不据此预测排名变化。\n\n演讲补充：两列都是 Terminal-Bench 4.0 上同一组模型的公开结果。\n\n演讲补充：两列是不同的评测口径：harness、effort、重复次数与是否含 fallback 都不同，不可混用也不可相减。"
   },
   {
-    "page": 20,
+    "page": 21,
+    "title": "推理模型 vs 编码 Agent 模型：是两种东西",
+    "section": "02 / 不仅仅是程序员的梦中情模 / 2.2",
+    "source": "https://openai.com/index/learning-to-reason-with-llms/\nhttps://openai.com/index/introducing-o3-and-o4-mini/\nhttps://github.com/deepseek-ai/DeepSeek-R1\nhttps://arxiv.org/abs/2501.12948\nhttps://www.anthropic.com/news/claude-3-7-sonnet\nhttps://www.anthropic.com/news/claude-4",
+    "notes": "概念对照，讲的是优化重心，不是互斥分类，也不是能力排名。o1（2024.09）、DeepSeek R1（2025.01）以强化学习训练长思维链，公开成绩以AIME、Codeforces等竞赛题为主；R1用规则奖励（答案对错、格式），与第24页“机器检验行不行”同源。推理模型也能调用工具：o3/o4-mini（2025.04）在ChatGPT中可用工具，同月发布Codex CLI。Claude 3.7 Sonnet（2025.02）本身也是混合推理模型（extended thinking），同时发布Claude Code研究预览；Claude 4（2025.05）支持思考与工具调用交替。因此右栏不是“不思考”，而是把思考放进与仓库、终端的多轮交互里。本页不放竞赛分或SWE-bench分数，不做同口径成绩比较。\n\n演讲补充：同一时期都在“变聪明”，但力气花在了不同的地方。\n\n演讲补充：推理模型也能调用工具，Claude 也会深度思考；两栏比的是优化重心，不是谁会谁不会。"
+  },
+  {
+    "page": 22,
     "title": "Chatbot → Copilot → Agent：从问一句，到交一件事",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.2",
     "source": "https://www.anthropic.com/news/claude-3-7-sonnet\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
     "notes": "吸收Gemini第13页三栏对照，重写为同一任务中的分工变化；三种交互方式可共存，不是每个产品的严格代际分类。代码、命令与交付均为教学示意，非本次真实运行。Copilot不绝对限定为只能单行补全，Agent也不承诺必定通过测试。人负责业务取舍、审查合并与生产授权。\n\n演讲补充：同一个任务：修复支付重试的错误。差别在于，谁来把下一步接起来。"
   },
   {
-    "page": 21,
+    "page": 23,
     "title": "真正变便宜的，是“再试一次”",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.2",
     "source": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents\nhttps://www.anthropic.com/engineering/code-execution-with-mcp",
     "notes": "结构示意，不是实测数据，也不给工时与费用对比：没有取得同一缺陷下人工耗时与Agent费用的可核验同口径数据，因此本页不出现任何金额或分钟数，避免编造ROI。左栏描述常见的串行排查过程，右栏任务名与进度为示意。并行度实际受授权范围、环境隔离、速率限制与人能审查多少约束；并非所有任务适合并行，也不保证重试一定成功。每条线的产出仍需人审查后合并。\n\n演讲补充：接着上一页那个修复任务，把它放进一个下午来看。\n\n演讲补充：一次只能推进一件；中途被打断，上下文要重新载入。\n\n演讲补充：每条线各自跑、各自失败、各自重试；交回来的每一条，仍然要我们审查后合并。"
   },
   {
-    "page": 22,
+    "page": 24,
     "title": "为什么 coding model 会越来越强？",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.2",
     "source": "https://github.com/deepseek-ai/DeepSeek-R1\nhttps://www.tbench.ai/news/terminal-bench-4-0",
     "notes": "机制图不是Claude私有训练配方；公开RL研究支持反思自检。评测数据不是训练数据，不把TB基准放进训练语料。运行中纠错不等于在线更新权重。\n\n演讲补充：机制示意：编码任务为什么特别适合用反馈来改进自己。"
   },
   {
-    "page": 23,
+    "page": 25,
     "title": "我们常在软件之间，充当“人肉胶水”",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.2",
     "source": "https://www.anthropic.com/engineering/code-execution-with-mcp",
     "notes": "吸收Gemini第14页人肉胶水比喻并与原第14页对账样本合并，不新增概念页。是常见办公流程示意，不是公司现状调查。订单980到账950差30、1200/1200差0、600/0差600为教学数据，非真实账务。不直接改账或发送通知；异常需结合业务规则复核。\n\n演讲补充：这段衔接不产生任何新信息，但必须有人做。\n\n演讲补充：教学样本 · 输出附原始行号与核对依据"
   },
   {
-    "page": 24,
+    "page": 26,
     "title": "从 MCP 到 Skills：接入系统，再保存做事方法",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.3",
     "source": "https://www.anthropic.com/news/model-context-protocol\nhttps://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
     "notes": "MCP2024.11.25；Skills2025.10.16，2025.12.18开放标准。Skills包含指令脚本资源，渐进加载。\n\n演讲补充：MCP 不是被 Skills 替代；两者解决的是不同问题。\n\n演讲补充：一次任务上下都要走。\n\n演讲补充：MCP 2024.11 发布；Skills 2025.10 发布，2025.12 成为开放标准。"
   },
   {
-    "page": 25,
+    "page": 27,
     "title": "它引领的潮流，已经超出 Claude 自己",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.3",
     "source": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
     "notes": "2025.12.09官方生态快照，自报非独立市场份额；10000+ active public servers，97M+月SDK下载，不是使用人数。\n\n演讲补充：MCP 从一家公司的开放协议，走向跨厂商 Agent 基础设施。"
   },
   {
-    "page": 26,
+    "page": 28,
     "title": "更好的 Agent，不是把所有信息都塞进提示词",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.3",
     "source": "https://www.anthropic.com/engineering/code-execution-with-mcp",
     "notes": "150000到2000 Tokens，98.6667%舍入98.7%，仅工具相关上下文，不是全任务费用。\n\n演讲补充：数字来自 Anthropic 官方工程博客的实测示例。\n\n演讲补充：同一工程示例。"
   },
   {
-    "page": 27,
+    "page": 29,
     "title": "Gemini 的反例：综合聪明，不自动等于工程能干",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.4",
     "source": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview\nhttps://artificialanalysis.ai/evaluations/terminalbench-4-0\nhttps://artificialanalysis.ai/models/claude-opus-5-5\nhttps://artificialanalysis.ai/models/gpt-6-astra",
     "notes": "图表量纲保留在轴标签上，比较口径详见演讲备注：左轴AA综合智能指数v4.3.2（0–60指数分，不是百分比）、右轴Terminal-Bench 4.0平均pass@1（0–80%），各自独立归一化，连线只表示同一模型在两套评测中的相对位置，不是分数变化，不可相减。Opus 5.5为max with fallback、Astra为max、Gemini为3.1 Pro Preview；59.6与59.1在右轴几乎重合，为可读性把标注上下分开，位置已用引线指回真实点。只说明本次型号在本次配置下终端评测弱，不据此断言Google整体衰落，不编造组织、训练或产品关停原因。\n\n演讲补充：同一家第三方机构的两套评测：一套测综合智能，一套测终端执行。\n\n演讲补充：左右是两套不同量纲的评测，各自独立归一化；连线表示同一模型在两套评测中的相对位置，不是分数变化，也不可相减。Opus 与 Astra 在右轴几乎重合（差 0.5 个百分点），为便于阅读分开标注。"
   },
   {
-    "page": 28,
+    "page": 30,
     "title": "OpenAI 的正例：追赶不止于 GPT-5.3",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.4",
     "source": "用户提供的多来源汇总（2026-10-06）\nterminal_bench_user_supplied.tsv",
     "notes": "本页按用户在2026-10-06提供的25条汇总记录绘制，20个实际模型，未经本次逐条独立核验。原始字段、来源标签及括号中的替代分数均保存在 terminal_bench_user_supplied.tsv；只使用 Score 列，不平均来源中的不同数字。日期按原表记录日期处理，不称官方发布日期；若与此前审计的发布日期冲突，不沿用此前“同日反超”结论。2.0、2.1、4.0独立坐标系，不跨版本比较。横轴为本版本所列日期排序后的事件等距排列，不是等时距。连线是同一版本的公开配置迭代轨迹，不是统一harness复测，不代表模型纯能力或严格排名。2.0的GPT-5.1通用版、Sonnet 5，以及4.0的Sonnet 5基线、Fable 5.1单独标点；4.0的Sol效率型号另画虚线，不接到Astra前沿线上。Baseline为旧模型在新评测上的参考成绩，不是新型号，也不据发布日期推断当时已完成该版本评测。本次数据没有时间、费用，不保留此前成本下降结论。\n\n原表记录：\nDate: 2025-11-13 | Vendor: OpenAI | Model: GPT-5.1 | Series: General | Benchmark: Terminal-Bench 2.0 | Score: 45.5 | Harness: Terminus 2 / Requesty | Source: Vals AI / Requesty\nDate: 2025-11-19 | Vendor: OpenAI | Model: GPT-5.1-Codex-Max | Series: Coding Flagship | Benchmark: Terminal-Bench 2.0 | Score: 58.1 | Harness: Official Codex Harness | Source: OpenAI Official / tbench.ai (53.5%)\nDate: 2025-11-20 | Vendor: Anthropic | Model: Claude Opus 4.5 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 69.5 | Harness: Harbor / Claude Code | Source: BenchLM / tbench.ai\nDate: 2025-12-11 | Vendor: OpenAI | Model: GPT-5.2 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 62.9 | Harness: Codex CLI (62.9%) / Warp (61.1%) | Source: tbench.ai (62.9% ± 3.0%) / Warp\nDate: 2026-01-15 | Vendor: OpenAI | Model: GPT-5.3 Codex | Series: Coding Flagship | Benchmark: Terminal-Bench 2.0 | Score: 77.3 | Harness: Official Codex Harness | Source: BenchLM / LLM Stats\nDate: 2026-01-20 | Vendor: Anthropic | Model: Claude Opus 4.6 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 73.2 | Harness: Claude Code | Source: BenchLM\nDate: 2026-02-15 | Vendor: OpenAI | Model: GPT-5.4 | Series: General Flagship | Benchmark: Terminal-Bench 2.0 | Score: 75.1 | Harness: Official Harness | Source: BenchLM\nDate: 2026-04-10 | Vendor: OpenAI | Model: GPT-5.5 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 82 | Harness: Official Harness | Source: BenchLM / LLM Stats\nDate: 2026-04-20 | Vendor: Anthropic | Model: Claude Opus 4.8 | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 74.6 | Harness: Terminus 2 | Source: Artificial Analysis\nDate: 2026-05-25 | Vendor: Anthropic | Model: Claude Sonnet 5 | Series: Mid-tier / Agent | Benchmark: Terminal-Bench 2.0 | Score: 80.4 | Harness: Anthropic Harness | Source: LLM Stats\nDate: 2026-05-25 | Vendor: Anthropic | Model: Claude Sonnet 5 (Baseline) | Series: Mid-tier / Baseline | Benchmark: Terminal-Bench 4.0 | Score: 10.3 | Harness: Claude Code | Source: Anthropic Sonnet 5.5 System Card\nDate: 2026-06-15 | Vendor: Anthropic | Model: Claude Fable 5 | Series: Reasoning / Research | Benchmark: Terminal-Bench 2.1 | Score: 86 | Harness: Terminus 2 | Source: Vals AI / Vellum\nDate: 2026-06-26 | Vendor: OpenAI | Model: GPT-5.6 Sol | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 88 | Harness: Terminus 2 (Max Effort) | Source: Artificial Analysis / OpenAI (88.8%)\nDate: 2026-06-26 | Vendor: OpenAI | Model: GPT-5.6 Sol (Baseline) | Series: Prior Flagship / Baseline | Benchmark: Terminal-Bench 4.0 | Score: 37.3 | Harness: Codex (Max Effort) | Source: tbench.ai / Anthropic Report\nDate: 2026-07-24 | Vendor: Anthropic | Model: Claude Opus 5 | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 89.1 | Harness: Terminus 2 (Max Effort) | Source: Artificial Analysis / Morph\nDate: 2026-07-24 | Vendor: Anthropic | Model: Claude Opus 5 (Baseline) | Series: Prior Flagship / Baseline | Benchmark: Terminal-Bench 4.0 | Score: 52.3 | Harness: Claude Code (51.8% Public, 52.3% Internal) | Source: Anthropic Opus 5.5 System Card / tbench.ai\nDate: 2026-08-31 | Vendor: Anthropic | Model: Claude Fable 5.1 | Series: Reasoning / Research | Benchmark: Terminal-Bench 4.0 | Score: 57.9 | Harness: Claude Code | Source: tbench.ai / Harbor Hub\nDate: 2026-09-01 | Vendor: Anthropic | Model: Claude Mythos 5.1 | Series: Specialized Flagship | Benchmark: Terminal-Bench 4.0 | Score: 60.9 | Harness: Anthropic Harness | Source: LLM Stats\nDate: 2026-09-03 | Vendor: OpenAI | Model: GPT-6 Astra | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 88.4 | Harness: Terminus 2 / AA (89.5% Med, 87.3% Vals) | Source: Artificial Analysis / Vals AI\nDate: 2026-09-03 | Vendor: OpenAI | Model: GPT-6 Astra | Series: Frontier Flagship | Benchmark: Terminal-Bench 4.0 | Score: 58.2 | Harness: Codex (Max Effort) | Source: tbench.ai (58.2% ± 2.8%) / Vals (59.6%)\nDate: 2026-09-22 | Vendor: Anthropic | Model: Claude Opus 5.5 | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 87.6 | Harness: Terminus 2 (High Effort) | Source: Vals AI (87.64%) / BenchLM (86.4%)\nDate: 2026-09-22 | Vendor: Anthropic | Model: Claude Opus 5.5 | Series: Frontier Flagship | Benchmark: Terminal-Bench 4.0 | Score: 66.4 | Harness: Claude Code (Xhigh Effort) | Source: Anthropic Official / Vals (65.2%)\nDate: 2026-09-23 | Vendor: OpenAI | Model: GPT-6 Sol | Series: Workhorse (Efficient) | Benchmark: Terminal-Bench 4.0 | Score: 44.4 | Harness: Mini-SWE-agent | Source: Vals AI / Emergent\nDate: 2026-09-29 | Vendor: Anthropic | Model: Claude Sonnet 5.5 | Series: Coding Specialist | Benchmark: Terminal-Bench 4.0 | Score: 70.6 | Harness: Claude Code (Peak Effort) | Source: Anthropic Official / LLM Stats\nDate: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Efficient) | Benchmark: Terminal-Bench 4.0 | Score: 55.1 | Harness: Mini-SWE-agent | Source: Vals AI / Emergent\n\n演讲补充：三代终端评测，20 个模型的公开成绩轨迹。\n\n演讲补充：多来源、不同配置汇总；横轴按资料中的迭代事件等距排列，版本间不比较分数。"
   },
   {
-    "page": 29,
+    "page": 31,
+    "title": "被反超之后，OpenAI 也在自我进化",
+    "section": "02 / 不仅仅是程序员的梦中情模 / 2.4",
+    "source": "用户提供的多来源汇总（2026-10-08）\narr_valuation_user_supplied.tsv\nhttps://www.anthropic.com/news/anthropic-raises-series-e-at-usd61-5b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\nhttps://www.anthropic.com/news/series-h",
+    "notes": "本页按用户在2026-10-08提供的28条多来源汇总绘制（ARR 15条、估值13条），未经本次逐条独立核验；原始字段与来源标签保存在 arr_valuation_user_supplied.tsv。与本deck已核实口径一致的点：Anthropic 2025年初约$1B、2025.08>$5B、2026.02 $14B、2026.05>$47B（第10页官方run-rate），E/F/G/H轮$61.5B/$183B/$380B/$965B投后（官方公告）。其余点（OpenAI全部ARR与估值、Anthropic 2025年末$9B、2026.03 $19B、2026.04 $30B、2026.07 $65B、2026.09 $72B、条款书$350B、二级$1,350B）只来自用户汇总所列二手来源，未取得原文复核。ARR是年化run-rate，不是全年确认收入；两家口径（是否含云分成、是否为月度×12）未必一致，交叉点只表示所列数字的先后，不是审计后的收入排名。估值混合了一级融资投后、员工回购要约、二级市场成交与IPO目标，空心点为非一级融资口径，不可与实心点直接等同。OpenAI $1,050B为保密递交IPO的目标区间中值，Anthropic $1,350B为二级市场讨论值，均非上市定价；Anthropic超过$2T的IPO目标见第3页，不画进本图。横轴按日期等比例。OpenAI 2026.06→2026.09 $26.5B→$69B约2.6倍，汇总将其归因于GPT-5.6 Sol与GPT-6 Astra发布，本页只呈现时间共现，不做因果判断。\n\n原表记录：\nDate: 2025-02-15 | Company: Anthropic | Metric: ARR | Amount_USD_B: 1 | Event_or_Round: Claude Code Launch | Notes: Claude Code initial release; ARR ~$1B | Source: SaaStr / Wikipedia\nDate: 2025-02-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 8 | Event_or_Round: Early 2025 Baseline | Notes: Driven by ChatGPT Plus/Team & API | Source: FutureSearch / Value Add VC\nDate: 2025-03-03 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 61.5 | Event_or_Round: Series E | Notes: Raised $3.5B led by Lightspeed Venture Partners | Source: Anthropic Official / Wikipedia\nDate: 2025-03-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 300 | Event_or_Round: SoftBank Round | Notes: Raised $40B financing led by SoftBank Group | Source: Value Add VC / Pinggy\nDate: 2025-07-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 12 | Event_or_Round: July 2025 Milestone | Notes: First to cross $12B in SaaS history | Source: SaaStr / Bloomberg\nDate: 2025-09-01 | Company: Anthropic | Metric: ARR | Amount_USD_B: 5 | Event_or_Round: Series F Period | Notes: Rapid enterprise uptake via Claude Code & API | Source: PitchBook / FutureSearch\nDate: 2025-09-02 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 183 | Event_or_Round: Series F | Notes: Raised $13B led by ICONIQ, Fidelity, Lightspeed | Source: Anthropic Official / Wikipedia\nDate: 2025-10-31 | Company: OpenAI | Metric: ARR | Amount_USD_B: 16 | Event_or_Round: Fall 2025 Growth | Notes: Monthly recurring revenue crosses $1B+ mark | Source: AI Business Weekly\nDate: 2025-10-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 500 | Event_or_Round: Secondary Tender | Notes: Secondary employee liquidity tender offer | Source: SmartAsset / Sacra\nDate: 2025-12-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 9 | Event_or_Round: Year-End 2025 Exit | Notes: Exit 2025 at $9B annualized run-rate | Source: SaaStr / The AI Corner\nDate: 2025-12-31 | Company: OpenAI | Metric: ARR | Amount_USD_B: 21.4 | Event_or_Round: Year-End 2025 Exit | Notes: Exits 2025 at $21.4B run rate ($20B+ declared) | Source: Reuters / The Information / TradingKey\nDate: 2025-12-31 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 350 | Event_or_Round: Term Sheet | Notes: Signed term sheet for $10B round led by Coatue & GIC | Source: Wikipedia / Forbes\nDate: 2026-02-12 | Company: Anthropic | Metric: ARR | Amount_USD_B: 14 | Event_or_Round: Series G Disclosure | Notes: Claude Code ARR alone reaches $2.5B+ | Source: SaaStr / Pinggy\nDate: 2026-02-12 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 380 | Event_or_Round: Series G | Notes: Raised $30B at $380B post-money valuation | Source: Wikipedia / Tastytrade\nDate: 2026-02-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 25 | Event_or_Round: Early 2026 Milestone | Notes: Hits $25B ARR, enters 5-month growth plateau | Source: Value Add VC / FutureSearch\nDate: 2026-03-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 19 | Event_or_Round: Q1 2026 Close | Notes: Sustained doubling pace every few weeks | Source: SaaStr\nDate: 2026-03-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 852 | Event_or_Round: Mega Financing Round | Notes: Closed $122B committed capital round at $852B post-money | Source: OpenAI Official / Reuters\nDate: 2026-04-15 | Company: Anthropic | Metric: ARR | Amount_USD_B: 30 | Event_or_Round: April 2026 Milestone | Notes: Crosses $30B ARR, officially surpassing OpenAI ($25B) | Source: The AI Corner / Reddit Investing\nDate: 2026-05-28 | Company: Anthropic | Metric: ARR | Amount_USD_B: 47 | Event_or_Round: Series H Disclosure | Notes: Disclosed alongside Series H fundraise | Source: SaaStr / PitchBook\nDate: 2026-05-28 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 965 | Event_or_Round: Series H | Notes: Raised $65B at $965B post-money; officially tops OpenAI | Source: Anthropic / Sequoia / Digital Applied\nDate: 2026-06-30 | Company: OpenAI | Metric: ARR | Amount_USD_B: 26.5 | Event_or_Round: Mid-2026 Plateau | Notes: Slower growth amidst enterprise competition from Claude | Source: Value Add VC / Emergent\nDate: 2026-07-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 65 | Event_or_Round: Q2 Earnings Milestone | Notes: Leaked financials confirm $65B+ ARR and first operating profit | Source: PitchBook / Morningstar / Yahoo Finance\nDate: 2026-08-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 40 | Event_or_Round: Breakout Milestone | Notes: Breakout growth post GPT-5.6 Sol launch, crosses $40B | Source: Bloomberg / Value Add VC\nDate: 2026-09-21 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 894.3 | Event_or_Round: Forge Secondary | Notes: Private market share price $721.85, $894.33B market cap | Source: Forge Global / SmartAsset\nDate: 2026-09-29 | Company: Anthropic | Metric: ARR | Amount_USD_B: 72 | Event_or_Round: Q3 Close / Opus 5.5 | Notes: Enterprise agent workloads surging following Claude 5.5 launch | Source: Axios / Dealroom\nDate: 2026-09-29 | Company: OpenAI | Metric: ARR | Amount_USD_B: 69 | Event_or_Round: Late Q3 Spike | Notes: ARR nears $70B driven by GPT-6 Astra enterprise commitments | Source: Axios / Reuters / Luminix AI\nDate: 2026-09-30 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 1350 | Event_or_Round: Pre-IPO / Secondary | Notes: Secondary market trading & discussions range up to $1.5T-$2.0T | Source: PitchBook / GraniteShares / Tastytrade\nDate: 2026-10-01 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 1050 | Event_or_Round: Confidential IPO Target | Notes: SEC confidential IPO filing targeting >$1.0T-$1.2T | Source: Sacra / Value Add VC\n\n演讲补充：左边是年化收入，右边是估值，横轴按真实日期比例。先看左图六月以后那段绿线。\n\n演讲补充：多来源汇总，非审计数字；ARR 为年化 run-rate，估值混合融资、回购、二级与 IPO 目标，空心点不可与实心点等同。"
+  },
+  {
+    "page": 32,
     "title": "编码模型与 AGI",
     "section": "PART 03",
     "source": "章节过渡页",
     "notes": "引出第三章，不新增数据。\n\n演讲补充：先把 AGI 说清楚，再回答：为什么是编码能力，以及还差多少。"
   },
   {
-    "page": 30,
+    "page": 33,
     "title": "什么是 AGI？本场只用三条标准",
     "section": "03 / 编码模型与 AGI / 3.1",
     "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
     "notes": "明确为本演讲的工作定义，不是业界统一判定标准，也没有公认的通过线。三条不是人类级通用智能的充分条件，满足三条也不等于AGI达成。本页只给定义与“怎么判断有没有”的问题，不给当前进度评分，避免与3.3门槛表重复。三条标准取自用户大纲原文表述，不借用任何厂商的能力分级。\n\n演讲补充：每条标准配一个可以当场判断的问题。\n\n演讲补充：这是本场采用的工作定义，不是业界统一判定标准；三条都满足也不等于已经是 AGI。"
   },
   {
-    "page": 31,
+    "page": 34,
     "title": "从给建议，到接下一段工作：自治的滑杆在右移",
     "section": "03 / 编码模型与 AGI / 3.1",
     "source": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents\nhttps://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "吸收Gemini第24页自治滑杆，与原AGI工作定义合并。四档是演讲交互框架，不是R&D AL等级、不代表线性技术成熟度或通用AGI认证。持续运行是需要调度/监控/权限/恢复的部署方式，不是所有Claude产品自动具备。工具使用、持续学习、自我迭代保留为工作框架，非必要充分判定。对账为教学示意。\n\n演讲补充：还是那件对账的事，四种不同的交付方式。"
   },
   {
-    "page": 32,
+    "page": 35,
     "title": "代码既是数字义肢，也是造工具的“石斧”",
     "section": "03 / 编码模型与 AGI / 3.2",
     "source": "https://www.anthropic.com/engineering/code-execution-with-mcp\nhttps://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
     "notes": "吸收Gemini第25页数字义肢/石斧比喻，保留目标→代码→结果的机制。比喻不援引人类进化史，不把编码等同可制造任何工具。文件/API调用必须获得授权；脚本需测试，结果需核对。对账工具为教学机制示意，不声称执行成功。文件匹配只能处理编码规则，不自动决定业务含义。\n\n演讲补充：这不是两条路线，而是同一个任务里交替出现的两种动作。"
   },
   {
-    "page": 33,
+    "page": 36,
     "title": "从软件世界，到物理世界：代码搭起最后一段桥",
     "section": "03 / 编码模型与 AGI / 3.2",
     "source": "机制示意；非Claude机器人实测或产品能力承诺",
     "notes": "物理动作必须有被授权硬件、传感器反馈、保护系统；不能把API访问等同物理通用智能。\n\n演讲补充：机制示意：代码在这条链路上承担哪一段。\n\n演讲补充：不是 Claude 机器人实测，也不是产品能力承诺。软件里失败只花一次重试；物理世界里失败可能不可逆。"
   },
   {
-    "page": 34,
+    "page": 37,
     "title": "AGI 还有多远？先看它是否开始参与自己的研发",
     "section": "03 / 编码模型与 AGI / 3.3",
     "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "厂商原型指标自报：26% AL4 AI主导、人监督；>90% AL3+协作包含AL4，不相加；不是发现占比或26%模型改进，未报告AL5完全自主。\n\n演讲补充：Anthropic R&D Automation Index · 2026 年 8 月快照。\n\n演讲补充：AL1–AL5 是自动化层级：AL3 为 AI 协作，AL4 为 AI 主导、人类监督，AL5 为完全自主。厂商自报指标，AL3+ 与 AL4 为包含关系，不可相加。"
   },
   {
-    "page": 35,
+    "page": 38,
     "title": "下一轮智能，开始吃到上一轮智能的红利",
     "section": "03 / 编码模型与 AGI / 3.3",
     "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "RSI为可能的代际反馈机制；不等于完全自主递归改进已实现或智能爆炸已证实。创意、验证、算力与安全为约束。\n\n演讲补充：这一步是机制推断，不是已经观测到的完整闭环。"
   },
   {
-    "page": 36,
+    "page": 39,
     "title": "距离 AGI，剩下的是哪些可观察的门槛？",
     "section": "03 / 编码模型与 AGI / 3.3",
     "source": "分析框架\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents\nhttps://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "文件记忆和skills改善运行系统不等于权重持续学习。AI主导研发仍人监督；物理世界长期可靠性未由代码基准证明。\n\n演讲补充：不猜日期，只列可以观察、可以验证的判断点。"
   },
   {
-    "page": 37,
+    "page": 40,
     "title": "两万亿押注的，不是一个更好的代码补全工具",
     "section": "结尾 / 回到两万亿",
     "source": "https://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs\nhttps://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\nhttps://www.anthropic.com/news/series-h\nhttps://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "结尾为商业与技术方向性判断，非目标估值合理性的确定结论或投资建议。\n\n演讲补充：两万亿同时为这三层付钱，尽管它们的确定性完全不同。"
   },
   {
-    "page": 38,
+    "page": 41,
     "title": "当执行越来越便宜，什么更值钱？",
     "section": "结尾 / 回到我们的工作",
     "source": "组织方向性分析；对账教学样本；授权、隐私与生产操作责任保留在人类组织",
     "notes": "吸收Gemini第31页执行廉价/判断稀缺的反问，与原角色结尾合并，不使用淘汰旧技能、伪工作、舰队统帅等贬抑或训导措辞。执行成本下降为方向性条件，不声称全部执行已无限廉价。具体30/600为第14页教学样本呼应；不将差额认定为漏款，不自动发起催收或改账。保留员工/研发/公司三方各一项具体落点，不构成员工必须如何工作的命令。\n\n演讲补充：同一件对账工作，重新分一次工。"
   },
   {
-    "page": 39,
+    "page": 42,
     "title": "谢谢大家",
     "section": "结尾",
     "source": "结束页",

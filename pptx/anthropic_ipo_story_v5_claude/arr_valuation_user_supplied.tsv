@@ -1,0 +1,29 @@
+Date	Company	Metric	Amount_USD_B	Event_or_Round	Notes	Source
+2025-02-15	Anthropic	ARR	1	Claude Code Launch	Claude Code initial release; ARR ~$1B	SaaStr / Wikipedia
+2025-02-15	OpenAI	ARR	8	Early 2025 Baseline	Driven by ChatGPT Plus/Team & API	FutureSearch / Value Add VC
+2025-03-03	Anthropic	Valuation	61.5	Series E	Raised $3.5B led by Lightspeed Venture Partners	Anthropic Official / Wikipedia
+2025-03-31	OpenAI	Valuation	300	SoftBank Round	Raised $40B financing led by SoftBank Group	Value Add VC / Pinggy
+2025-07-15	OpenAI	ARR	12	July 2025 Milestone	First to cross $12B in SaaS history	SaaStr / Bloomberg
+2025-09-01	Anthropic	ARR	5	Series F Period	Rapid enterprise uptake via Claude Code & API	PitchBook / FutureSearch
+2025-09-02	Anthropic	Valuation	183	Series F	Raised $13B led by ICONIQ, Fidelity, Lightspeed	Anthropic Official / Wikipedia
+2025-10-31	OpenAI	ARR	16	Fall 2025 Growth	Monthly recurring revenue crosses $1B+ mark	AI Business Weekly
+2025-10-31	OpenAI	Valuation	500	Secondary Tender	Secondary employee liquidity tender offer	SmartAsset / Sacra
+2025-12-31	Anthropic	ARR	9	Year-End 2025 Exit	Exit 2025 at $9B annualized run-rate	SaaStr / The AI Corner
+2025-12-31	OpenAI	ARR	21.4	Year-End 2025 Exit	Exits 2025 at $21.4B run rate ($20B+ declared)	Reuters / The Information / TradingKey
+2025-12-31	Anthropic	Valuation	350	Term Sheet	Signed term sheet for $10B round led by Coatue & GIC	Wikipedia / Forbes
+2026-02-12	Anthropic	ARR	14	Series G Disclosure	Claude Code ARR alone reaches $2.5B+	SaaStr / Pinggy
+2026-02-12	Anthropic	Valuation	380	Series G	Raised $30B at $380B post-money valuation	Wikipedia / Tastytrade
+2026-02-15	OpenAI	ARR	25	Early 2026 Milestone	Hits $25B ARR, enters 5-month growth plateau	Value Add VC / FutureSearch
+2026-03-31	Anthropic	ARR	19	Q1 2026 Close	Sustained doubling pace every few weeks	SaaStr
+2026-03-31	OpenAI	Valuation	852	Mega Financing Round	Closed $122B committed capital round at $852B post-money	OpenAI Official / Reuters
+2026-04-15	Anthropic	ARR	30	April 2026 Milestone	Crosses $30B ARR, officially surpassing OpenAI ($25B)	The AI Corner / Reddit Investing
+2026-05-28	Anthropic	ARR	47	Series H Disclosure	Disclosed alongside Series H fundraise	SaaStr / PitchBook
+2026-05-28	Anthropic	Valuation	965	Series H	Raised $65B at $965B post-money; officially tops OpenAI	Anthropic / Sequoia / Digital Applied
+2026-06-30	OpenAI	ARR	26.5	Mid-2026 Plateau	Slower growth amidst enterprise competition from Claude	Value Add VC / Emergent
+2026-07-31	Anthropic	ARR	65	Q2 Earnings Milestone	Leaked financials confirm $65B+ ARR and first operating profit	PitchBook / Morningstar / Yahoo Finance
+2026-08-15	OpenAI	ARR	40	Breakout Milestone	Breakout growth post GPT-5.6 Sol launch, crosses $40B	Bloomberg / Value Add VC
+2026-09-21	OpenAI	Valuation	894.3	Forge Secondary	Private market share price $721.85, $894.33B market cap	Forge Global / SmartAsset
+2026-09-29	Anthropic	ARR	72	Q3 Close / Opus 5.5	Enterprise agent workloads surging following Claude 5.5 launch	Axios / Dealroom
+2026-09-29	OpenAI	ARR	69	Late Q3 Spike	ARR nears $70B driven by GPT-6 Astra enterprise commitments	Axios / Reuters / Luminix AI
+2026-09-30	Anthropic	Valuation	1350	Pre-IPO / Secondary	Secondary market trading & discussions range up to $1.5T-$2.0T	PitchBook / GraniteShares / Tastytrade
+2026-10-01	OpenAI	Valuation	1050	Confidential IPO Target	SEC confidential IPO filing targeting >$1.0T-$1.2T	Sacra / Value Add VC

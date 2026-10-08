@@ -5,6 +5,65 @@ V5 新增与重做页面的来源、口径与边界集中记在开头的「V5 �
 
 检索日期：2026-10-04；IPO纪录修正：2026-10-05。主题：Anthropic 2万亿IPO的背后：编码模型与AGI。
 
+## 新第 31 页：ARR 与估值双轨（2026-10-08）
+
+插在第 30 页（OpenAI 逐代追赶）之后，全稿 42 页；原第 31 页起顺延一页。数据为用户提供的 28 条多来源汇总（ARR 15 条、估值 13 条），原样保存在 `arr_valuation_user_supplied.tsv`，本次未逐条独立核验。
+
+| 状态 | 数据点 | 说明 |
+| :--- | :--- | :--- |
+| ✅ | Anthropic ARR 约 $1B（2025 初）/ >$5B（2025.08）/ $14B（2026.02）/ >$47B（2026.05） | 与第 10 页官方 run-rate 口径一致；汇总把 >$5B 记为 2025-09-01 |
+| ✅ | Anthropic E / F / G / H 轮投后 $61.5B / $183B / $380B / $965B | 官方融资公告 |
+| 🔶 | OpenAI $300B（软银轮）、$852B（$122B 轮） | 汇总标注 OpenAI 官方 / Reuters，本次未取得原文 |
+| ❌ | OpenAI 全部 ARR 点（$8B → $69B） | 只来自汇总所列二手来源；“2.6 倍”和“GPT-5.6 Sol / GPT-6 Astra 驱动”是汇总的归因，页面只写时间共现 |
+| ❌ | Anthropic $9B（2025 末）、$19B（2026.03）、$30B（2026.04）、$65B（2026.07）、$72B（2026.09） | 二手来源；$65B 的“泄露财报 + 首次经营利润”不上页面 |
+| ❌ | Anthropic 条款书 $350B、二级 $1,350B；OpenAI 回购要约 $500B、Forge $894B、IPO 目标 $1,050B | 非一级融资口径，图中画空心点；$1,050B 取汇总给出的 $1.0–1.2T 目标区间 |
+
+口径边界：ARR 是年化 run-rate，不是全年确认收入。两家口径（是否含云分成、是否按月度 ×12）未必一致，所以 2026.04 的交叉只说明所列数字的先后。估值线混合了投后、回购、二级成交和 IPO 目标。Anthropic 超过 $2T 的 IPO 目标（第 03 页，Reuters）没有画进图中，$1,350B 二级值与它并不冲突。横轴按真实日期等比例。
+
+## 新第 04 页：Anthropic 是谁（2026-10-07）
+
+插在第 03 页之后，全稿 41 页。下方所有历史记录中的页码均为插页前页码。核实结果：✅ 一手来源已核实；🔶 只有权威二手来源；❌ 未核实，不上页面。
+
+### 谁创立的
+
+- ✅ 2021 年 1 月成立（注册日 2021-01-26，Wikipedia「Anthropic」）。
+- ✅ Anthropic 是 PBC：见官方 https://www.anthropic.com/company 。
+- 🔶 「七位联合创始人」来自 Reuters 2026-09-28/29 所见的 S-1 草案。报道点名了 Dario Amodei（CEO）、Daniela Amodei（总裁兼董事长）、Tom Brown（首席算力官）、Chris Olah。Wikipedia 信息框列了八人，多出 Jared Kaplan、Jack Clark、Ben Mann、Sam McCandlish，同时正文写的是「七位前 OpenAI 员工」，两处没有对齐。页面写「七位」，只点名 Reuters 提到的人。Jared Kaplan 没有上页面，因为这次没有核实他是否算在七人之内。
+- ✅ Dario 2016 年加入 OpenAI，任研究副总裁，2021 年离开（Wikipedia「Dario Amodei」）。Tom Brown 是 GPT-3 论文第一作者（arXiv 2005.14165）。
+
+### 治理
+
+- ✅ LTBT 页面 https://www.anthropic.com/news/the-long-term-benefit-trust （2023-09-19）：五名无财务利益的受托人，持有 Class T 股，按时间和融资里程碑逐步选任董事，「4 年内选出董事会多数」。脚注写明后续人员变动：Fontaine 2025-05 加入、Cuéllar 2026-01 加入、Bernanke 2026-07 加入。但官方公司页目前只列了 Shah、Fontaine、Bernanke 三人，和脚注对不上，所以页面不写受托人人数。
+- 🔶 IPO 后的结构来自 Reuters（https://www.investing.com/news/stock-market-news/exclusiveanthropic-leaders-to-control-ai-lab-via-founder-llc-to-promote-public-good-over-market-forces-4921448 ，2026-09-28/29，Reuters 看到的 S-1 草案，Anthropic 不予置评），并由 Columbia CLS Blue Sky Blog 2026-10-02 文章交叉印证。具体是：Founder LLC 由创始人多数决定，指挥唯一一股 Class F，在关键事项上拥有 50.1% 表决权；7 席董事中 LTBT 选 4 席，Class A 与 Class F 选 3 席；公众持有 Class A，一股一票，是五类股份之一，不能单独选董事；创始人剩两人及以下时，特殊权利开始失效。这些都是**草案报道**，不是最终公开的注册文件，notes 里已写明。
+
+### 算力
+
+- ✅ Amazon：2024-11-22 新增 $4B，累计 $8B；AWS 是「主要云与训练伙伴」。来源 https://www.anthropic.com/news/anthropic-amazon-trainium
+- ✅ Google：2025-10-23 宣布最多 100 万颗 TPU，2026 年上线「远超 1GW」，「价值数百亿美元」。来源 https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
+- 🔶 Google 的股权投资金额：2023.10 投 $500M，并承诺后续 $1.5B；2025.03 再投 $1B。这些只见于 Wikipedia，没在官方页核实，页面只写「股东」，不写金额。
+- ✅ Microsoft 最多 $5B、NVIDIA 最多 $10B，Anthropic 承诺采购 $30B Azure 算力（2025-11-18）。来源 https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
+- ❌ 不采用 `data/anthropic_funding_and_valuation_history.csv` 里「Google 持股约 10%」这类说法。「股东 = 供应商」只描述结构，不判断是否构成循环交易。
+
+### 彩蛋与互动提问（只进 notes）
+
+- ✅ Dario 2014-11 至 2015-10 在百度（Wikipedia）。Lex Fridman 访谈 #452 原话：「I first joined the AI world when I was working at Baidu with Andrew Ng in late 2014」，并说正是在语音识别工作中第一次感到「数据、算力、训练越多越好」。Deep Speech 2（arXiv 1512.02595）署名为 Amodei 等人，按字母排序，所以他排第一不代表他是一作。
+- ✅ 2025-09-04 官方公告 https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions ：限制对象是「由不支持地区的公司直接或间接持股超过 50% 的实体」，不论这些实体在哪里运营。公告给出的理由是法律、监管与安全风险，包括可能被强制向情报机构提供数据、被用于蒸馏等。
+- 🔶 百度经历与对华立场的关系：
+  - 2026-06 Bloomberg《The Circuit》Emily Chang 长访谈（YouTube x2VHFgyawPE）。二手转述（websearchapi.ai）称，他在百度一年，印象深的是一句「在中国不在乎隐私」的随口话。
+  - 中文论坛 linux.do 帖子标题称他表示「我对中国的看法与百度无关」。帖子返回 403，没能读到正文。
+  - 原视频这次没有核实。
+- 结论：没有证据支持「因为百度经历才封号」的因果关系。官方的理由是国家安全与合规，中国本来也不是支持地区。这个问题只作为可选的提问引子写进 notes，页面上只写「在百度做语音识别」这一条事实。
+
+## 新第 21 页：推理模型 vs 编码 Agent 模型（2026-10-06）
+
+- 插在原第 19 / 20 页之间，原第 20 页起顺延。插入第 04 页后，它现在是第 21 页。下方所有历史记录中的页码均为插页前页码。
+- 本页是概念对照，不含任何分数；对比的是优化重心，不是互斥分类，也不是能力排名。
+- DeepSeek R1：GitHub README 已核验，写明 R1-Zero「通过大规模强化学习训练、不以 SFT 为前置步骤」，报告 AIME 2024、Codeforces 和 SWE Verified。规则奖励（答案对错、格式）的描述出自论文 arXiv 2501.12948。
+- OpenAI o1（2024.09）、o3 / o4-mini（2025.04）以及同期 Codex CLI：两个发布页直接访问都返回 403，这次没能复核原文。页面只用了「推理模型」「竞赛题为主要战场」这类定性描述；发布月份写在 notes 里，未在页面展示。
+- Claude 3.7 Sonnet（2025.02，混合推理 + Claude Code 研究预览）、Claude 4（2025.05，思考与工具调用交替）沿用全稿已引用的官方发布页。
+- 边界：推理模型同样能调用工具，Claude 同样有 extended thinking。右栏「算力花在工具调用之间」说的是思考放进了与仓库、终端的多轮交互里，不是说不思考。
+- 本页刻意不放 Codeforces 与 SWE-bench 的交叉比较，避免把不同 harness、不同子集的分数并列。
+
 ## 新第 04 页：中国互联网 Top 10 对比（2026-10-06）
 
 - 按用户要求插在原第 03 / 04 页之间，采用仓库 `docs/03_anthropic_valuation_and_arr_deep_dive.md` §1.2 的参考数据；原始数值保存在 `china_internet_market_cap_reference.json`。

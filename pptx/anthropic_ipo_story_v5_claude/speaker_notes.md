@@ -38,7 +38,34 @@
 
 演讲补充：S-1 草案已提交，发行股数与价格尚未确定。
 
-## 04 2 万亿美元，比中国互联网 Top 10 总和还高
+## 04 Anthropic 是谁：七位创始人，一套不寻常的治理
+
+**章节**：01 / 史上最大 IPO
+
+**来源**：
+
+- https://en.wikipedia.org/wiki/Anthropic
+- https://en.wikipedia.org/wiki/Dario_Amodei
+- https://www.anthropic.com/company
+- https://www.anthropic.com/news/the-long-term-benefit-trust
+- https://www.investing.com/news/stock-market-news/exclusiveanthropic-leaders-to-control-ai-lab-via-founder-llc-to-promote-public-good-over-market-forces-4921448
+- https://clsbluesky.law.columbia.edu/2026/10/02/public-purpose-and-founder-control-at-anthropic/
+- https://www.anthropic.com/news/anthropic-amazon-trainium
+- https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
+- https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
+- https://lexfridman.com/dario-amodei-transcript/
+- https://arxiv.org/abs/1512.02595
+- https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions
+
+**口径与边界**：成立：2021年1月注册（Wikipedia）。创始人数：Reuters依据S-1草案称七位联合创始人，点名Dario（CEO）、Daniela（总裁兼董事长）、Tom Brown（首席算力官）、Chris Olah；Wikipedia信息框列八人（另含Jared Kaplan、Jack Clark、Ben Mann、Sam McCandlish），与“七位”未对齐，页面只写“七位”并只点名Reuters所列人员。Tom Brown为GPT-3论文第一作者。Dario曾任OpenAI研究副总裁（2016加入，2021离开）。治理：Anthropic为特拉华州公益公司（PBC，官方公司页与LTBT页）。LTBT经Class T股份选任董事，2023承诺4年内选出董事会多数。IPO后结构来自Reuters 2026-09-28/29所见S-1草案：创始人经Founder LLC指挥唯一一股Class F，关键事项50.1%表决权；7席董事中LTBT选4席，Class A与Class F选3席；公众为Class A一股一票，五类股份之一，不能单独选董事；创始人剩两人及以下时特殊权利开始失效。这些是草案报道，不是最终注册文件。算力：Amazon累计$8B（2024-11-22官方），AWS为主要训练与云伙伴；Google 2025-10-23官方最多100万颗TPU、价值数百亿美元，Google股权金额只见于Wikipedia（2023.10 $500M+后续$1.5B，2025.03再$1B），未经官方页核实，页面不写金额；Microsoft最多$5B、NVIDIA最多$10B，Anthropic承诺采购$30B Azure（2025-11-18官方）。“股东=供应商”是结构描述，不判断是否构成循环交易。
+
+演讲补充：先认识这家公司，再看它的价格。
+
+演讲补充：彩蛋背景：Dario 于2014年11月至2015年10月在百度（Wikipedia），在Andrew Ng的硅谷AI实验室做语音识别；他在Lex Fridman访谈中说，正是在那里第一次感到“数据、算力、训练越多，模型越好”，即scaling的雏形。Deep Speech 2论文（arXiv 1512.02595）作者按字母排序，他列第一不代表一作贡献。
+
+演讲补充：互动提问（可选）：“Claude 针对中国用户的封号，和 Dario 在百度的经历有关吗？”——可查到的事实：1）中国从来不是 Claude 的支持地区，个人账号受地区条款约束；2）2025-09-04 官方把限制扩展到“中国等不支持地区的公司直接或间接持股超过50%的实体”，理由写的是法律、监管与安全风险，数据可能被强制提供给情报机构、被用于蒸馏；3）Dario 在 2025–2026 年多篇文章与采访中把中国的 AI 发展定位为安全威胁。关于百度：一篇对2026-06 Bloomberg《The Circuit》长访谈的二手转述称，他在百度一年，印象深的不是技术而是一句“在中国不在乎隐私”的随口话；而一个中文论坛帖标题称他在该访谈中表示“对中国的看法与百度无关”。两者都是二手材料，原视频未核实。结论：没有证据支持“因为百度经历才封号”的因果关系，官方给出的是国家安全与合规理由。这里只作为提问引子，不下结论。
+
+## 05 2 万亿美元，比中国互联网 Top 10 总和还高
 
 **章节**：01 / 史上最大 IPO / 1.1
 
@@ -52,7 +79,7 @@
 
 演讲补充：矩形面积严格按参考市值成比例分配；整框20000亿，十家公司13220亿，右侧余量6780亿。腾讯独立一列，其余分三行；白色分隔线只作公司边界。详细单家公司金额保留于JSON，不再在页面上逐项列数。
 
-## 05 从阿里巴巴到 Anthropic：超级 IPO 的尺度
+## 06 从阿里巴巴到 Anthropic：超级 IPO 的尺度
 
 **章节**：01 / 史上最大 IPO / 1.1
 
@@ -71,7 +98,7 @@
 
 演讲补充：已上市公司按 IPO 发行价计算估值；Anthropic 为报道中的上市估值目标。
 
-## 06 同样的两万亿，被定价的不是同一种东西
+## 07 同样的两万亿，被定价的不是同一种东西
 
 **章节**：01 / 史上最大 IPO / 1.1
 
@@ -87,7 +114,7 @@
 
 演讲补充：性质对照，不是同口径财务比较；右侧尚未定价，两者不在同一状态。
 
-## 07 走到两万亿，别人用了几十年
+## 08 走到两万亿，别人用了几十年
 
 **章节**：01 / 史上最大 IPO / 1.2
 
@@ -107,7 +134,7 @@
 
 演讲补充：已上市公司为二级市场市值首次突破 $2T；Anthropic 为 IPO 发行估值目标，尚未定价。
 
-## 08 从成立到两万亿目标：仅仅五年
+## 09 从成立到两万亿目标：仅仅五年
 
 **章节**：01 / 史上最大 IPO / 1.2
 
@@ -125,7 +152,7 @@
 
 演讲补充：实线与实心点为已完成定价的融资轮次；虚线与空心点为报道中的 IPO 目标，尚未定价。2021–2024 各轮公开口径不一致，未入图。
 
-## 09 Claude Code 发布之后，公司年化收入陡增
+## 10 Claude Code 发布之后，公司年化收入陡增
 
 **章节**：01 / 史上最大 IPO / 1.3
 
@@ -143,7 +170,7 @@
 
 演讲补充：竖线为 Claude Code 两个发布时点，在首段内按月份比例定位；其余横轴为事件点，不按时间等比例。时间上的先后不等于全部收入增长都来自这一个产品。
 
-## 10 Claude Code 本身，也跑出了十亿美元级生意
+## 11 Claude Code 本身，也跑出了十亿美元级生意
 
 **章节**：01 / 史上最大 IPO / 1.3
 
@@ -156,7 +183,7 @@
 
 演讲补充：上一页是公司整体口径；这一页只看 Claude Code 这一个产品。
 
-## 11 18–20 倍收入，怎样才能支撑两万亿？
+## 12 18–20 倍收入，怎样才能支撑两万亿？
 
 **章节**：01 / 史上最大 IPO / 1.3
 
@@ -169,7 +196,7 @@
 
 演讲补充：估值 ÷ 年化收入 = 收入倍数；这里不是 PE，ARR 也不是利润。
 
-## 12 高增长之外，市场还在押注什么？
+## 13 高增长之外，市场还在押注什么？
 
 **章节**：01 / 史上最大 IPO
 
@@ -181,7 +208,7 @@
 
 演讲补充：2025 年确认收入约 $4.6B；仍有超过 $8B 的经营亏损。
 
-## 13 不仅仅是程序员的梦中情模
+## 14 不仅仅是程序员的梦中情模
 
 **章节**：PART 02
 
@@ -193,7 +220,7 @@
 
 演讲补充：价格之后讲能力：编码成绩、Agent 闭环、生态标准，以及同行的反例与正例。
 
-## 14 没有铺满生成赛道，却在冲击两万亿
+## 15 没有铺满生成赛道，却在冲击两万亿
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 转折
 
@@ -214,7 +241,7 @@
 
 演讲补充：比较独立生成模型产品线；Claude 有语音对话，也能用代码画图。Sora 已于 2026.09 停服。
 
-## 15 从三分之一，到几乎做满：真实仓库修复的跨越
+## 16 从三分之一，到几乎做满：真实仓库修复的跨越
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.1
 
@@ -500,7 +527,7 @@
 
 演讲补充：每格 = 1 个百分点；不是逐题运行记录。历史配置不同，数字是公开能力足迹。
 
-## 16 不是一次偶然领先，是一代代把工程问题往前推
+## 17 不是一次偶然领先，是一代代把工程问题往前推
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.1
 
@@ -790,7 +817,7 @@
 
 演讲补充：更早的起点：Claude 2 · HumanEval 71.2%（2023）；3.7 定制 scaffold：70.3%（489 题）。
 
-## 17 终端里的进展：在 2.1 上，已做到接近九成
+## 18 终端里的进展：在 2.1 上，已做到接近九成
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.1
 
@@ -934,7 +961,7 @@
 
 演讲补充：原版：Claude Code / Terminus-1；2.0：Terminus-2；2.1：含不同 harness。各代 thinking 配置不同。
 
-## 18 换一套更有区分度的题，再看模型往前走
+## 19 换一套更有区分度的题，再看模型往前走
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.1
 
@@ -991,7 +1018,7 @@
 
 演讲补充：4.0：Claude Code --bare；Opus 5.5 xhigh，其余近期节点 max；5.5 含 fallback。各代配置有差异。
 
-## 19 同一对手，换一套 harness，差距就不一样
+## 20 同一对手，换一套 harness，差距就不一样
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.1
 
@@ -1062,7 +1089,26 @@
 
 演讲补充：两列是不同的评测口径：harness、effort、重复次数与是否含 fallback 都不同，不可混用也不可相减。
 
-## 20 Chatbot → Copilot → Agent：从问一句，到交一件事
+## 21 推理模型 vs 编码 Agent 模型：是两种东西
+
+**章节**：02 / 不仅仅是程序员的梦中情模 / 2.2
+
+**来源**：
+
+- https://openai.com/index/learning-to-reason-with-llms/
+- https://openai.com/index/introducing-o3-and-o4-mini/
+- https://github.com/deepseek-ai/DeepSeek-R1
+- https://arxiv.org/abs/2501.12948
+- https://www.anthropic.com/news/claude-3-7-sonnet
+- https://www.anthropic.com/news/claude-4
+
+**口径与边界**：概念对照，讲的是优化重心，不是互斥分类，也不是能力排名。o1（2024.09）、DeepSeek R1（2025.01）以强化学习训练长思维链，公开成绩以AIME、Codeforces等竞赛题为主；R1用规则奖励（答案对错、格式），与第24页“机器检验行不行”同源。推理模型也能调用工具：o3/o4-mini（2025.04）在ChatGPT中可用工具，同月发布Codex CLI。Claude 3.7 Sonnet（2025.02）本身也是混合推理模型（extended thinking），同时发布Claude Code研究预览；Claude 4（2025.05）支持思考与工具调用交替。因此右栏不是“不思考”，而是把思考放进与仓库、终端的多轮交互里。本页不放竞赛分或SWE-bench分数，不做同口径成绩比较。
+
+演讲补充：同一时期都在“变聪明”，但力气花在了不同的地方。
+
+演讲补充：推理模型也能调用工具，Claude 也会深度思考；两栏比的是优化重心，不是谁会谁不会。
+
+## 22 Chatbot → Copilot → Agent：从问一句，到交一件事
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.2
 
@@ -1075,7 +1121,7 @@
 
 演讲补充：同一个任务：修复支付重试的错误。差别在于，谁来把下一步接起来。
 
-## 21 真正变便宜的，是“再试一次”
+## 23 真正变便宜的，是“再试一次”
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.2
 
@@ -1092,7 +1138,7 @@
 
 演讲补充：每条线各自跑、各自失败、各自重试；交回来的每一条，仍然要我们审查后合并。
 
-## 22 为什么 coding model 会越来越强？
+## 24 为什么 coding model 会越来越强？
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.2
 
@@ -1105,7 +1151,7 @@
 
 演讲补充：机制示意：编码任务为什么特别适合用反馈来改进自己。
 
-## 23 我们常在软件之间，充当“人肉胶水”
+## 25 我们常在软件之间，充当“人肉胶水”
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.2
 
@@ -1119,7 +1165,7 @@
 
 演讲补充：教学样本 · 输出附原始行号与核对依据
 
-## 24 从 MCP 到 Skills：接入系统，再保存做事方法
+## 26 从 MCP 到 Skills：接入系统，再保存做事方法
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.3
 
@@ -1136,7 +1182,7 @@
 
 演讲补充：MCP 2024.11 发布；Skills 2025.10 发布，2025.12 成为开放标准。
 
-## 25 它引领的潮流，已经超出 Claude 自己
+## 27 它引领的潮流，已经超出 Claude 自己
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.3
 
@@ -1148,7 +1194,7 @@
 
 演讲补充：MCP 从一家公司的开放协议，走向跨厂商 Agent 基础设施。
 
-## 26 更好的 Agent，不是把所有信息都塞进提示词
+## 28 更好的 Agent，不是把所有信息都塞进提示词
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.3
 
@@ -1162,7 +1208,7 @@
 
 演讲补充：同一工程示例。
 
-## 27 Gemini 的反例：综合聪明，不自动等于工程能干
+## 29 Gemini 的反例：综合聪明，不自动等于工程能干
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.4
 
@@ -1179,7 +1225,7 @@
 
 演讲补充：左右是两套不同量纲的评测，各自独立归一化；连线表示同一模型在两套评测中的相对位置，不是分数变化，也不可相减。Opus 与 Astra 在右轴几乎重合（差 0.5 个百分点），为便于阅读分开标注。
 
-## 28 OpenAI 的正例：追赶不止于 GPT-5.3
+## 30 OpenAI 的正例：追赶不止于 GPT-5.3
 
 **章节**：02 / 不仅仅是程序员的梦中情模 / 2.4
 
@@ -1221,7 +1267,56 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：多来源、不同配置汇总；横轴按资料中的迭代事件等距排列，版本间不比较分数。
 
-## 29 编码模型与 AGI
+## 31 被反超之后，OpenAI 也在自我进化
+
+**章节**：02 / 不仅仅是程序员的梦中情模 / 2.4
+
+**来源**：
+
+- 用户提供的多来源汇总（2026-10-08）
+- arr_valuation_user_supplied.tsv
+- https://www.anthropic.com/news/anthropic-raises-series-e-at-usd61-5b-post-money-valuation
+- https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation
+- https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation
+- https://www.anthropic.com/news/series-h
+
+**口径与边界**：本页按用户在2026-10-08提供的28条多来源汇总绘制（ARR 15条、估值13条），未经本次逐条独立核验；原始字段与来源标签保存在 arr_valuation_user_supplied.tsv。与本deck已核实口径一致的点：Anthropic 2025年初约$1B、2025.08>$5B、2026.02 $14B、2026.05>$47B（第10页官方run-rate），E/F/G/H轮$61.5B/$183B/$380B/$965B投后（官方公告）。其余点（OpenAI全部ARR与估值、Anthropic 2025年末$9B、2026.03 $19B、2026.04 $30B、2026.07 $65B、2026.09 $72B、条款书$350B、二级$1,350B）只来自用户汇总所列二手来源，未取得原文复核。ARR是年化run-rate，不是全年确认收入；两家口径（是否含云分成、是否为月度×12）未必一致，交叉点只表示所列数字的先后，不是审计后的收入排名。估值混合了一级融资投后、员工回购要约、二级市场成交与IPO目标，空心点为非一级融资口径，不可与实心点直接等同。OpenAI $1,050B为保密递交IPO的目标区间中值，Anthropic $1,350B为二级市场讨论值，均非上市定价；Anthropic超过$2T的IPO目标见第3页，不画进本图。横轴按日期等比例。OpenAI 2026.06→2026.09 $26.5B→$69B约2.6倍，汇总将其归因于GPT-5.6 Sol与GPT-6 Astra发布，本页只呈现时间共现，不做因果判断。
+
+原表记录：
+Date: 2025-02-15 | Company: Anthropic | Metric: ARR | Amount_USD_B: 1 | Event_or_Round: Claude Code Launch | Notes: Claude Code initial release; ARR ~$1B | Source: SaaStr / Wikipedia
+Date: 2025-02-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 8 | Event_or_Round: Early 2025 Baseline | Notes: Driven by ChatGPT Plus/Team & API | Source: FutureSearch / Value Add VC
+Date: 2025-03-03 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 61.5 | Event_or_Round: Series E | Notes: Raised $3.5B led by Lightspeed Venture Partners | Source: Anthropic Official / Wikipedia
+Date: 2025-03-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 300 | Event_or_Round: SoftBank Round | Notes: Raised $40B financing led by SoftBank Group | Source: Value Add VC / Pinggy
+Date: 2025-07-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 12 | Event_or_Round: July 2025 Milestone | Notes: First to cross $12B in SaaS history | Source: SaaStr / Bloomberg
+Date: 2025-09-01 | Company: Anthropic | Metric: ARR | Amount_USD_B: 5 | Event_or_Round: Series F Period | Notes: Rapid enterprise uptake via Claude Code & API | Source: PitchBook / FutureSearch
+Date: 2025-09-02 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 183 | Event_or_Round: Series F | Notes: Raised $13B led by ICONIQ, Fidelity, Lightspeed | Source: Anthropic Official / Wikipedia
+Date: 2025-10-31 | Company: OpenAI | Metric: ARR | Amount_USD_B: 16 | Event_or_Round: Fall 2025 Growth | Notes: Monthly recurring revenue crosses $1B+ mark | Source: AI Business Weekly
+Date: 2025-10-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 500 | Event_or_Round: Secondary Tender | Notes: Secondary employee liquidity tender offer | Source: SmartAsset / Sacra
+Date: 2025-12-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 9 | Event_or_Round: Year-End 2025 Exit | Notes: Exit 2025 at $9B annualized run-rate | Source: SaaStr / The AI Corner
+Date: 2025-12-31 | Company: OpenAI | Metric: ARR | Amount_USD_B: 21.4 | Event_or_Round: Year-End 2025 Exit | Notes: Exits 2025 at $21.4B run rate ($20B+ declared) | Source: Reuters / The Information / TradingKey
+Date: 2025-12-31 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 350 | Event_or_Round: Term Sheet | Notes: Signed term sheet for $10B round led by Coatue & GIC | Source: Wikipedia / Forbes
+Date: 2026-02-12 | Company: Anthropic | Metric: ARR | Amount_USD_B: 14 | Event_or_Round: Series G Disclosure | Notes: Claude Code ARR alone reaches $2.5B+ | Source: SaaStr / Pinggy
+Date: 2026-02-12 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 380 | Event_or_Round: Series G | Notes: Raised $30B at $380B post-money valuation | Source: Wikipedia / Tastytrade
+Date: 2026-02-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 25 | Event_or_Round: Early 2026 Milestone | Notes: Hits $25B ARR, enters 5-month growth plateau | Source: Value Add VC / FutureSearch
+Date: 2026-03-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 19 | Event_or_Round: Q1 2026 Close | Notes: Sustained doubling pace every few weeks | Source: SaaStr
+Date: 2026-03-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 852 | Event_or_Round: Mega Financing Round | Notes: Closed $122B committed capital round at $852B post-money | Source: OpenAI Official / Reuters
+Date: 2026-04-15 | Company: Anthropic | Metric: ARR | Amount_USD_B: 30 | Event_or_Round: April 2026 Milestone | Notes: Crosses $30B ARR, officially surpassing OpenAI ($25B) | Source: The AI Corner / Reddit Investing
+Date: 2026-05-28 | Company: Anthropic | Metric: ARR | Amount_USD_B: 47 | Event_or_Round: Series H Disclosure | Notes: Disclosed alongside Series H fundraise | Source: SaaStr / PitchBook
+Date: 2026-05-28 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 965 | Event_or_Round: Series H | Notes: Raised $65B at $965B post-money; officially tops OpenAI | Source: Anthropic / Sequoia / Digital Applied
+Date: 2026-06-30 | Company: OpenAI | Metric: ARR | Amount_USD_B: 26.5 | Event_or_Round: Mid-2026 Plateau | Notes: Slower growth amidst enterprise competition from Claude | Source: Value Add VC / Emergent
+Date: 2026-07-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 65 | Event_or_Round: Q2 Earnings Milestone | Notes: Leaked financials confirm $65B+ ARR and first operating profit | Source: PitchBook / Morningstar / Yahoo Finance
+Date: 2026-08-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 40 | Event_or_Round: Breakout Milestone | Notes: Breakout growth post GPT-5.6 Sol launch, crosses $40B | Source: Bloomberg / Value Add VC
+Date: 2026-09-21 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 894.3 | Event_or_Round: Forge Secondary | Notes: Private market share price $721.85, $894.33B market cap | Source: Forge Global / SmartAsset
+Date: 2026-09-29 | Company: Anthropic | Metric: ARR | Amount_USD_B: 72 | Event_or_Round: Q3 Close / Opus 5.5 | Notes: Enterprise agent workloads surging following Claude 5.5 launch | Source: Axios / Dealroom
+Date: 2026-09-29 | Company: OpenAI | Metric: ARR | Amount_USD_B: 69 | Event_or_Round: Late Q3 Spike | Notes: ARR nears $70B driven by GPT-6 Astra enterprise commitments | Source: Axios / Reuters / Luminix AI
+Date: 2026-09-30 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 1350 | Event_or_Round: Pre-IPO / Secondary | Notes: Secondary market trading & discussions range up to $1.5T-$2.0T | Source: PitchBook / GraniteShares / Tastytrade
+Date: 2026-10-01 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 1050 | Event_or_Round: Confidential IPO Target | Notes: SEC confidential IPO filing targeting >$1.0T-$1.2T | Source: Sacra / Value Add VC
+
+演讲补充：左边是年化收入，右边是估值，横轴按真实日期比例。先看左图六月以后那段绿线。
+
+演讲补充：多来源汇总，非审计数字；ARR 为年化 run-rate，估值混合融资、回购、二级与 IPO 目标，空心点不可与实心点等同。
+
+## 32 编码模型与 AGI
 
 **章节**：PART 03
 
@@ -1233,7 +1328,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：先把 AGI 说清楚，再回答：为什么是编码能力，以及还差多少。
 
-## 30 什么是 AGI？本场只用三条标准
+## 33 什么是 AGI？本场只用三条标准
 
 **章节**：03 / 编码模型与 AGI / 3.1
 
@@ -1248,7 +1343,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：这是本场采用的工作定义，不是业界统一判定标准；三条都满足也不等于已经是 AGI。
 
-## 31 从给建议，到接下一段工作：自治的滑杆在右移
+## 34 从给建议，到接下一段工作：自治的滑杆在右移
 
 **章节**：03 / 编码模型与 AGI / 3.1
 
@@ -1261,7 +1356,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：还是那件对账的事，四种不同的交付方式。
 
-## 32 代码既是数字义肢，也是造工具的“石斧”
+## 35 代码既是数字义肢，也是造工具的“石斧”
 
 **章节**：03 / 编码模型与 AGI / 3.2
 
@@ -1274,7 +1369,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：这不是两条路线，而是同一个任务里交替出现的两种动作。
 
-## 33 从软件世界，到物理世界：代码搭起最后一段桥
+## 36 从软件世界，到物理世界：代码搭起最后一段桥
 
 **章节**：03 / 编码模型与 AGI / 3.2
 
@@ -1288,7 +1383,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：不是 Claude 机器人实测，也不是产品能力承诺。软件里失败只花一次重试；物理世界里失败可能不可逆。
 
-## 34 AGI 还有多远？先看它是否开始参与自己的研发
+## 37 AGI 还有多远？先看它是否开始参与自己的研发
 
 **章节**：03 / 编码模型与 AGI / 3.3
 
@@ -1302,7 +1397,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：AL1–AL5 是自动化层级：AL3 为 AI 协作，AL4 为 AI 主导、人类监督，AL5 为完全自主。厂商自报指标，AL3+ 与 AL4 为包含关系，不可相加。
 
-## 35 下一轮智能，开始吃到上一轮智能的红利
+## 38 下一轮智能，开始吃到上一轮智能的红利
 
 **章节**：03 / 编码模型与 AGI / 3.3
 
@@ -1314,7 +1409,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：这一步是机制推断，不是已经观测到的完整闭环。
 
-## 36 距离 AGI，剩下的是哪些可观察的门槛？
+## 39 距离 AGI，剩下的是哪些可观察的门槛？
 
 **章节**：03 / 编码模型与 AGI / 3.3
 
@@ -1328,7 +1423,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：不猜日期，只列可以观察、可以验证的判断点。
 
-## 37 两万亿押注的，不是一个更好的代码补全工具
+## 40 两万亿押注的，不是一个更好的代码补全工具
 
 **章节**：结尾 / 回到两万亿
 
@@ -1344,7 +1439,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：两万亿同时为这三层付钱，尽管它们的确定性完全不同。
 
-## 38 当执行越来越便宜，什么更值钱？
+## 41 当执行越来越便宜，什么更值钱？
 
 **章节**：结尾 / 回到我们的工作
 
@@ -1356,7 +1451,7 @@ Date: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Effi
 
 演讲补充：同一件对账工作，重新分一次工。
 
-## 39 谢谢大家
+## 42 谢谢大家
 
 **章节**：结尾
 

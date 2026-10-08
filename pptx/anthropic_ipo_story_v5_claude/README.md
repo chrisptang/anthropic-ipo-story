@@ -1,9 +1,35 @@
 # Anthropic 2万亿IPO的背后：编码模型与AGI · V5（Claude）
 
-39 页。以 V4（30 页）为蓝本，吸收参考稿里 V4 确实缺的叙事装置，并把五处表现力不足的页面重做为图。
-财务与原有评测数字沿用 V4 已审计口径；现第 28 页按用户于 2026-10-06 提供的 25 条多来源汇总重绘，不标为统一复测。数据来源与边界见 `source_audit.md`。
+42 页。以 V4（30 页）为蓝本，吸收参考稿里 V4 确实缺的叙事装置，并把五处表现力不足的页面重做为图。
+财务与原有评测数字沿用 V4 已审计口径；现第 30 页按用户于 2026-10-06 提供的 25 条多来源汇总重绘，不标为统一复测。数据来源与边界见 `source_audit.md`。
 
-## 本轮新增：第 04 页中国互联网 Top 10 对比
+## 本轮新增：第 31 页 ARR 与估值双轨
+
+插在第 30 页（OpenAI 逐代追赶）之后，原第 31 页起顺延，共 42 页：
+
+- 左右两张图：年化收入（ARR）与估值，Anthropic 珊瑚方点、OpenAI 绿圆点，横轴按真实日期等比例。
+- 按用户提供的 28 条多来源汇总绘制，原表保存为 `arr_valuation_user_supplied.tsv`；构建时逐条读取并断言全部上图。标签由脚本自动避让，放不下会直接报错。
+- 估值图里，回购要约、条款书、二级成交、IPO 目标画成空心点，与一级融资的实心点区分。
+- 页面只有两条注释：「Anthropic 反超：2026.04」和「OpenAI 再加速：3 个月 $26.5B → $69B」。核实状态（多数 OpenAI 数据未核实）见 `source_audit.md`；口径边界只写在 notes 里。
+
+## 上一轮新增：第 04 页 Anthropic 是谁
+
+插在第 03 页（冲击两万亿 IPO）之后，原第 04 页起顺延，共 41 页：
+
+- 三栏卡片，每栏回答一个问题：谁创立的（2021.01，七位前 OpenAI 成员）、为什么不一样（PBC + LTBT，S-1 草案中的 Class F 与 4/7 董事席位）、靠谁供给算力（Amazon / Google / Microsoft + NVIDIA，股东同时是供应商）。
+- 第一栏底部放一行彩蛋：Dario 2014–15 年在百度做语音识别。scaling 的起源故事，以及“封号是否和百度经历有关”这个互动提问，都只写在 notes 里。页面不做因果暗示。
+- 每条数据的来源与核实状态见 `source_audit.md`。
+
+## 更早新增：第 21 页推理模型 vs 编码 Agent 模型
+
+插在原第 19 页（harness 口径对照）与原第 20 页（Chatbot → Copilot → Agent）之间。插入第 04 页后，它现在是第 21 页：
+
+- 补上全稿缺的一段：o1 / o3 / o4-mini / DeepSeek R1 这一代推理模型，和 Claude Code 代表的编码 Agent 模型，优化的不是同一件事。
+- 两栏五行对照：优化目标、算力花在哪、输入、典型战场、交付物。结论为「会解竞赛题，不等于会修真实仓库」，和第 28 页 Gemini 反例的论点前后呼应。
+- 本页只做概念对照，不放竞赛分或 SWE-bench 分数。「推理模型也能调用工具，Claude 也会深度思考」这条边界写在 notes 里。
+- 下文更早记录里的页码，是插页前的版本页码。
+
+## 更早新增：中国互联网 Top 10 对比（现第 05 页）
 
 在原第 03 / 04 页之间插入一页，其余内容不变、页码顺延：
 
@@ -82,17 +108,17 @@
 ## 阅读顺序
 
 - 01 封面 · 02 PART 01
-- 03–12：史上最大 IPO。两万亿引子 → 中国互联网 Top 10 对比 → 历史坐标 → 两种资产 → 别人用了多少年 → 估值历程 → 收入 → Claude Code 自身 → 收入倍数 → 市场还在押注什么。
-- 13 PART 02
-- 14–28：不仅仅是程序员的梦中情模。产品路线转折 → 四页编码与终端成绩 → 两种口径 → Agent 分工 → 再试一次 → 反馈闭环 → 人肉胶水 → MCP/Skills 三层 → 生态 → 按需加载 → Gemini 反例 → OpenAI 逐代追赶与效率。
-- 29 PART 03
-- 30–36：编码模型与 AGI。三条标准 → 自治滑杆 → 数字义肢与石斧 → 物理闭环 → 参与自身研发 → 代际反馈 → 剩余门槛。
-- 37–38：回到两万亿；回到我们自己的工作。
-- 39：结束页（像素吉祥物重绘 + 讨论提示）。
+- 03–13：史上最大 IPO。两万亿引子 → Anthropic 是谁 → 中国互联网 Top 10 对比 → 历史坐标 → 两种资产 → 别人用了多少年 → 估值历程 → 收入 → Claude Code 自身 → 收入倍数 → 市场还在押注什么。
+- 14 PART 02
+- 15–31：不仅仅是程序员的梦中情模。产品路线转折 → 四页编码与终端成绩 → 两种口径 → 推理模型 vs 编码 Agent → Agent 分工 → 再试一次 → 反馈闭环 → 人肉胶水 → MCP/Skills 三层 → 生态 → 按需加载 → Gemini 反例 → OpenAI 逐代追赶 → ARR 与估值双轨。
+- 32 PART 03
+- 33–39：编码模型与 AGI。三条标准 → 自治滑杆 → 数字义肢与石斧 → 物理闭环 → 参与自身研发 → 代际反馈 → 剩余门槛。
+- 40–41：回到两万亿；回到我们自己的工作。
+- 42：结束页（像素吉祥物重绘 + 讨论提示）。
 
 ## 交付
 
-本轮（2026-10-06）状态：PPTX、生成脚本、`slides.json`、演讲备注、39 页 Keynote PDF 预览与 `slide_text.md` 已同步更新。验收 PDF 位于 `/tmp/anthropic-v5-top10/final.pdf`；未另存本轮 KEY / 正式 PDF。`preview/p27-native-preview.png` 是插页前的原生几何辅助预览，该页当前画面以 `preview/slide-28.png` 为准。
+本轮（2026-10-07）状态：PPTX、生成脚本、`slides.json`、演讲备注、41 页 Keynote PDF 预览与 `slide_text.md` 已同步更新。验收 PDF 位于 `/tmp/anthropic-v5-pageA/final.pdf`；未另存本轮 KEY / 正式 PDF。`preview/p27-native-preview.png` 是插页前的原生几何辅助预览，该页当前画面以 `preview/slide-30.png` 为准。
 
 - `Anthropic_2万亿IPO的背后_编码模型与AGI_Claude.pptx`
 - `Anthropic_2万亿IPO的背后_编码模型与AGI_Claude.key`
@@ -101,10 +127,11 @@
 - `speaker_notes.md`：每页来源与口径，作者用，不出现在页面上。
 - `source_audit.md`：完整审计与数据边界。
 - `slides.json`：生成器清单。
-- `terminal_bench_user_supplied.tsv`：现第 28 页的 25 条原始汇总记录，保留日期、型号、版本、分数、harness 与原表来源标签。
-- `china_internet_market_cap_reference.json`：新增第 04 页的十家公司参考市值。
+- `terminal_bench_user_supplied.tsv`：现第 30 页的 25 条原始汇总记录，保留日期、型号、版本、分数、harness 与原表来源标签。
+- `arr_valuation_user_supplied.tsv`：现第 31 页的 28 条原始汇总记录（日期、公司、指标、金额、事件、说明、来源标签）。
+- `china_internet_market_cap_reference.json`：现第 05 页的十家公司参考市值。
 - `layout_check.py`：独立解析最终 XML 的几何复核脚本。
-- `preview/`：39 页 Keynote PDF 渲染图与逐页文本。
+- `preview/`：41 页 Keynote PDF 渲染图与逐页文本。
 
 ## 双端兼容（Keynote + PowerPoint）
 
@@ -123,7 +150,11 @@
 为此所有文本框都带 `fit:'shrink'`（`<a:normAutofit/>`），溢出时自动缩字号而不是跑版。
 若要在 Windows 上得到和 Mac 完全一致的排版，把 PingFang SC 装进 Windows 字体目录即可。
 
-**已验证**：本轮 PPTX 结构校验通过；Keynote 导入 39 页、导出验收 PDF、PDF 渲染 39 页；本轮新增页已目视检查，原有内容顺延；演讲备注已写入全部 39 页。
+**第 31 页插页后（2026-10-08）**：构建时 28 条记录全部上图、标签避让断言通过；`compat.py` 规范化完成，`layout_check.py` 复核 `slides=42 issues=0`，PPTX 结构校验通过；`speaker_notes.md` 已同步为 42 页。本轮 Keynote 导出被环境拦截，`preview/` 与 `slide_text.md` 仍是 41 页旧版（第 31 页起页码差一），待重新导出后更新。新页只用 XML 粗渲染目视检查过。PowerPoint 端仍未验证。
+
+**第 04 / 21 页插页后（2026-10-07）**：PPTX 结构校验通过，`layout_check.py` 复核 `slides=41 issues=0`；Keynote 导入 41 页，导出 PDF 到 `/tmp/anthropic-v5-pageA/final.pdf`，渲染 41 页后更新了 `preview/` 与 `slide_text.md`；新增两页已目视检查。PowerPoint 端仍未验证。
+
+**插页前的记录**：本轮 PPTX 结构校验通过；Keynote 导入 39 页、导出验收 PDF、PDF 渲染 39 页；本轮新增页已目视检查，原有内容顺延；演讲备注已写入全部 39 页。
 **未验证**：本机没有装 PowerPoint，Windows/Mac 版 PowerPoint 的实际渲染未经目视确认；
 上面三处 XML 修正与字体回退是针对 PowerPoint 的，但请在你那边打开一次确认。
 
