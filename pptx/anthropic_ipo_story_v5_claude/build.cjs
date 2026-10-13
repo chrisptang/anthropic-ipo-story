@@ -214,6 +214,24 @@ const rows=[['Google',['Gemini Image','Veo','Gemini Audio']],['OpenAI',['GPT-Ima
 box(s,9.65,2.54,2.89,3.31,C.yp);text(s,'Anthropic',9.9,2.85,2.39,.38,22,{bold:true,color:C.dark});text(s,'>2 万亿',9.9,3.66,2.39,.66,34,{bold:true,color:C.dark});text(s,'美元 · IPO 目标',9.9,4.38,2.39,.36,17,{bold:true});text(s,'把焦点放在\n编码与 Agent',9.9,5.03,2.39,.56,18);
 speakerOnly(s,'比较独立生成模型产品线；Claude 有语音对话，也能用代码画图。Sora 已于 2026.09 停服。');text(s,'它没有靠“什么都能生成”走到这里。那它最擅长的，到底是什么？',.83,6.55,11.7,.35,22,{bold:true});
 }
+// 回答上一页的钩子：先用观众熟悉的聊天产品做基线，讲清“编码模型”是什么，再进入成绩页。只做概念对照，不放分数。
+{
+const s=slide(ch2+' / 2.1','编码模型是什么：底座一样，练的是另一件事','先回答“它和豆包、ChatGPT 有什么不一样”，再看它的成绩。',
+'https://arxiv.org/abs/2203.02155\nhttps://www.anthropic.com/news/claude-3-7-sonnet\nhttps://openai.com/index/introducing-o3-and-o4-mini/',
+'概念对照，讲的是训练与使用的重心，不是互斥分类，也不是能力排名。左栏写的是豆包、ChatGPT的日常对话用法，不是对其底层模型能力的判断；两者都能写代码，也可能接入工具。“人觉得答得好不好”指以人类偏好反馈（RLHF，InstructGPT 2022.03）为代表的对话对齐重心；如今聊天模型也用可验证奖励训练，所以是重心差异而非互斥。右栏“测试跑没跑过”与第25页“机器检验行不行”同源。Claude 3.7 Sonnet（2025.02）同时发布Claude Code研究预览。OpenAI也在走这条路：2025.04随o3/o4-mini发布Codex CLI，第31页的GPT-5.1-Codex-Max、GPT-5.3 Codex为其编码系列；OpenAI Codex发布页直接访问返回403，未取得原文复核，因此不引用其训练细节。本页不放分数。');
+const dims=['你给它什么','它怎么干','怎么判对错','交回来什么'];
+const cols=[
+ {x:2.8,fill:C.gray,t:'聊天模型',k:'豆包、ChatGPT 日常对话',rows:['一个问题','想好，一次答完','人觉得答得好不好','一段回答，代码要自己复制去跑']},
+ {x:7.86,fill:C.yp,t:'编码模型',k:'coding model · Claude Code、OpenAI Codex',rows:['一个仓库 + 一个任务','查 → 改 → 跑 → 再修，直到通过','测试跑没跑过','改好的代码 + 测试结果']}];
+const w=4.7,top=2.45,r0=3.55,rh=.48;
+cols.forEach((c,i)=>{box(s,c.x,top,w,3.05,c.fill);
+ text(s,c.t,c.x+.26,top+.17,w-.52,.4,22,{bold:true,color:C.dark});text(s,c.k,c.x+.26,top+.61,w-.52,.28,12,{color:C.muted});
+ line(s,c.x+.26,3.45,c.x+w-.26,3.45,C.line,1);
+ c.rows.forEach((t,j)=>{const y=r0+j*rh;if(j)line(s,c.x+.26,y,c.x+w-.26,y,C.line,.6);text(s,t,c.x+.26,y+.05,w-.52,.38,16,{bold:i===1});});});
+dims.forEach((t,j)=>text(s,t,.84,r0+j*rh+.05,1.8,.38,14,{bold:true,color:C.muted}));
+text(s,'豆包也能写代码：区别不在会不会，而在被练成一问一答，还是一路干到测试通过。这条路 OpenAI 也在走（见第 31 页）。',.84,5.7,11.7,.32,14,{color:C.muted});
+takeaway(s,'底座都是大语言模型，区别在训练重心：一个练“答得好”，一个练“把活干完”。');
+}
 let history;try{history=JSON.parse(fs.readFileSync(path.join(__dirname,'frontier_history_verified.json'),'utf8'));}catch(e){throw new Error('Frontier history could not be loaded',{cause:e});}
 // Editable 100-cell display; SVG source assets retained separately.
 function hundred(s,score,x,y,d){const step=d/10,cell=step*.79;for(let i=0;i<100;i++){const xx=x+(i%10)*step,yy=y+Math.floor(i/10)*step;rect(s,xx,yy,cell,cell,C.line);const ratio=Math.max(0,Math.min(1,score-i));if(ratio)rect(s,xx,yy,cell*ratio,cell,C.coral);}}
@@ -261,15 +279,15 @@ pans.forEach(p=>{const w=5.64;box(s,p.x,2.5,w,3.4,p.fill);
 footnote(s,'两列是不同的评测口径：harness、effort、重复次数与是否含 fallback 都不同，不可混用也不可相减。');
 takeaway(s,'领先只有半个百分点，而且换个口径就变样——它必须靠持续经营守住。');
 }
-// 成绩之后、范式之前：先讲清“编码 Agent 模型”和推理模型优化的不是同一件事。只做概念对照，不放分数。
+// 成绩之后、范式之前：再分一层：编码模型和推理模型优化的不是同一件事。只做概念对照，不放分数。
 {
-const s=slide(ch2+' / 2.2','推理模型 vs 编码 Agent 模型：是两种东西','同一时期都在“变聪明”，但力气花在了不同的地方。',
+const s=slide(ch2+' / 2.2','再分一层：推理模型 vs 编码模型','同一时期都在“变聪明”，但力气花在了不同的地方。',
 'https://openai.com/index/learning-to-reason-with-llms/\nhttps://openai.com/index/introducing-o3-and-o4-mini/\nhttps://github.com/deepseek-ai/DeepSeek-R1\nhttps://arxiv.org/abs/2501.12948\nhttps://www.anthropic.com/news/claude-3-7-sonnet\nhttps://www.anthropic.com/news/claude-4',
-'概念对照，讲的是优化重心，不是互斥分类，也不是能力排名。o1（2024.09）、DeepSeek R1（2025.01）以强化学习训练长思维链，公开成绩以AIME、Codeforces等竞赛题为主；R1用规则奖励（答案对错、格式），与第24页“机器检验行不行”同源。推理模型也能调用工具：o3/o4-mini（2025.04）在ChatGPT中可用工具，同月发布Codex CLI。Claude 3.7 Sonnet（2025.02）本身也是混合推理模型（extended thinking），同时发布Claude Code研究预览；Claude 4（2025.05）支持思考与工具调用交替。因此右栏不是“不思考”，而是把思考放进与仓库、终端的多轮交互里。本页不放竞赛分或SWE-bench分数，不做同口径成绩比较。');
+'概念对照，讲的是优化重心，不是互斥分类，也不是能力排名。o1（2024.09）、DeepSeek R1（2025.01）以强化学习训练长思维链，公开成绩以AIME、Codeforces等竞赛题为主；R1用规则奖励（答案对错、格式），与第25页“机器检验行不行”同源。推理模型也能调用工具：o3/o4-mini（2025.04）在ChatGPT中可用工具，同月发布Codex CLI。Claude 3.7 Sonnet（2025.02）本身也是混合推理模型（extended thinking），同时发布Claude Code研究预览；Claude 4（2025.05）支持思考与工具调用交替。因此右栏不是“不思考”，而是把思考放进与仓库、终端的多轮交互里。本页不放竞赛分或SWE-bench分数，不做同口径成绩比较。');
 const dims=['优化目标','算力花在哪','输入','典型战场','交付物'];
 const cols=[
  {x:2.8,fill:C.gray,t:'推理模型',k:'o1 · o3 · o4-mini · DeepSeek R1',rows:['单轮把题做对','回答之前的长思维链','一道定义清楚的题','AIME 数学 · Codeforces 竞赛','一个答案']},
- {x:7.86,fill:C.yp,t:'编码 Agent 模型',k:'Claude 3.7 起 · Claude Code',rows:['多轮把活干完','工具调用之间：查 → 改 → 跑 → 再修','一个陌生仓库 + 模糊需求','SWE-bench · Terminal-Bench','Diff + 测试结果 + 没解决的问题']}];
+ {x:7.86,fill:C.yp,t:'编码模型',k:'Claude 3.7 起 · Claude Code',rows:['多轮把活干完','工具调用之间：查 → 改 → 跑 → 再修','一个陌生仓库 + 模糊需求','SWE-bench · Terminal-Bench','Diff + 测试结果 + 没解决的问题']}];
 const w=4.7,top=2.45,r0=3.55,rh=.48;
 cols.forEach((c,i)=>{box(s,c.x,top,w,3.53,c.fill);
  text(s,c.t,c.x+.26,top+.17,w-.52,.4,22,{bold:true,color:C.dark});text(s,c.k,c.x+.26,top+.61,w-.52,.28,12,{color:C.muted});
@@ -306,7 +324,7 @@ takeaway(s,'并行度取决于授权、环境和我们能审查多少——这�
 }
 // 14
 {
-const s=slide(ch2+' / 2.2','为什么 coding model 会越来越强？','机制示意：编码任务为什么特别适合用反馈来改进自己。','https://github.com/deepseek-ai/DeepSeek-R1\nhttps://www.tbench.ai/news/terminal-bench-4-0','机制图不是Claude私有训练配方；公开RL研究支持反思自检。评测数据不是训练数据，不把TB基准放进训练语料。运行中纠错不等于在线更新权重。');
+const s=slide(ch2+' / 2.2','为什么编码模型会越来越强？','机制示意：编码任务为什么特别适合用反馈来改进自己。','https://github.com/deepseek-ai/DeepSeek-R1\nhttps://www.tbench.ai/news/terminal-bench-4-0','机制图不是Claude私有训练配方；公开RL研究支持反思自检。评测数据不是训练数据，不把TB基准放进训练语料。运行中纠错不等于在线更新权重。');
 flow(s,[['任务与环境','仓库、依赖\n需求与约束'],['执行与反馈','读 → 改 → 跑\n测试指出失败'],['学习有效策略','训练更新\n更善于下一批任务']]);
 text(s,'任务内：执行 → 失败 → 再尝试     /     训练期：用反馈更新策略',.85,5.84,11.75,.38,18,{color:C.dark,bold:true});
 takeaway(s,'编码不是只靠人评“像不像”，而是让机器反复检验“行不行”。');
