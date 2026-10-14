@@ -14,7 +14,7 @@ import sys
 import zipfile
 from pathlib import Path
 
-DECK = Path(__file__).parent / 'Anthropic_2万亿IPO的背后_编码模型与AGI_Claude.pptx'
+DECK = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).parent / 'Anthropic_2万亿IPO的背后_编码模型与AGI_Claude.pptx'
 PHANTOM_AX_ID = b'<c:axId val="2094734556"/>'
 MULTI_LVL = re.compile(
     r'<c:multiLvlStrRef>\s*<c:f>(.*?)</c:f>\s*<c:multiLvlStrCache>\s*'

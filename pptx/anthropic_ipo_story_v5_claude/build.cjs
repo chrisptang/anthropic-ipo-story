@@ -448,7 +448,7 @@ const raw=fs.readFileSync(path.join(__dirname,'arr_valuation_user_supplied.tsv')
 const fields=raw.shift().split('\t');
 const recs=raw.map(row=>{const v=row.split('\t');if(v.length!==fields.length)throw new Error('ARR record columns');const r=Object.fromEntries(fields.map((k,i)=>[k,v[i]]));r.v=Number(r.Amount_USD_B);r.t=Date.parse(r.Date);if(!Number.isFinite(r.v)||!Number.isFinite(r.t))throw new Error('ARR record value');return r;});
 if(recs.length!==28)throw new Error('Expected 28 user-supplied ARR/valuation records');
-const notes='本页按用户在2026-10-08提供的28条多来源汇总绘制（ARR 15条、估值13条），未经本次逐条独立核验；原始字段与来源标签保存在 arr_valuation_user_supplied.tsv。与本deck已核实口径一致的点：Anthropic 2025年初约$1B、2025.08>$5B、2026.02 $14B、2026.05>$47B（第10页官方run-rate），E/F/G/H轮$61.5B/$183B/$380B/$965B投后（官方公告）。其余点（OpenAI全部ARR与估值、Anthropic 2025年末$9B、2026.03 $19B、2026.04 $30B、2026.07 $65B、2026.09 $72B、条款书$350B、二级$1,350B）只来自用户汇总所列二手来源，未取得原文复核。ARR是年化run-rate，不是全年确认收入；两家口径（是否含云分成、是否为月度×12）未必一致，交叉点只表示所列数字的先后，不是审计后的收入排名。估值混合了一级融资投后、员工回购要约、二级市场成交与IPO目标，空心点为非一级融资口径，不可与实心点直接等同。OpenAI $1,050B为保密递交IPO的目标区间中值，Anthropic $1,350B为二级市场讨论值，均非上市定价；Anthropic超过$2T的IPO目标见第3页，不画进本图。横轴按日期等比例。OpenAI 2026.06→2026.09 $26.5B→$69B约2.6倍，汇总将其归因于GPT-5.6 Sol与GPT-6 Astra发布，本页只呈现时间共现，不做因果判断。\n\n原表记录：\n'+recs.map(r=>fields.map(k=>k+': '+r[k]).join(' | ')).join('\n');
+const notes='本页按用户在2026-10-08提供的28条多来源汇总绘制（ARR 15条、估值13条），未经本次逐条独立核验；原始字段与来源标签保存在 arr_valuation_user_supplied.tsv。与本deck已核实口径一致的点：Anthropic 2025年初约$1B、2025.08>$5B、2026.02 $14B、2026.05>$47B（第10页官方run-rate），E/F/G/H轮$61.5B/$183B/$380B/$965B投后（官方公告）。其余点（OpenAI全部ARR与估值、Anthropic 2025年末$9B、2026.03 $19B、2026.04 $30B、2026.07 $65B、2026.09 $72B、条款书$350B、二级$1,350B）只来自用户汇总所列二手来源，未取得原文复核。ARR是年化run-rate，不是全年确认收入；两家口径（是否含云分成、是否为月度×12）未必一致，交叉点只表示所列数字的先后，不是审计后的收入排名。估值混合了一级融资投后、员工回购要约、二级市场成交与IPO目标，空心点为非一级融资口径，不可与实心点直接等同。OpenAI $1,050B为保密递交IPO的目标区间中值，Anthropic $1,350B为二级市场讨论值，均非上市定价；Anthropic超过$2T的IPO目标见第3页，不画进本图。横轴按日期等比例。OpenAI 2026.09 原汇总为$69B（2026-09-29 Axios/Reuters“接近$70B”），2026-10-08 FT、Reuters、Bloomberg报道其向投资人披露的9月年化收入接近$50B，$70B为其年底目标；差异主要来自口径：OpenAI该数字不计入经AWS、Google Cloud等云伙伴售出的部分收入，Anthropic计入。本页改用$50B。2026.08 $40B点口径未取得原文复核。OpenAI 2026.06→2026.09 $26.5B→$50B约1.9倍，汇总将其归因于GPT-5.6 Sol与GPT-6 Astra发布，本页只呈现时间共现，不做因果判断。\n\n原表记录：\n'+recs.map(r=>fields.map(k=>k+': '+r[k]).join(' | ')).join('\n');
 const s=slide(ch2+' / 2.4','被反超之后，OpenAI 也在自我进化',null,'用户提供的多来源汇总（2026-10-08）\narr_valuation_user_supplied.tsv\n'+[SRC.e,SRC.f,SRC.g,SRC.h].join('\n'),notes);
 speakerOnly(s,'左边是年化收入，右边是估值，横轴按真实日期比例。先看左图六月以后那段绿线。');
 rect(s,9.78,1.88,.11,.11,C.coral);text(s,'Anthropic',9.97,1.78,1.15,.3,12,{bold:true,color:C.dark});
@@ -461,7 +461,7 @@ const cw=t=>[...t].reduce((a,ch)=>a+(/[一-鿿]/.test(ch)?.145:ch===' '?.04:.07)
 const fmt=v=>'$'+(v>=100?Math.round(v).toLocaleString('en-US'):String(v))+'B';
 const panels=[
  {metric:'ARR',title:'年化收入（ARR）',unit:'十亿美元 · 2025.02—2026.09',x:.78,w:5.9,max:80,ticks:[0,20,40,60,80],
-  chips:[['Anthropic 反超：2026.04，$30B 对 $25B',C.pale,C.dark],['OpenAI 再加速：3 个月 $26.5B → $69B',C.gray,C.sage]]},
+  chips:[['Anthropic 反超：2026.04，$30B 对 $25B',C.pale,C.dark],['OpenAI 再加速：3 个月 $26.5B → $50B',C.gray,C.sage]]},
  {metric:'Valuation',title:'估值',unit:'十亿美元 · 空心为二级 / 条款书 / 目标',x:7.0,w:5.6,max:1500,ticks:[0,500,1000,1500],
   chips:[['H 轮 $965B，首次高于 OpenAI $852B',C.pale,C.dark]]}];
 const months=[['2025.01','2025-01-01'],['2025.07','2025-07-01'],['2026.01','2026-01-01'],['2026.07','2026-07-01']];
@@ -494,7 +494,7 @@ panels.forEach(p=>{
  });
 });
 if(plotted!==recs.length)throw new Error('ARR record missing from visual');
-footnote(s,'多来源汇总，非审计数字；ARR 为年化 run-rate，估值混合融资、回购、二级与 IPO 目标，空心点不可与实心点等同。');
+footnote(s,'非审计数字；ARR 为年化 run-rate。OpenAI 不计经云伙伴售出的部分收入，Anthropic 计入，两家不同口径。空心点为二级 / 条款书 / 目标估值。');
 takeaway(s,'追赶者也在进化：竞争把两条曲线一起推高。');
 }
 divider('PART 03','编码模型与 AGI','先把 AGI 说清楚，再回答：为什么是编码能力，以及还差多少。',[['3.1','AGI 指的是什么'],['3.2','为什么是编码'],['3.3','还有多远']],'引出第三章，不新增数据。');
