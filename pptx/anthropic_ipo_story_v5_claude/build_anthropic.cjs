@@ -176,17 +176,25 @@ takeaway(s,'不是缓慢积累的巨头，而是收入与能力同时加速的�
 }
 // 06
 {
-const s=slide(ch1+' / 1.3','Claude Code 发布之后，公司年化收入陡增','纵轴为公司整体年化收入，单位十亿美元。',[SRC.f,SRC.g,SRC.h,'https://www.anthropic.com/news/claude-3-7-sonnet','https://www.anthropic.com/news/claude-4'].join('\n'),'run-rate revenue不是全年确认营收、不是保证续约ARR，采用官方名称。公司整体收入并非全部来自ClaudeCode；时间共现不证明Code单独导致全部增长。年初约1B、8月>5B、2月14B、5月>47B，下限点。');
+const s=slide(ch1+' / 1.3','Claude Code 发布之后，公司年化收入陡增','纵轴为公司收入，单位十亿美元；浅柱为 S-1 披露的季度确认收入（GAAP），折线为年化 run-rate。',[SRC.f,SRC.g,SRC.h,'https://www.anthropic.com/news/claude-3-7-sonnet','https://www.anthropic.com/news/claude-4','https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm'].join('\n'),'run-rate revenue不是全年确认营收、不是保证续约ARR，采用官方名称。公司整体收入并非全部来自ClaudeCode；时间共现不证明Code单独导致全部增长。年初约1B、8月>5B、2月14B、5月>47B，下限点。GAAP季度收入（S-1合并利润表，$B）：2025Q1 0.376、Q2 0.787、Q3 1.382、Q4 2.040、2026Q1 4.731、Q2 11.555；2026Q3招股书留白，按文件内"2026Q3为2024Q4收入$197M的86倍"倒算≈16.9，与2026-10-14投资者日报道值一致。');
 // 把 Claude Code 的两个发布点标在曲线上：标题是因果断言，图上就要能看到锚点。
-{const labels=['2025 年初','2025.08','2026.02','2026.05'],values=[1,5,14,47],MAX=50;
-s.addChart(pptx.ChartType.line,[{name:'Run-rate USD B',labels,values}],{x:.75,y:2.57,w:8.2,h:3.4,chartColors:[C.coral],showLegend:false,valAxisMinVal:0,valAxisMaxVal:MAX,showMarker:true,showBorder:false});rect(s,.75,2.57,8.2,3.4,C.white);
-label(s,'公司年化收入 · 十亿美元',.8,2.13,7);
-const px=1.37,py=3.05,pw=7.1,ph=2.25,yv=v=>py+ph-v/MAX*ph,xi=i=>px+i*pw/3;
+// 2026-10-26 公开 S-1 后，横轴从事件点改为季度类目：淡珊瑚柱为 GAAP 季度确认收入，折线为年化 run-rate，同一十亿美元轴；年化口径约为当季收入×4。
+{const quarters=['2025Q1','2025Q2','2025Q3','2025Q4','2026Q1','2026Q2','2026Q3'],gaap=[.376,.787,1.382,2.040,4.731,11.555,16.9],gaapText=['0.38','0.79','1.38','2.04','4.73','11.6','≈16.9'],arr=[[0,1,'1','2025 年初'],[2,5,'>5','2025.08'],[4,14,'14','2026.02'],[5,47,'>47','2026.05']],MAX=50;
+s.addChart(pptx.ChartType.line,[{name:'Run-rate USD B',labels:['2025 年初','2025.08','2026.02','2026.05'],values:[1,5,14,47]}],{x:.75,y:2.57,w:8.2,h:3.4,chartColors:[C.coral],showLegend:false,valAxisMinVal:0,valAxisMaxVal:MAX,showMarker:true,showBorder:false});rect(s,.75,2.57,8.2,3.4,C.white);
+s.addChart(pptx.ChartType.bar,[{name:'Quarterly GAAP USD B',labels:quarters,values:gaap}],{x:.75,y:2.57,w:8.2,h:3.4,chartColors:[C.coral],showLegend:false,showTitle:false,showValue:false,valAxisMinVal:0,valAxisMaxVal:MAX,showBorder:false});rect(s,.75,2.57,8.2,3.4,C.white);
+label(s,'公司收入 · 十亿美元',.8,2.13,7);
+const px=1.37,py=3.05,pw=7.1,ph=2.25,qw=pw/7,yv=v=>py+ph-v/MAX*ph,xc=i=>px+(i+.5)*qw;
 [0,12.5,25,37.5,50].forEach(v=>{const y=yv(v);line(s,px,y,px+pw,y,C.line,.7);text(s,String(v),.75,y-.13,.55,.26,10,{align:'right',color:C.muted});});
-[[1.70,'2025.02 研究预览',2.58],[2.72,'2025.05 全面开放',2.84]].forEach(r=>{dash(s,r[0],py,r[0],py+ph,C.coral,1.3);text(s,r[1],r[0]-.86,r[2],1.72,.26,11,{bold:true,color:C.dark,align:'center'});});
-let prev;values.forEach((v,i)=>{const x=xi(i),y=yv(v);if(prev)line(s,prev.x,prev.y,x,y,C.coral,2.6);circle(s,x-.055,y-.055,.11,C.coral);text(s,(v===5||v===47?'>':'')+v,x-.6,y-.46,1.2,.32,15,{bold:true,color:C.dark,align:'center'});text(s,labels[i],x-.8,py+ph+.16,1.6,.3,12,{align:'center',color:C.muted});prev={x,y};});
+gaap.forEach((v,i)=>{const x=xc(i)-.28,y=yv(v);s.addShape(ST.rect,{x,y,w:.56,h:py+ph-y,fill:{color:C.coral,transparency:62},line:{color:C.coral,transparency:100}});text(s,quarters[i],x-.22,py+ph+.14,1,.24,12,{align:'center',color:C.muted});text(s,gaapText[i],x-.22,py+ph+.4,1,.2,11,{align:'center',color:C.muted});});
+[[1.877,'2025.02 研究预览',2.58],[2.891,'2025.05 全面开放',2.84]].forEach(r=>{dash(s,r[0],py,r[0],py+ph,C.coral,1.3);text(s,r[1],r[0]-.86,r[2],1.72,.26,11,{bold:true,color:C.dark,align:'center'});});
+let prev;arr.forEach(([i,v,vt,dt])=>{const x=xc(i),y=yv(v);if(prev)line(s,prev.x,prev.y,x,y,C.coral,2.6);circle(s,x-.055,y-.055,.11,C.coral);
+ if(i===0){text(s,vt,x+.18,y-.62,.7,.28,15,{bold:true,color:C.dark});text(s,dt,x+.18,y-.32,.75,.2,10,{color:C.muted});}
+ else{text(s,vt,x-.6,y-.68,1.2,.28,15,{bold:true,color:C.dark,align:'center'});text(s,dt,x-.75,y-.36,1.5,.2,10,{align:'center',color:C.muted});}
+ prev={x,y};});
+s.addShape(ST.rect,{x:4.3,y:2.52,w:.26,h:.15,fill:{color:C.coral,transparency:62},line:{color:C.coral,transparency:100}});text(s,'季度收入 · GAAP',4.63,2.44,1.6,.3,11,{color:C.muted});
+line(s,4.3,2.92,4.6,2.92,C.coral,2.6);circle(s,4.395,2.865,.11,C.coral);text(s,'年化收入 run-rate',4.7,2.77,1.6,.3,11,{color:C.muted});
 box(s,9.39,2.72,3.18,2.96,C.yp);text(s,'约 $1B',9.63,3.04,2.7,.57,31,{bold:true});text(s,'→ >$47B',9.63,3.97,2.7,.67,33,{bold:true,color:C.dark});text(s,'从 2025 年初\n到 2026 年 5 月',9.63,5.03,2.7,.51,16,{color:C.muted});
-footnote(s,'竖线为 Claude Code 两个发布时点，在首段内按月份比例定位；其余横轴为事件点，不按时间等比例。时间上的先后不等于全部收入增长都来自这一个产品。');}
+footnote(s,'竖线为 Claude Code 两个发布时点，按所在季度内月份比例定位；横轴改为季度等距类目。浅柱为 S-1 披露的季度确认收入（GAAP），2026Q3 招股书留白、按"2024Q4 收入 $197M 的 86 倍"倒算 ≈$16.9B；年化 run-rate 约为当季收入 ×4（S-1 定义：过去 28 天年化）。时间上的先后不等于全部收入增长都来自这一个产品。');}
 takeaway(s,'公司开始出售的不只是答案，而是能持续完成工作的执行能力。');
 }
 // 07
