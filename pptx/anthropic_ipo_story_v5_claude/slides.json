@@ -109,7 +109,7 @@
     "title": "编码模型是什么：底座一样，练的是另一件事",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.1",
     "source": "https://arxiv.org/abs/2203.02155\nhttps://www.anthropic.com/news/claude-3-7-sonnet\nhttps://openai.com/index/introducing-o3-and-o4-mini/",
-    "notes": "概念对照，讲的是训练与使用的重心，不是互斥分类，也不是能力排名。左栏写的是豆包、ChatGPT的日常对话用法，不是对其底层模型能力的判断；两者都能写代码，也可能接入工具。“人觉得答得好不好”指以人类偏好反馈（RLHF，InstructGPT 2022.03）为代表的对话对齐重心；如今聊天模型也用可验证奖励训练，所以是重心差异而非互斥。右栏“测试跑没跑过”与第25页“机器检验行不行”同源。Claude 3.7 Sonnet（2025.02）同时发布Claude Code研究预览。OpenAI也在走这条路：2025.04随o3/o4-mini发布Codex CLI，第31页的GPT-5.1-Codex-Max、GPT-5.3 Codex为其编码系列；OpenAI Codex发布页直接访问返回403，未取得原文复核，因此不引用其训练细节。本页不放分数。\n\n演讲补充：先回答“它和豆包、ChatGPT 有什么不一样”，再看它的成绩。"
+    "notes": "概念对照，讲的是训练与使用的重心，不是互斥分类，也不是能力排名。左栏写的是豆包、ChatGPT的日常对话用法，不是对其底层模型能力的判断；两者都能写代码，也可能接入工具。“人觉得答得好不好”指以人类偏好反馈（RLHF，InstructGPT 2022.03）为代表的对话对齐重心；如今聊天模型也用可验证奖励训练，所以是重心差异而非互斥。右栏“测试跑没跑过”与第25页“机器检验行不行”同源。Claude 3.7 Sonnet（2025.02）同时发布Claude Code研究预览。OpenAI也在走这条路：2025.04随o3/o4-mini发布Codex CLI，第32页的GPT-5.1-Codex-Max、GPT-5.3 Codex为其编码系列；OpenAI Codex发布页直接访问返回403，未取得原文复核，因此不引用其训练细节。本页不放分数。\n\n演讲补充：先回答“它和豆包、ChatGPT 有什么不一样”，再看它的成绩。"
   },
   {
     "page": 17,
@@ -183,118 +183,125 @@
   },
   {
     "page": 27,
+    "title": "另一个例子：排查线上 Bug 时的“多窗口侦探”",
+    "section": "02 / 不仅仅是程序员的梦中情模 / 2.2",
+    "source": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "notes": "研发与运维排障流程的教学示意，呼应上一页“人肉胶水”比喻，不是公司现状调查。工单截图、日志、数据库与 GitHub 查询均需在已授权只读范围内执行；不自动修改线上数据、不自动发布修复或直接回复客服，最终修复方案、工单更新与对外口径均由研发复核确认。\n\n演讲补充：研发与运维同样常在几套系统之间做人肉串联。\n\n演讲补充：教学示意 · 研发与运维排障中的跨系统串联；线上变更与对外回复仍需人工确认"
+  },
+  {
+    "page": 28,
     "title": "从 MCP 到 Skills：接入系统，再保存做事方法",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.3",
     "source": "https://www.anthropic.com/news/model-context-protocol\nhttps://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
     "notes": "MCP2024.11.25；Skills2025.10.16，2025.12.18开放标准。Skills包含指令脚本资源，渐进加载。\n\n演讲补充：MCP 不是被 Skills 替代；两者解决的是不同问题。\n\n演讲补充：一次任务上下都要走。\n\n演讲补充：MCP 2024.11 发布；Skills 2025.10 发布，2025.12 成为开放标准。"
   },
   {
-    "page": 28,
+    "page": 29,
     "title": "它引领的潮流，已经超出 Claude 自己",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.3",
     "source": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
     "notes": "2025.12.09官方生态快照，自报非独立市场份额；10000+ active public servers，97M+月SDK下载，不是使用人数。\n\n演讲补充：MCP 从一家公司的开放协议，走向跨厂商 Agent 基础设施。"
   },
   {
-    "page": 29,
+    "page": 30,
     "title": "更好的 Agent，不是把所有信息都塞进提示词",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.3",
     "source": "https://www.anthropic.com/engineering/code-execution-with-mcp",
     "notes": "150000到2000 Tokens，98.6667%舍入98.7%，仅工具相关上下文，不是全任务费用。\n\n演讲补充：数字来自 Anthropic 官方工程博客的实测示例。\n\n演讲补充：同一工程示例。"
   },
   {
-    "page": 30,
+    "page": 31,
     "title": "Gemini 的反例：综合聪明，不自动等于工程能干",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.4",
     "source": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview\nhttps://artificialanalysis.ai/evaluations/terminalbench-4-0\nhttps://artificialanalysis.ai/models/claude-opus-5-5\nhttps://artificialanalysis.ai/models/gpt-6-astra",
     "notes": "图表量纲保留在轴标签上，比较口径详见演讲备注：左轴AA综合智能指数v4.3.2（0–60指数分，不是百分比）、右轴Terminal-Bench 4.0平均pass@1（0–80%），各自独立归一化，连线只表示同一模型在两套评测中的相对位置，不是分数变化，不可相减。Opus 5.5为max with fallback、Astra为max、Gemini为3.1 Pro Preview；59.6与59.1在右轴几乎重合，为可读性把标注上下分开，位置已用引线指回真实点。只说明本次型号在本次配置下终端评测弱，不据此断言Google整体衰落，不编造组织、训练或产品关停原因。\n\n演讲补充：同一家第三方机构的两套评测：一套测综合智能，一套测终端执行。\n\n演讲补充：左右是两套不同量纲的评测，各自独立归一化；连线表示同一模型在两套评测中的相对位置，不是分数变化，也不可相减。Opus 与 Astra 在右轴几乎重合（差 0.5 个百分点），为便于阅读分开标注。"
   },
   {
-    "page": 31,
+    "page": 32,
     "title": "OpenAI 的正例：追赶不止于 GPT-5.3",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.4",
     "source": "用户提供的多来源汇总（2026-10-06）\nterminal_bench_user_supplied.tsv",
     "notes": "本页按用户在2026-10-06提供的25条汇总记录绘制，20个实际模型，未经本次逐条独立核验。原始字段、来源标签及括号中的替代分数均保存在 terminal_bench_user_supplied.tsv；只使用 Score 列，不平均来源中的不同数字。日期按原表记录日期处理，不称官方发布日期；若与此前审计的发布日期冲突，不沿用此前“同日反超”结论。2.0、2.1、4.0独立坐标系，不跨版本比较。横轴为本版本所列日期排序后的事件等距排列，不是等时距。连线是同一版本的公开配置迭代轨迹，不是统一harness复测，不代表模型纯能力或严格排名。2.0的GPT-5.1通用版、Sonnet 5，以及4.0的Sonnet 5基线、Fable 5.1单独标点；4.0的Sol效率型号另画虚线，不接到Astra前沿线上。Baseline为旧模型在新评测上的参考成绩，不是新型号，也不据发布日期推断当时已完成该版本评测。本次数据没有时间、费用，不保留此前成本下降结论。\n\n原表记录：\nDate: 2025-11-13 | Vendor: OpenAI | Model: GPT-5.1 | Series: General | Benchmark: Terminal-Bench 2.0 | Score: 45.5 | Harness: Terminus 2 / Requesty | Source: Vals AI / Requesty\nDate: 2025-11-19 | Vendor: OpenAI | Model: GPT-5.1-Codex-Max | Series: Coding Flagship | Benchmark: Terminal-Bench 2.0 | Score: 58.1 | Harness: Official Codex Harness | Source: OpenAI Official / tbench.ai (53.5%)\nDate: 2025-11-20 | Vendor: Anthropic | Model: Claude Opus 4.5 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 69.5 | Harness: Harbor / Claude Code | Source: BenchLM / tbench.ai\nDate: 2025-12-11 | Vendor: OpenAI | Model: GPT-5.2 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 62.9 | Harness: Codex CLI (62.9%) / Warp (61.1%) | Source: tbench.ai (62.9% ± 3.0%) / Warp\nDate: 2026-01-15 | Vendor: OpenAI | Model: GPT-5.3 Codex | Series: Coding Flagship | Benchmark: Terminal-Bench 2.0 | Score: 77.3 | Harness: Official Codex Harness | Source: BenchLM / LLM Stats\nDate: 2026-01-20 | Vendor: Anthropic | Model: Claude Opus 4.6 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 73.2 | Harness: Claude Code | Source: BenchLM\nDate: 2026-02-15 | Vendor: OpenAI | Model: GPT-5.4 | Series: General Flagship | Benchmark: Terminal-Bench 2.0 | Score: 75.1 | Harness: Official Harness | Source: BenchLM\nDate: 2026-04-10 | Vendor: OpenAI | Model: GPT-5.5 | Series: Flagship | Benchmark: Terminal-Bench 2.0 | Score: 82 | Harness: Official Harness | Source: BenchLM / LLM Stats\nDate: 2026-04-20 | Vendor: Anthropic | Model: Claude Opus 4.8 | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 74.6 | Harness: Terminus 2 | Source: Artificial Analysis\nDate: 2026-05-25 | Vendor: Anthropic | Model: Claude Sonnet 5 | Series: Mid-tier / Agent | Benchmark: Terminal-Bench 2.0 | Score: 80.4 | Harness: Anthropic Harness | Source: LLM Stats\nDate: 2026-05-25 | Vendor: Anthropic | Model: Claude Sonnet 5 (Baseline) | Series: Mid-tier / Baseline | Benchmark: Terminal-Bench 4.0 | Score: 10.3 | Harness: Claude Code | Source: Anthropic Sonnet 5.5 System Card\nDate: 2026-06-15 | Vendor: Anthropic | Model: Claude Fable 5 | Series: Reasoning / Research | Benchmark: Terminal-Bench 2.1 | Score: 86 | Harness: Terminus 2 | Source: Vals AI / Vellum\nDate: 2026-06-26 | Vendor: OpenAI | Model: GPT-5.6 Sol | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 88 | Harness: Terminus 2 (Max Effort) | Source: Artificial Analysis / OpenAI (88.8%)\nDate: 2026-06-26 | Vendor: OpenAI | Model: GPT-5.6 Sol (Baseline) | Series: Prior Flagship / Baseline | Benchmark: Terminal-Bench 4.0 | Score: 37.3 | Harness: Codex (Max Effort) | Source: tbench.ai / Anthropic Report\nDate: 2026-07-24 | Vendor: Anthropic | Model: Claude Opus 5 | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 89.1 | Harness: Terminus 2 (Max Effort) | Source: Artificial Analysis / Morph\nDate: 2026-07-24 | Vendor: Anthropic | Model: Claude Opus 5 (Baseline) | Series: Prior Flagship / Baseline | Benchmark: Terminal-Bench 4.0 | Score: 52.3 | Harness: Claude Code (51.8% Public, 52.3% Internal) | Source: Anthropic Opus 5.5 System Card / tbench.ai\nDate: 2026-08-31 | Vendor: Anthropic | Model: Claude Fable 5.1 | Series: Reasoning / Research | Benchmark: Terminal-Bench 4.0 | Score: 57.9 | Harness: Claude Code | Source: tbench.ai / Harbor Hub\nDate: 2026-09-01 | Vendor: Anthropic | Model: Claude Mythos 5.1 | Series: Specialized Flagship | Benchmark: Terminal-Bench 4.0 | Score: 60.9 | Harness: Anthropic Harness | Source: LLM Stats\nDate: 2026-09-03 | Vendor: OpenAI | Model: GPT-6 Astra | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 88.4 | Harness: Terminus 2 / AA (89.5% Med, 87.3% Vals) | Source: Artificial Analysis / Vals AI\nDate: 2026-09-03 | Vendor: OpenAI | Model: GPT-6 Astra | Series: Frontier Flagship | Benchmark: Terminal-Bench 4.0 | Score: 58.2 | Harness: Codex (Max Effort) | Source: tbench.ai (58.2% ± 2.8%) / Vals (59.6%)\nDate: 2026-09-22 | Vendor: Anthropic | Model: Claude Opus 5.5 | Series: Flagship | Benchmark: Terminal-Bench 2.1 | Score: 87.6 | Harness: Terminus 2 (High Effort) | Source: Vals AI (87.64%) / BenchLM (86.4%)\nDate: 2026-09-22 | Vendor: Anthropic | Model: Claude Opus 5.5 | Series: Frontier Flagship | Benchmark: Terminal-Bench 4.0 | Score: 66.4 | Harness: Claude Code (Xhigh Effort) | Source: Anthropic Official / Vals (65.2%)\nDate: 2026-09-23 | Vendor: OpenAI | Model: GPT-6 Sol | Series: Workhorse (Efficient) | Benchmark: Terminal-Bench 4.0 | Score: 44.4 | Harness: Mini-SWE-agent | Source: Vals AI / Emergent\nDate: 2026-09-29 | Vendor: Anthropic | Model: Claude Sonnet 5.5 | Series: Coding Specialist | Benchmark: Terminal-Bench 4.0 | Score: 70.6 | Harness: Claude Code (Peak Effort) | Source: Anthropic Official / LLM Stats\nDate: 2026-09-30 | Vendor: OpenAI | Model: GPT-6.1 Sol | Series: Workhorse (Efficient) | Benchmark: Terminal-Bench 4.0 | Score: 55.1 | Harness: Mini-SWE-agent | Source: Vals AI / Emergent\n\n演讲补充：三代终端评测，20 个模型的公开成绩轨迹。\n\n演讲补充：多来源、不同配置汇总；横轴按资料中的迭代事件等距排列，版本间不比较分数。"
   },
   {
-    "page": 32,
+    "page": 33,
     "title": "被反超之后，OpenAI 也在自我进化",
     "section": "02 / 不仅仅是程序员的梦中情模 / 2.4",
     "source": "用户提供的多来源汇总（2026-10-08）\narr_valuation_user_supplied.tsv\nhttps://www.anthropic.com/news/anthropic-raises-series-e-at-usd61-5b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\nhttps://www.anthropic.com/news/series-h",
     "notes": "本页按用户在2026-10-08提供的28条多来源汇总绘制（ARR 15条、估值13条），未经本次逐条独立核验；原始字段与来源标签保存在 arr_valuation_user_supplied.tsv。与本deck已核实口径一致的点：Anthropic 2025年初约$1B、2025.08>$5B、2026.02 $14B、2026.05>$47B（第10页官方run-rate），E/F/G/H轮$61.5B/$183B/$380B/$965B投后（官方公告）。其余点（OpenAI全部ARR与估值、Anthropic 2025年末$9B、2026.03 $19B、2026.04 $30B、2026.07 $65B、2026.09 $72B、条款书$350B、二级$1,350B）只来自用户汇总所列二手来源，未取得原文复核。ARR是年化run-rate，不是全年确认收入；两家口径（是否含云分成、是否为月度×12）未必一致，交叉点只表示所列数字的先后，不是审计后的收入排名。估值混合了一级融资投后、员工回购要约、二级市场成交与IPO目标，空心点为非一级融资口径，不可与实心点直接等同。OpenAI $1,050B为保密递交IPO的目标区间中值，Anthropic $1,350B为二级市场讨论值，均非上市定价；Anthropic超过$2T的IPO目标见第3页，不画进本图。横轴按日期等比例。OpenAI 2026.06→2026.09 $26.5B→$69B约2.6倍，汇总将其归因于GPT-5.6 Sol与GPT-6 Astra发布，本页只呈现时间共现，不做因果判断。\n\n原表记录：\nDate: 2025-02-15 | Company: Anthropic | Metric: ARR | Amount_USD_B: 1 | Event_or_Round: Claude Code Launch | Notes: Claude Code initial release; ARR ~$1B | Source: SaaStr / Wikipedia\nDate: 2025-02-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 8 | Event_or_Round: Early 2025 Baseline | Notes: Driven by ChatGPT Plus/Team & API | Source: FutureSearch / Value Add VC\nDate: 2025-03-03 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 61.5 | Event_or_Round: Series E | Notes: Raised $3.5B led by Lightspeed Venture Partners | Source: Anthropic Official / Wikipedia\nDate: 2025-03-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 300 | Event_or_Round: SoftBank Round | Notes: Raised $40B financing led by SoftBank Group | Source: Value Add VC / Pinggy\nDate: 2025-07-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 12 | Event_or_Round: July 2025 Milestone | Notes: First to cross $12B in SaaS history | Source: SaaStr / Bloomberg\nDate: 2025-09-01 | Company: Anthropic | Metric: ARR | Amount_USD_B: 5 | Event_or_Round: Series F Period | Notes: Rapid enterprise uptake via Claude Code & API | Source: PitchBook / FutureSearch\nDate: 2025-09-02 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 183 | Event_or_Round: Series F | Notes: Raised $13B led by ICONIQ, Fidelity, Lightspeed | Source: Anthropic Official / Wikipedia\nDate: 2025-10-31 | Company: OpenAI | Metric: ARR | Amount_USD_B: 16 | Event_or_Round: Fall 2025 Growth | Notes: Monthly recurring revenue crosses $1B+ mark | Source: AI Business Weekly\nDate: 2025-10-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 500 | Event_or_Round: Secondary Tender | Notes: Secondary employee liquidity tender offer | Source: SmartAsset / Sacra\nDate: 2025-12-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 9 | Event_or_Round: Year-End 2025 Exit | Notes: Exit 2025 at $9B annualized run-rate | Source: SaaStr / The AI Corner\nDate: 2025-12-31 | Company: OpenAI | Metric: ARR | Amount_USD_B: 21.4 | Event_or_Round: Year-End 2025 Exit | Notes: Exits 2025 at $21.4B run rate ($20B+ declared) | Source: Reuters / The Information / TradingKey\nDate: 2025-12-31 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 350 | Event_or_Round: Term Sheet | Notes: Signed term sheet for $10B round led by Coatue & GIC | Source: Wikipedia / Forbes\nDate: 2026-02-12 | Company: Anthropic | Metric: ARR | Amount_USD_B: 14 | Event_or_Round: Series G Disclosure | Notes: Claude Code ARR alone reaches $2.5B+ | Source: SaaStr / Pinggy\nDate: 2026-02-12 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 380 | Event_or_Round: Series G | Notes: Raised $30B at $380B post-money valuation | Source: Wikipedia / Tastytrade\nDate: 2026-02-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 25 | Event_or_Round: Early 2026 Milestone | Notes: Hits $25B ARR, enters 5-month growth plateau | Source: Value Add VC / FutureSearch\nDate: 2026-03-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 19 | Event_or_Round: Q1 2026 Close | Notes: Sustained doubling pace every few weeks | Source: SaaStr\nDate: 2026-03-31 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 852 | Event_or_Round: Mega Financing Round | Notes: Closed $122B committed capital round at $852B post-money | Source: OpenAI Official / Reuters\nDate: 2026-04-15 | Company: Anthropic | Metric: ARR | Amount_USD_B: 30 | Event_or_Round: April 2026 Milestone | Notes: Crosses $30B ARR, officially surpassing OpenAI ($25B) | Source: The AI Corner / Reddit Investing\nDate: 2026-05-28 | Company: Anthropic | Metric: ARR | Amount_USD_B: 47 | Event_or_Round: Series H Disclosure | Notes: Disclosed alongside Series H fundraise | Source: SaaStr / PitchBook\nDate: 2026-05-28 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 965 | Event_or_Round: Series H | Notes: Raised $65B at $965B post-money; officially tops OpenAI | Source: Anthropic / Sequoia / Digital Applied\nDate: 2026-06-30 | Company: OpenAI | Metric: ARR | Amount_USD_B: 26.5 | Event_or_Round: Mid-2026 Plateau | Notes: Slower growth amidst enterprise competition from Claude | Source: Value Add VC / Emergent\nDate: 2026-07-31 | Company: Anthropic | Metric: ARR | Amount_USD_B: 65 | Event_or_Round: Q2 Earnings Milestone | Notes: Leaked financials confirm $65B+ ARR and first operating profit | Source: PitchBook / Morningstar / Yahoo Finance\nDate: 2026-08-15 | Company: OpenAI | Metric: ARR | Amount_USD_B: 40 | Event_or_Round: Breakout Milestone | Notes: Breakout growth post GPT-5.6 Sol launch, crosses $40B | Source: Bloomberg / Value Add VC\nDate: 2026-09-21 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 894.3 | Event_or_Round: Forge Secondary | Notes: Private market share price $721.85, $894.33B market cap | Source: Forge Global / SmartAsset\nDate: 2026-09-29 | Company: Anthropic | Metric: ARR | Amount_USD_B: 72 | Event_or_Round: Q3 Close / Opus 5.5 | Notes: Enterprise agent workloads surging following Claude 5.5 launch | Source: Axios / Dealroom\nDate: 2026-09-29 | Company: OpenAI | Metric: ARR | Amount_USD_B: 69 | Event_or_Round: Late Q3 Spike | Notes: ARR nears $70B driven by GPT-6 Astra enterprise commitments | Source: Axios / Reuters / Luminix AI\nDate: 2026-09-30 | Company: Anthropic | Metric: Valuation | Amount_USD_B: 1350 | Event_or_Round: Pre-IPO / Secondary | Notes: Secondary market trading & discussions range up to $1.5T-$2.0T | Source: PitchBook / GraniteShares / Tastytrade\nDate: 2026-10-01 | Company: OpenAI | Metric: Valuation | Amount_USD_B: 1050 | Event_or_Round: Confidential IPO Target | Notes: SEC confidential IPO filing targeting >$1.0T-$1.2T | Source: Sacra / Value Add VC\n\n演讲补充：左边是年化收入，右边是估值，横轴按真实日期比例。先看左图六月以后那段绿线。\n\n演讲补充：多来源汇总，非审计数字；ARR 为年化 run-rate，估值混合融资、回购、二级与 IPO 目标，空心点不可与实心点等同。"
   },
   {
-    "page": 33,
+    "page": 34,
     "title": "编码模型与 AGI",
     "section": "PART 03",
     "source": "章节过渡页",
     "notes": "引出第三章，不新增数据。\n\n演讲补充：先把 AGI 说清楚，再回答：为什么是编码能力，以及还差多少。"
   },
   {
-    "page": 34,
+    "page": 35,
     "title": "什么是 AGI？本场只用三条标准",
     "section": "03 / 编码模型与 AGI / 3.1",
     "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
     "notes": "明确为本演讲的工作定义，不是业界统一判定标准，也没有公认的通过线。三条不是人类级通用智能的充分条件，满足三条也不等于AGI达成。本页只给定义与“怎么判断有没有”的问题，不给当前进度评分，避免与3.3门槛表重复。三条标准取自用户大纲原文表述，不借用任何厂商的能力分级。\n\n演讲补充：每条标准配一个可以当场判断的问题。\n\n演讲补充：这是本场采用的工作定义，不是业界统一判定标准；三条都满足也不等于已经是 AGI。"
   },
   {
-    "page": 35,
+    "page": 36,
     "title": "从给建议，到接下一段工作：自治的滑杆在右移",
     "section": "03 / 编码模型与 AGI / 3.1",
     "source": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents\nhttps://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "吸收Gemini第24页自治滑杆，与原AGI工作定义合并。四档是演讲交互框架，不是R&D AL等级、不代表线性技术成熟度或通用AGI认证。持续运行是需要调度/监控/权限/恢复的部署方式，不是所有Claude产品自动具备。工具使用、持续学习、自我迭代保留为工作框架，非必要充分判定。对账为教学示意。\n\n演讲补充：还是那件对账的事，四种不同的交付方式。"
   },
   {
-    "page": 36,
+    "page": 37,
     "title": "代码既是数字义肢，也是造工具的“石斧”",
     "section": "03 / 编码模型与 AGI / 3.2",
     "source": "https://www.anthropic.com/engineering/code-execution-with-mcp\nhttps://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
     "notes": "吸收Gemini第25页数字义肢/石斧比喻，保留目标→代码→结果的机制。比喻不援引人类进化史，不把编码等同可制造任何工具。文件/API调用必须获得授权；脚本需测试，结果需核对。对账工具为教学机制示意，不声称执行成功。文件匹配只能处理编码规则，不自动决定业务含义。\n\n演讲补充：这不是两条路线，而是同一个任务里交替出现的两种动作。"
   },
   {
-    "page": 37,
+    "page": 38,
     "title": "从软件世界，到物理世界：代码搭起最后一段桥",
     "section": "03 / 编码模型与 AGI / 3.2",
     "source": "机制示意；非Claude机器人实测或产品能力承诺",
     "notes": "物理动作必须有被授权硬件、传感器反馈、保护系统；不能把API访问等同物理通用智能。\n\n演讲补充：机制示意：代码在这条链路上承担哪一段。\n\n演讲补充：不是 Claude 机器人实测，也不是产品能力承诺。软件里失败只花一次重试；物理世界里失败可能不可逆。"
   },
   {
-    "page": 38,
+    "page": 39,
     "title": "AGI 还有多远？先看它是否开始参与自己的研发",
     "section": "03 / 编码模型与 AGI / 3.3",
     "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "厂商原型指标自报：26% AL4 AI主导、人监督；>90% AL3+协作包含AL4，不相加；不是发现占比或26%模型改进，未报告AL5完全自主。\n\n演讲补充：Anthropic R&D Automation Index · 2026 年 8 月快照。\n\n演讲补充：AL1–AL5 是自动化层级：AL3 为 AI 协作，AL4 为 AI 主导、人类监督，AL5 为完全自主。厂商自报指标，AL3+ 与 AL4 为包含关系，不可相加。"
   },
   {
-    "page": 39,
+    "page": 40,
     "title": "下一轮智能，开始吃到上一轮智能的红利",
     "section": "03 / 编码模型与 AGI / 3.3",
     "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "RSI为可能的代际反馈机制；不等于完全自主递归改进已实现或智能爆炸已证实。创意、验证、算力与安全为约束。\n\n演讲补充：这一步是机制推断，不是已经观测到的完整闭环。"
   },
   {
-    "page": 40,
+    "page": 41,
     "title": "距离 AGI，剩下的是哪些可观察的门槛？",
     "section": "03 / 编码模型与 AGI / 3.3",
     "source": "分析框架\nhttps://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents\nhttps://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "文件记忆和skills改善运行系统不等于权重持续学习。AI主导研发仍人监督；物理世界长期可靠性未由代码基准证明。\n\n演讲补充：不猜日期，只列可以观察、可以验证的判断点。"
   },
   {
-    "page": 41,
+    "page": 42,
     "title": "两万亿押注的，不是一个更好的代码补全工具",
     "section": "结尾 / 回到两万亿",
     "source": "https://live.euronext.com/en/financial-news/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs\nhttps://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\nhttps://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\nhttps://www.anthropic.com/news/series-h\nhttps://www.anthropic.com/institute/measuring-pace-of-ai-development",
     "notes": "结尾为商业与技术方向性判断，非目标估值合理性的确定结论或投资建议。\n\n演讲补充：两万亿同时为这三层付钱，尽管它们的确定性完全不同。"
   },
   {
-    "page": 42,
+    "page": 43,
     "title": "当执行越来越便宜，什么更值钱？",
     "section": "结尾 / 回到我们的工作",
     "source": "组织方向性分析；对账教学样本；授权、隐私与生产操作责任保留在人类组织",
     "notes": "吸收Gemini第31页执行廉价/判断稀缺的反问，与原角色结尾合并，不使用淘汰旧技能、伪工作、舰队统帅等贬抑或训导措辞。执行成本下降为方向性条件，不声称全部执行已无限廉价。具体30/600为第14页教学样本呼应；不将差额认定为漏款，不自动发起催收或改账。保留员工/研发/公司三方各一项具体落点，不构成员工必须如何工作的命令。\n\n演讲补充：同一件对账工作，重新分一次工。"
   },
   {
-    "page": 43,
+    "page": 44,
     "title": "谢谢大家",
     "section": "结尾",
     "source": "结束页",
